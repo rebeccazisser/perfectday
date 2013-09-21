@@ -73,7 +73,18 @@ The reason Sublime is epic is because you can soup it up with packages. Basicall
 After that, you'll need to restart Sublime. After that, type Shift + Command + p. It'll bring up this prompt where you can type. If you type 'install', it'll bring up all of these packages you can install. Type in gitgutter, and it will magically install gitgutter. If you type CSS and HTML and other things, you might find some other cool packages too, explore a bit.
 
 # Other Useful Terminal Stuff
+I have a terminal app that shows you the git branch you're on and whether or not you've made changes (it looks like a cloud and a lightning bolt; it's pretty useful). You should install it too. Here are the steps to get that working:
 
+Install ZSH:
+```curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh```
+
+Switch to your home directory:
+```cd ~```
+
+Open up the file named .zshrc. In there, there's something that looks like this:
+```ZSH_THEME:something```
+
+Rename ```something``` to ```cloud```. Restart the terminal; now you too should have lightning bolts and clouds. 
 
 # CSS/SASS
 We're not going to use CSS. SASS is better, and you can always just type in CSS if you want. However, there's some stuff you need to do to make it work. Here are the basics: we run a terminal command, and it will bundle up all of our SASS files and turn them into one, big, CSS file that we never touch because it's programmatically perfect. Instead, we only change the SASS (.scss) files. Unfortunately, you need to install some stuff to run the terminal command (like you needed to install git):
