@@ -31,7 +31,7 @@ This will send the changes to me so I can get them. To make sure it's worked, go
 ```git pull```
 This will get changes from me. You should try and do this before you start working. 
 
-## Other Useful Git Stuff
+## Git Branches
 ```git checkout -b name-of-branch```
 Whenever I'm working on stuff, we want to keep <em>master</em> (our perfect, working, not fucked up-at-any-point-branch) clean. This means that when you make changes, you shouldn't work on master. Instead, you should copy master, and work on the copy instead. That's what the thing above does. Like:
 
@@ -79,13 +79,9 @@ After that, you'll need to restart Sublime. After that, type Shift + Command + p
 We're not going to use CSS. SASS is better, and you can always just type in CSS if you want. However, there's some stuff you need to do to make it work. Here are the basics: we run a terminal command, and it will bundle up all of our SASS files and turn them into one, big, CSS file that we never touch because it's programmatically perfect. Instead, we only change the SASS (.scss) files. Unfortunately, you need to install some stuff to run the terminal command (like you needed to install git):
 
 # Ruby
+In your terminal:
 ```$ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled # Or, --ruby=1.9.3```
-This will install Ruby, which handles our SASS files. It takes a bit. 
+This will install Ruby, which handles our SASS files. It takes a bit, so make sure you have a good internet connection.
 
 # Other Useful Stuff
-* [Responsive Bookmarklet](http://responsive.victorcoulon.fr/): Get this thing. We're building a mobile application, so we'll need a thing to test with. 
-
-
-
-
-
+* [Responsive Bookmarklet](http://responsive.victorcoulon.fr/): Get this thing, it's super useful.
