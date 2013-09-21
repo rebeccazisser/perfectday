@@ -91,8 +91,12 @@ We're not going to use CSS. SASS is better, and you can always just type in CSS 
 
 # Ruby
 In your terminal:
+
 ```$ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled # Or, --ruby=1.9.3```
+
 This will install Ruby, which handles our SASS files. It takes a bit, so make sure you have a good internet connection.
+
+In your ```perfectday/``` directory, run ```rake sass```. This will update your CSS files. 
 
 # Other Useful Stuff
 * [Responsive Bookmarklet](http://responsive.victorcoulon.fr/): Get this thing, it's super useful.
