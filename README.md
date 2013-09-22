@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 Perfect Day!
-=======
+
 Hey Rebecca! I figure I might as well put some of the terminal commands and stuff in here. So, using git:
 
 # How to Use Git
@@ -85,7 +84,7 @@ Switch to your home directory:
 ```cd ~```
 
 Open up the file named .zshrc. In there, there's something that looks like this:
-```ZSH_THEME:something```
+```ZSH_THEME : something```
 
 Rename ```something``` to ```cloud```. Restart the terminal; now you too should have lightning bolts and clouds. 
 
@@ -94,9 +93,12 @@ We're not going to use CSS. SASS is better, and you can always just type in CSS 
 
 # Ruby
 In your terminal:
+
 ```$ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled # Or, --ruby=1.9.3```
+
 This will install Ruby, which handles our SASS files. It takes a bit, so make sure you have a good internet connection.
+
+In your ```perfectday/``` directory, run ```rake sass```. This will update your CSS files. 
 
 # Other Useful Stuff
 * [Responsive Bookmarklet](http://responsive.victorcoulon.fr/): Get this thing, it's super useful.
->>>>>>> 20fae7b00d7a5b994df160923e85e95be8943fa5
