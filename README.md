@@ -49,7 +49,7 @@ Once you're ready to put this stuff into master, here are the steps you take:
 ```git checkout master```
 This is how you change in-between branches. 
 
-``git pull```
+```git pull```
 Make sure that master is up-to-date!
 
 ```git checkout updatingStyles```
