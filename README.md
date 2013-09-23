@@ -11,6 +11,12 @@ Here's some stuff I use a lot:
 ```ls -l``` 
 This lets you see the files that are in the current directory. This helps if you don't know where you are.
 
+```cd ../```
+This is how you move up a directory.
+
+```touch index.html```
+You can make files really quickly with the touch command. This will make a new empty file named index.html.
+
 ## Git Stuff
 This is for when you actually want to <em>push</em> and <em>pull</em> files (meaning, send the changes to me and get changes I've made).
 

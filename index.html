@@ -38,11 +38,47 @@
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <h1 class="title">Ratchet</h1>
+    <h1 class="title">Perfect Day</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
+    <div class="content-padded">
+      <p class="welcome">Playing with push.js, which makes the pages slide: <br />
+        <ul class="list">
+          <li>
+              <a href="user.html" data-transition="slide-in">
+                  Go to the User Page
+              </a>
+              <span class="chevron"></span>
+          </li>
+          <li>
+              <a href="home.html" data-transition="slide-in">
+                  Go to the Home Page
+              </a>
+              <span class="chevron"></span>
+          </li>
+          <li>
+              <a href="search.html" data-transition="slide-in">
+                  Go to the Search Page
+              </a>
+              <span class="chevron"></span>
+          </li>
+          <li>
+              <a href="new.html" data-transition="slide-in">
+                  Go to the New Page
+              </a>
+              <span class="chevron"></span>
+          </li>
+        </ul>
+
+  A link that doesn't slide:
+  <!-- Use data-ignore="push" to prevent the push.js interception -->
+<a href="http://www.google.com" data-ignore="push">Google<a>
+      </p>
+    </div>
+
+
     <div class="content-padded">
       <p class="welcome">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resorces:</p>
     </div>
@@ -51,24 +87,6 @@
       <li>
         <a href="http://maker.github.com/ratchet/">
           <strong>Ratchet documentation</strong>
-          <span class="chevron"></span>
-        </a>
-      </li>
-      <li>
-        <a href="http://www.github.com/maker/ratchet/">
-          <strong>Ratchet on Github</strong>
-          <span class="chevron"></span>
-        </a>
-      </li>
-      <li>
-        <a href="https://groups.google.com/forum/#!forum/goratchet">
-          <strong>Ratchet Google group</strong>
-          <span class="chevron"></span>
-        </a>
-      </li>
-      <li>
-        <a href="http://www.twitter.com/GoRatchet">
-          <strong>Ratchet on Twitter</strong>
           <span class="chevron"></span>
         </a>
       </li>
