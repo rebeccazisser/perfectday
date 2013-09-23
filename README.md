@@ -2,9 +2,7 @@ Perfect Day!
 
 Hey Rebecca! I figure I might as well put some of the terminal commands and stuff in here. So, using git:
 
-# How to Use Git
-## Terminal Stuff
-I always open terminal from Spotlight, so open that.
+# How to Use the Terminal/iTerm2
 
 Here's some stuff I use a lot:
 
@@ -32,6 +30,12 @@ This will send the changes to me so I can get them. To make sure it's worked, go
 
 ```git pull```
 This will get changes from me. You should try and do this before you start working. 
+
+```git log```
+This is where you can see the commit messages. You press 'q' to get out of the viewing window.
+
+```git status```
+This is how you can see what files you've changed.
 
 ## Git Branches
 ```git checkout -b name-of-branch```
@@ -67,38 +71,12 @@ Voilà! You can push your changes!
 That was a lot of information, but don't worry. We'll go over it together Sunday.
 
 
-# Other Useful Sublime Stuff
-The reason Sublime is epic is because you can soup it up with packages. Basically, things that make it nicer/easier to use. There are a ton you can download (just go through the packages, you'll see there are <em>tons</em>) but the one I really want you to install is gitgutter. It will make it easier to use git because you can see which lines have been changed and which will be commited; also, it shows conflicts when we've both tried to edit the same line.
-
-[Package Control](https://sublime.wbond.net/installation#st2)
-
-After that, you'll need to restart Sublime. After that, type Shift + Command + p. It'll bring up this prompt where you can type. If you type 'install', it'll bring up all of these packages you can install. Type in gitgutter, and it will magically install gitgutter. If you type CSS and HTML and other things, you might find some other cool packages too, explore a bit.
+# Sublime Package Control
+Anytime you there might be something useful, type Shift + Command + p and see if there's a package for it. SASS is one, GitGutter is another, but there are <em>tons</em>, you just gotta look for them.
 
 # Other Useful Terminal Stuff
 I have a terminal app that shows you the git branch you're on and whether or not you've made changes (it looks like a cloud and a lightning bolt; it's pretty useful). You should install it too. Here are the steps to get that working:
 
-Install ZSH:
-```curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh```
-
-Switch to your home directory:
-```cd ~```
-
-Open up the file named .zshrc. In there, there's something that looks like this:
-```ZSH_THEME : something```
-
-Rename ```something``` to ```cloud```. Restart the terminal; now you too should have lightning bolts and clouds. 
-
-# CSS/SASS
-We're not going to use CSS. SASS is better, and you can always just type in CSS if you want. However, there's some stuff you need to do to make it work. Here are the basics: we run a terminal command, and it will bundle up all of our SASS files and turn them into one, big, CSS file that we never touch because it's programmatically perfect. Instead, we only change the SASS (.scss) files. Unfortunately, you need to install some stuff to run the terminal command (like you needed to install git):
-
-# Ruby
-In your terminal:
-
-```$ \curl -L https://get.rvm.io | bash -s stable --rails --autolibs=enabled # Or, --ruby=1.9.3```
-
-This will install Ruby, which handles our SASS files. It takes a bit, so make sure you have a good internet connection.
-
-In your ```perfectday/``` directory, run ```rake sass```. This will update your CSS files. 
-
-# Other Useful Stuff
-* [Responsive Bookmarklet](http://responsive.victorcoulon.fr/): Get this thing, it's super useful.
+# SASS
+```rake sass```
+Whenever you make changes to the sass files, run this and the terminal will update the css file for you on the fly. When you are ready to get out of the watching window, press control + c. Remember though, iTerm2 has tabs...
