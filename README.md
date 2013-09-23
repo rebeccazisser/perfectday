@@ -1,6 +1,5 @@
-Perfect Day!
-
-Hey Rebecca! I figure I might as well put some of the terminal commands and stuff in here. So, using git:
+# Perfect Day
+## Journeys that delight
 
 # How to Use the Terminal/iTerm2
 
