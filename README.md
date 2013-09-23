@@ -1,6 +1,11 @@
 # Perfect Day
 ## Journeys that delight
 
+# Documentation
+Since we're using Ratchet, we should both read over the documentation. It looks like they've anticipated everything we'll need, we just need to go ovwer all of it.
+
+* [Ratchet Documentation](http://maker.github.io/ratchet/two.html#gettingStarted)
+
 # How to Use the Terminal/iTerm2
 
 Here's some stuff I use a lot:
@@ -75,6 +80,13 @@ Voilà! You can push your changes!
 
 That was a lot of information, but don't worry. We'll go over it together Sunday.
 
+# Github Pages
+So, github pages are super cool! Github probably explains it better than I do, but the gist of it is that I'm going to set up a service hook so that when you push to master, you can view the app hosted online here: [Perfect Day](http://helenvholmes.github.io/perfectday/). This is important, because the app is probably going to act differently on our phones than it will sized down on our computers. This way, you can check to make sure that your changes made on master are still working on mobile. 
+
+Also, if you're paying for hosting, you should look into github pages because they're free. I host my portfolio here, and it's awesome. They do a lot of optimization on your files that I always forget to do to make your website faster. 
+
+* [What are Github Pages?](https://help.github.com/articles/what-are-github-pages)
+* [Github Pages Documentation](https://help.github.com/categories/20/articles)
 
 # Sublime Package Control
 Anytime you there might be something useful, type Shift + Command + p and see if there's a package for it. SASS is one, GitGutter is another, but there are <em>tons</em>, you just gotta look for them.
