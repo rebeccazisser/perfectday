@@ -1,0 +1,4 @@
+To Do:
+
+* Set up nodemon server for push history api
+* Add explanation of node to readme
