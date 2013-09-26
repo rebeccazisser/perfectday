@@ -2,3 +2,10 @@ To Do:
 
 * Set up nodemon server for push history api
 * Add explanation of node to readme
+* Flesh out local server section
+* Code walkthrough on fingerblast/touch events
+
+
+
+Deployment:
+* Unlink fingerblast.js
