@@ -2,9 +2,12 @@
 ## Journeys that delight
 
 # Documentation
-Since we're using Ratchet, we should both read over the documentation. It looks like they've anticipated everything we'll need, we just need to go ovwer all of it.
+Since we're using Ratchet, we should both read over the documentation. It looks like they've anticipated everything we'll need, we just need to go over all of it.
 
 * [Ratchet Documentation](http://maker.github.io/ratchet/two.html#gettingStarted)
+
+# Files
+According to the Ratchet Documentation, the structure for making the pages transition properly is pretty much set in stone. When you go to make a new page, just cop over the template from index.html and go from there.
 
 # How to Use the Terminal/iTerm2
 

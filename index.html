@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="css/i.css">
 
     <!-- Include the compiled Ratchet JS -->
-    <script src="ratchet.js"></script>
+    <script src="js/ratchet.js"></script>
 
     <!-- Include the Fingerblast so push.js works -->
-    <script src="fingerblast.js"></script>
+    <script src="js/fingerblast.js"></script>
 
     <!-- Intro paragraph styles. Delete once you start using this page -->
     <style type="text/css">
@@ -98,4 +98,10 @@
   </div>
 
   </body>
+
+
+<!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
+  <script type='text/javascript'>
+    var fb = new FingerBlast ('body');
+  </script>
 </html>
