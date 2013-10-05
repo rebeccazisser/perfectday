@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Ratchet template page
+        </title><!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"><!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- Set Apple icons for when prototype is saved to home screen -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png"><!-- Include the compiled Ratchet CSS -->
+        <link rel="stylesheet" href="../css/ratchet.css" type="text/css"><!-- Our CSS -->
+        <link rel="stylesheet" href="../css/i.css" type="text/css"><!-- Include the compiled Ratchet JS -->
+
+        <script src="../js/libs/ratchet.js" type="text/javascript">
+</script><!-- Include the Fingerblast so push.js works -->
+
+        <script src="../js/libs/fingerblast.js" type="text/javascript">
+</script>
+    </head>
+    <body>
+
+  <header class="bar-title">
+    <h1 class="title">Modal slideup</h1>
+  </header>
+  
+  <div class="content">
+    <a href="#myModal" class="button">Open modal</a>
+  </div>
+
+
+
+
+
+  <div id="myModal" class="modal">
+    <header class="bar-title">
+      <h1 class="title">Modal</h1>
+      <a class="button" href="#myModal">
+        Close
+      </a>
+    </header>
+    
+    <div class="content content-padded">
+      <p>Honey, check it out, you got me mesmerized
+      With your black hair and fat-ass thighs
+      Street poetry is my everyday
+      But yo, I gotta stop when you trot my way
+      If I was workin at the club you would not pay
+      Aiyyo, my man phife diggy, he got somthin to say</p>
+
+      <p>I like em brown, yellow, puero rican or hatian
+      Name is phife dawg from the zulu nation
+      Told you in the jam that we can get down
+      Now lets knock the boots like the group h-town
+      You got bbd all on your bedroom wall
+      But Im above the rim and this is how I ball
+      A pretty little somethin on the new york street
+      This is how I represent over this here beat</p>
+      <p>Talkin bout you</p>
+
+      <p>Yo, I took you out</p>
+      <p>But sex was on my mind for the whole damn route
+      My mind was in a frenzy and a horny state
+      But I couldnt drop dimes cause *you couldnt relate*</p>
+    </div>
+  </div>
+ <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
+        <script type='text/javascript'>
+          var fb = new FingerBlast ('body');
+            </script> 
+    </body>
+</html>
