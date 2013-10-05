@@ -78,7 +78,7 @@ if (hasHomescreen && !expired && !isStandalone && isSafari) {
 
 
 /* on DOM ready */
-function $(document).ready() {
+function ready () {
 
 	document.removeEventListener('DOMContentLoaded', ready, false);
 

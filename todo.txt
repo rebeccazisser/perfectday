@@ -9,3 +9,8 @@ To Do:
 
 Deployment:
 * Unlink fingerblast.js
+
+
+
+Add to homescreen
+Form pages
