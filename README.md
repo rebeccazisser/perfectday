@@ -102,7 +102,7 @@ I have a terminal app that shows you the git branch you're on and whether or not
 Whenever you make changes to the sass files, run this and the terminal will update the css file for you on the fly. When you are ready to get out of the watching window, press control + c. Remember though, iTerm2 has tabs...
 
 # Git Config
-		[core]
+	[core]
 		repositoryformatversion = 0
 		filemode = true
 		bare = false
