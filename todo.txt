@@ -12,5 +12,5 @@ Deployment:
 
 
 
-Add to homescreen
-Form pages
+Done: 
+* Add to homescreen
