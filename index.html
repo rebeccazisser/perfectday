@@ -1,116 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ratchet template page</title>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Ratchet template page
+        </title><!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"><!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- Set Apple icons for when prototype is saved to home screen -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-    <!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- Include the compiled Ratchet CSS -->
+        <link rel="stylesheet" href="../css/ratchet.css" type="text/css">
 
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- Our CSS -->
+        <link rel="stylesheet" href="../css/i.css" type="text/css">
 
-    <!-- Set Apple icons for when prototype is saved to home screen -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+        <!-- Include the compiled Ratchet JS -->
+        <script src="../js/libs/ratchet.js" type="text/javascript"></script>
 
-    <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
-
-    <!-- Our CSS -->
-    <link rel="stylesheet" href="css/i.css">
-
-    <!-- Include the compiled Ratchet JS -->
-    <script src="js/libs/ratchet.js"></script>
-
-    <!-- Include the Fingerblast so push.js works -->
-    <script src="js/libs/fingerblast.js"></script>
-
-    <!-- Include the add to homescreen script -->
-    <script src="js/libs/add-to.js"></script>
-
-    <!-- Intro paragraph styles. Delete once you start using this page -->
-    <style type="text/css">
-        .welcome {
-          line-height: 1.5;
-          color: #555;
-        }
-    </style>
-
-  </head>
-  <body>
-
-  <!-- Make sure all your bars are the first things in your <body> -->
-  <header class="bar-title">
-    <h1 class="title">Perfect Day</h1>
-  </header>
-
-  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-  <div class="content">
-    <div class="content-padded">
-      <p class="welcome">Playing with push.js, which makes the pages slide: <br />
-        <ul class="list">
-          <li>
-              <a href="user.html" data-transition="slide-in">
-                  Go to the User Page
-              </a>
-              <span class="chevron"></span>
-          </li>
-          <li>
-              <a href="explore.html" data-transition="slide-in">
-                  Go to the explore page
-              </a>
-              <span class="chevron"></span>
-          </li>
-          <li>
-              <a href="home.html" data-transition="slide-in">
-                  Go to the Home Page
-              </a>
-              <span class="chevron"></span>
-          </li>
-          <li>
-              <a href="search.html" data-transition="slide-in">
-                  Go to the Search Page
-              </a>
-              <span class="chevron"></span>
-          </li>
-          <li>
-              <a href="new.html" data-transition="slide-in">
-                  Go to the New Page
-              </a>
-              <span class="chevron"></span>
-          </li>
-        </ul>
-
-  A link that doesn't slide:
-  <!-- Use data-ignore="push" to prevent the push.js interception -->
-<a href="http://www.google.com" data-ignore="push">Google<a>
-      </p>
-    </div>
+        <!-- Include the Fingerblast so push.js works locally-->
+        <script src="../js/libs/fingerblast.js" type="text/javascript"></script>
+    </head>
+    <body>
+     
+                <div id="map-canvas"></div>
 
 
-    <div class="content-padded">
-      <p class="welcome">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resorces: Just checking that something works</p>
-    </div>
 
-    <ul class="list inset">
-      <li>
-        <a href="http://maker.github.com/ratchet/">
-          <strong>Ratchet documentation</strong>
-          <span class="chevron"></span>
-        </a>
-      </li>
-    </ul>
+        <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
+        <script type='text/javascript'>
+            var fb = new FingerBlast ('body');
+        </script>
 
-  </div>
-
-  </body>
-
-
-<!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
-  <script type='text/javascript'>
-    var fb = new FingerBlast ('body');
-  </script>
+        <!-- Our map code -->
+        <script src="../js/map.js" type="text/javascript"></script>
+    </body>
 </html>
