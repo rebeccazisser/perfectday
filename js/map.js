@@ -49,7 +49,7 @@ function initialize() {
       var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: 'Your location'
+        content: 'You'
       });
 
       map.setCenter(pos);
@@ -62,7 +62,7 @@ function initialize() {
     handleNoGeolocation(true);
   }
 
-  getRoute();
+  // getRoute();
 }
 
 function getRoute() {

@@ -16,38 +16,31 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
     <!-- Include the compiled Ratchet CSS -->
     <link rel="stylesheet" href="css/ratchet.css">
 
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
 
-    <!-- Include the compiled Modernizr JS -->
-    <script src="js/libs/modernizr.js"></script>
-
-    <!-- Include the compiled Ratchet JS -->
-    <script src="js/libs/ratchet.js"></script>
-
-    <!-- Include the Fingerblast so push.js works -->
-    <!--// <script src="js/fingerblast.js"></script>-->
-
     <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
     <script src="js/map.js"></script>
 
-    <!-- Intro paragraph styles. Delete once you start using this page -->
-    <style type="text/css">
-        .welcome {
-          line-height: 1.5;
-          color: #555;
-        }
-    </style>
 
   </head>
 
   <div id="map-canvas"></div>
 
-<!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
-<!--  <script type='text/javascript'>
-    var fb = new FingerBlast ('body');
-  </script> -->
+  <nav>
+    player mode
+    <button>tools</button>
+    <div class="subnav">
+      <button>listen to audio</button>
+      <button>explore</button>
+      <button>share</button>
+      <button>step-by-step directions</button>
+    </div>
+  </nav>
 </html>
