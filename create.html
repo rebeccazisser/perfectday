@@ -23,56 +23,54 @@
     <link rel="stylesheet" href="css/i.css">
 
     <!-- Include the compiled Ratchet JS -->
-    <script src="js/ratchet.js"></script>
+    <script src="js/libs/ratchet.js"></script>
 
     <!-- Include the Fingerblast so push.js works -->
-    <script src="js/fingerblast.js"></script>
+    <script src="js/libs/fingerblast.js"></script>
 
-    <!-- Intro paragraph styles. Delete once you start using this page -->
-    <style type="text/css">
-        .welcome {
-          line-height: 1.5;
-          color: #555;
-        }
-    </style>
+    
 
   </head>
   <body>
-
-  <!-- Make sure all your bars are the first things in your <body> -->
+ 
   <header class="bar-title">
-    <h1 class="title">Perfect Day</h1>
+    <h1 class="title">Modal slideup</h1>
+        <a href="#myModal" class="button">End</a>
+
   </header>
+  
+ 
+ 
+ 
+ 
+  <div id="myModal" class="modal">
+    <header class="bar-title">
+      <h1 class="title">End Experience</h1>
+      <a class="button" href="#myModal">
+        Close
+      </a>
+    </header>
+    
+    <div class="content content-padded">
+      <form>
+      <p>Title your experience</p>
+      <input type="text" placeholder="be creative and descriptive">
+      <p>Additional Notes</p>
+      <textarea rows="5" placeholder="what should they bring, how to prepare, etc."></textarea>
+      <p>facebook, twitter, foursquare, email</p>
+      <a class="button button-block">submit</a>
 
-  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-  <div class="content">
-    <div class="content-padded">
-     
 
-    <a href="profile.html">Profile</a>
-    <a href="help.html">Help</a>
-    <a href="share.html">Share</a>
-    <a href="pin.html">Help</a>
-    <a href="record.html">Explore</a>
-    <a href="endcreate.html">Exit</a>
-
-   
-      
 
     </div>
-
-    <ul class="list inset">
-      <li>
-        <a href="http://maker.github.com/ratchet/">
-          <strong>Ratchet documentation</strong>
-          <span class="chevron"></span>
-        </a>
-      </li>
-    </ul>
-
   </div>
+ <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
+        <!--<script type='text/javascript'>
+          var fb = new FingerBlast ('body');
+            </script> -->
+    </body>
 
-  </body>
+
 
 
 <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
