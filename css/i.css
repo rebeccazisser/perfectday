@@ -583,11 +583,15 @@ html {
   width: 100%;
   height: 100%; }
 
-nav {
+.tools {
   position: absolute;
   bottom: 150px;
   right: 50px;
   z-index: 5000000; }
+  .tools .subnav {
+    display: none; }
 
-.subnav {
-  display: hidden !important; }
+nav {
+  position: absolute;
+  top: 30px;
+  left: 50px; }

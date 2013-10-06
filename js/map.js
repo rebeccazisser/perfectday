@@ -1,11 +1,13 @@
-function initialize() {
-  var mapOptions = {
-    zoom: 8,
-    center: new google.maps.LatLng(-34.397, 150.644),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-}
+// function initialize() {
+//   var mapOptions = {
+//     zoom: 8,
+//     center: new google.maps.LatLng(-34.397, 150.644),
+//      // disableDefaultUI: true,
+//      // mapTypeControl: false,
+//     mapTypeId: google.maps.MapTypeId.ROADMAP
+//   }
+//   var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+// }
 
 // Initialize the map.
 
@@ -21,7 +23,9 @@ function initialize() {
 
   var mapOptions = {
     zoom: 12,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    disableDefaultUI: false,
+    mapTypeControl: false,
   };
 
   directionsDisplay = new google.maps.DirectionsRenderer();

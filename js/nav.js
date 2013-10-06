@@ -1,9 +1,16 @@
 // Controller for our navigation
 
-$(nav).click(function(){
+$('.tools').click(function(){
 	if ($('.subnav').is(":visible")) {
 		$('.subnav').hide();
 	} else {
 		$('.subnav').show();
 	}
 });
+
+
+$('#myToggle').bind('toggle', switchModes);
+
+var switchModes = function() {
+
+};
