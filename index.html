@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            Ratchet template page
-        </title><!-- Sets initial viewport load and disables zooming  -->
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"><!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- Set Apple icons for when prototype is saved to home screen -->
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
 
-        <!-- Include the compiled Ratchet CSS -->
-        <link rel="stylesheet" href="../css/ratchet.css" type="text/css">
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <!-- Our CSS -->
-        <link rel="stylesheet" href="../css/i.css" type="text/css">
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <!-- Include the compiled Ratchet JS -->
-        <script src="../js/libs/ratchet.js" type="text/javascript"></script>
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-        <!-- Include the Fingerblast so push.js works locally-->
-        <script src="../js/libs/fingerblast.js" type="text/javascript"></script>
-    </head>
-    <body>
-     
-                <div id="map-canvas"></div>
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="css/ratchet.css">
 
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/i.css">
 
+    <!-- Include the compiled Modernizr JS -->
+    <script src="js/libs/modernizr.js"></script>
 
-        <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
-        <script type='text/javascript'>
-            var fb = new FingerBlast ('body');
-        </script>
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/libs/ratchet.js"></script>
 
-        <!-- Our map code -->
-        <script src="../js/map.js" type="text/javascript"></script>
-    </body>
+    <!-- Include the Fingerblast so push.js works -->
+    <!--// <script src="js/fingerblast.js"></script>-->
+
+    <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
+    <script src="js/map.js"></script>
+
+    <!-- Intro paragraph styles. Delete once you start using this page -->
+    <style type="text/css">
+        .welcome {
+          line-height: 1.5;
+          color: #555;
+        }
+    </style>
+
+  </head>
+
+  <div id="map-canvas"></div>
+
+<!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
+<!--  <script type='text/javascript'>
+    var fb = new FingerBlast ('body');
+  </script> -->
 </html>
