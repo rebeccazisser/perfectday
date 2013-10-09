@@ -198,3 +198,34 @@ nav {
   position: absolute;
   top: 30px;
   left: 50px; }
+
+
+/*Universal Styles*/
+.button-block {
+  margin-top: 10px;
+  font-size: 14px;
+  width: 90px;
+  height: 12px;
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+  /*================================================================================
+  Intro Screen Styles
+  ==================================================================================*/
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    width:103px;
+
+  }
+
+  .introtext p{
+    font-size: 10pt;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: auto; 
+  }

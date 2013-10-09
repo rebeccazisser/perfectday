@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="css/i.css">
 
     <!-- Include the compiled Ratchet JS -->
-    <script src="js/ratchet.js"></script>
+    <script src="js/libs/ratchet.js"></script>
 
     <!-- Include the Fingerblast so push.js works -->
-    <script src="js/fingerblast.js"></script>
+    <script src="js/libs/fingerblast.js"></script>
 
     <!-- Intro paragraph styles. Delete once you start using this page -->
     <style type="text/css">
@@ -42,28 +42,46 @@
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
     <h1 class="title">Perfect Day</h1>
+    <a class="button" href="profile.html">Profile</a>
+    <a class="button" href="explore.html">Explore</a>
+     <a class="button">Create</a>
+
+    <a class="button" href="#help">Help</a>
+    <a>Create</a>
+
   </header>
+
+  
+     <div id="help" class="modal">
+    <header class="bar-title">
+      <h1 class="title">help</h1>
+      <a class="button" href="#help">
+        Close
+      </a>
+
+    </header>
+    
+    <div class="content content-padded">
+      
+
+
+    </div>
+  </div>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
     <div class="content-padded">
+
      
 
-     <a href="profile.html">Profile</a>
-    <a href="explore.html">Explore</a>
-  
+    <div class="tools">
     </div>
 
-    <ul class="list inset">
-      <li>
-        <a href="http://maker.github.com/ratchet/">
-          <strong>Ratchet documentation</strong>
-          <span class="chevron"></span>
-        </a>
-      </li>
-    </ul>
+    <div>
+  
+    </div>
+     </div>
 
-  </div>
 
   </body>
 
