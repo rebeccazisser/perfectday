@@ -4,7 +4,10 @@ To Do:
 * Add explanation of node to readme
 * Flesh out local server section
 * Code walkthrough on fingerblast/touch events
+* Link up picturefill.js
 
+Images:
+* Export as 72 and 300 dpi for all (brew imagemagick?)
 
 
 Deployment:
