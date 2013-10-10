@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="css/i.css">
 
     <!-- Include the compiled Ratchet JS -->
-    <script src="js/ratchet.js"></script>
+    <script src="js/libs/ratchet.js"></script>
 
     <!-- Include the Fingerblast so push.js works -->
-    <script src="js/fingerblast.js"></script>
+    <script src="js/libs/fingerblast.js"></script>
 
     <!-- Intro paragraph styles. Delete once you start using this page -->
     <style type="text/css">
@@ -47,6 +47,69 @@
   </a>
   </header>
 
+<div id="facebook" class="modal">
+    <header class="bar-title">
+      <h1 class="title">sign up with facebook</h1>
+      <a class="button" href="#facebook">
+        Close
+      </a>
+
+    </header>
+    
+    <div class="content content-padded">
+      
+<form>
+  <p class="form"> username:</p>
+  <input type="text" placeholder="username">
+  <p class="form"> password:</p>
+  <input type="text" placeholder="password">
+  <a  href="create.html" class="button button-block">sign in</a>
+</form>
+
+  </div>
+  </div>
+  <div id="twitter" class="modal">
+    <header class="bar-title">
+      <h1 class="title">sign up with twitter</h1>
+      <a class="button" href="#twitter">
+        Close
+      </a>
+
+    </header>
+    
+    <div class="content content-padded">
+      
+<form>
+  <p class="form"> username:</p>
+  <input type="text" placeholder="username">
+  <p class="form"> password:</p>
+  <input type="text" placeholder="password">
+  <a  href="create.html" class="button button-block">sign in</a>
+</form>
+
+  </div>
+  </div>
+  <div id="gmail" class="modal">
+    <header class="bar-title">
+      <h1 class="title">sign up with gmail</h1>
+      <a class="button" href="#gmail">
+        Close
+      </a>
+
+    </header>
+    
+    <div class="content content-padded">
+      
+<form>
+  <p class="form"> username:</p>
+  <input type="text" placeholder="username">
+  <p class="form"> password:</p>
+  <input type="text" placeholder="password">
+  <a  href="create.html" class="button button-block">sign in</a>
+</form>
+
+  </div>
+  </div>
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
     <div class="content-padded">
@@ -54,9 +117,9 @@
 
     </div>
   <form>
-  <a class="button button-block" href="signin.html">sign up with facebook</a>
-  <a class="button button-block" href="signin.html">sign up with twitter</a>
-  <a class="button button-block" href="signin.html">sign up with gmail</a>
+  <a class="button button-block" href="#facebook">sign up with facebook</a>
+  <a class="button button-block" href="#twitter">sign up with twitter</a>
+  <a class="button button-block" href="#gmail">sign up with gmail</a>
     <P class="signup">Already have an acoount? <a href="signin.html">Log in!</a></p>   
   </form>
 
