@@ -1,6 +1,13 @@
 /* ==========================================================================
    Site styles
    ========================================================================== */
-img .logo {
-	margin-left:40px;
+.button_block{
+	background-color:$blue;
+}
+
+.logo {
+	width: 300px;
+	left: 50%;
+	position: absolute;
+	margin-left: -150px;
 }

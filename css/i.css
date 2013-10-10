@@ -204,9 +204,9 @@ nav {
 .button-block {
   margin-top: 10px;
   font-size: 14px;
-  width: 90px;
-  height: 12px;
-  padding-top: 8px;
+  width: 250px;
+  height: 22px;
+  padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -219,18 +219,13 @@ nav {
   /*================================================================================
   Intro Screen Styles
   ==================================================================================*/
-.logo{
-    margin-left: auto;
-    margin-right: auto;
-    width:103px;
-
-  }
 
   .introtext p{
-    font-size: 10pt;
+    width: 90%;
+    font-size: 18pt;
     margin-top: 20px;
     margin-bottom: 50px;
-    margin-left: 30px;
+    margin-left: auto;
     margin-right: auto; 
   }
 
@@ -243,6 +238,7 @@ nav {
     height: 100px;
   }
 
+
   .left{
  margin-left: 10px;
  height: 100px;
@@ -251,9 +247,8 @@ nav {
   .right{
     margin-left: 200px;
   }
+/*================================================================================
+form styles
+  ==================================================================================*/
 
-  a.right{
-        margin-left: 200px;
-
-  }
 

@@ -808,10 +808,16 @@ select {
 
 /* Block level buttons (full width buttons) */
 .button-block {
+   width: 400px;
+  height: 40px;
   display: block;
   padding: 11px 0 13px;
   margin-bottom: 10px;
   font-size: 16px;
+  margin-top: 10px;
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Active state for block level buttons */
