@@ -198,3 +198,62 @@ nav {
   position: absolute;
   top: 30px;
   left: 50px; }
+
+
+/*Universal Styles*/
+.button-block {
+  margin-top: 10px;
+  font-size: 14px;
+  width: 90px;
+  height: 12px;
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.back{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+  /*================================================================================
+  Intro Screen Styles
+  ==================================================================================*/
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    width:103px;
+
+  }
+
+  .introtext p{
+    font-size: 10pt;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-right: auto; 
+  }
+
+  /*================================================================================
+  Explore Screen Styles
+  ==================================================================================*/
+
+  .list{
+    margin-top: 70px;
+    height: 100px;
+  }
+
+  .left{
+ margin-left: 10px;
+ height: 100px;
+  }
+
+  .right{
+    margin-left: 200px;
+  }
+
+  a.right{
+        margin-left: 200px;
+
+  }
+

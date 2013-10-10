@@ -23,46 +23,62 @@
     <link rel="stylesheet" href="css/i.css">
 
     <!-- Include the compiled Ratchet JS -->
-    <script src="js/ratchet.js"></script>
+    <script src="js/libs/ratchet.js"></script>
+
+    <script src="js/libs/jquery.js"></script>
 
     <!-- Include the Fingerblast so push.js works -->
     <script src="js/fingerblast.js"></script>
 
-    <!-- Intro paragraph styles. Delete once you start using this page -->
-    <style type="text/css">
-        .welcome {
-          line-height: 1.5;
-          color: #555;
-        }
-    </style>
+
 
   </head>
   <body>
 
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-    <h1 class="title">Perfect Day</h1>
   </header>
 
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
     <div class="content-padded">
-     
+       <div class="logo">
+       <img src="img/logo_pd.png">
+     </div>
+    <div class="introtext">
+      <p> perfect day is an app that helps you discover perfect days and curate great experiences to share with others.
+      </p>   
+     </div>
+<a href="fakeplay.html"class="button button-block">Start</a>
 
-     <a href="profile.html">Profile</a>
-    <a href="explore.html">Explore</a>
-  
+
+
     </div>
 
-    <ul class="list inset">
-      <li>
-        <a href="http://maker.github.com/ratchet/">
-          <strong>Ratchet documentation</strong>
-          <span class="chevron"></span>
-        </a>
-      </li>
-    </ul>
+  <!-- Our Map -->
+  <!-- <div id="map-canvas"></div> -->
 
+
+  <!-- Top navigation --> 
+
+  <nav>
+     <a href="#help" class="button-main">help</a>
+     <a href="profile.html" class="button-main">profile</a>
+     <a href="create.html" class="button-main">creator</a>
+     <a href="explore.html" class="button-main">explorer</a>
+  </nav>
+
+
+
+
+  <div class="tools">
+    <div class="subnav">
+      <a class="button">listen to audio</a>
+      <a class="button-main" href="explore.html">explore</a>
+      <a class="button-main">share</a>
+      <a class="button">step-by-step directions</a>
+    </div>
+    <a class="button-main">tools</a>
   </div>
 
   </body>

@@ -28,57 +28,89 @@
     <!-- Include the Fingerblast so push.js works -->
     <script src="js/libs/fingerblast.js"></script>
 
-    
+    <!-- Intro paragraph styles. Delete once you start using this page -->
+    <style type="text/css">
+        .welcome {
+          line-height: 1.5;
+          color: #555;
+        }
+    </style>
 
   </head>
   <body>
- 
-  <header class="bar-title">
-    <h1 class="title">Play</h1>
-        <a href="#myModal" class="button">End</a>
 
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar-title">
+    <a class="button" href="play2.html">Next</a>
+    <a class="button" href="#end">End</a>
+
+    <h1 class="title">Perfect Day</h1>
+    <a class="button" href="profile.html">Profile</a>
+    <a class="button" href="explore.html">Explore</a>
+     <a class="button">Create</a>
+
+
+
+    <a class="button" href="#help">Help</a>
+    <a>Create</a>
 
   </header>
-  
- 
- 
- 
- 
-  <div id="myModal" class="modal">
+
+
+     <div id="help" class="modal">
     <header class="bar-title">
-      <h1 class="title">End Experience</h1>
-      <a class="button" href="#myModal">
+      <h1 class="title">help</h1>
+      <a class="button" href="#help">
         Close
       </a>
 
     </header>
     
     <div class="content content-padded">
-      <form>
-
-     <h1>You just finished an experience!</h1>
-      <p>facebook, twitter, foursquare, email</p>
-      <p>What did you think?</p>
-      <p>star star star star</p>
-      <a>submit</a>
-      <a href="explore.html" class="button button-block">explore</a>
-      <a href="signup.html" class="button button-block">create</a>
+      
 
 
-
-    </div>
   </div>
- <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
-        <!--<script type='text/javascript'>
-          var fb = new FingerBlast ('body');
-            </script> -->
-    </body>
+  </div>
+
+  <div id="end" class="modal">
+    <header class="bar-title">
+      <h1 class="title">end</h1>
+      <a class="button" href="#end">
+        Close
+      </a>
+
+    </header>
+    
+    <div class="content content-padded">
+      <h1>You just finished an experience!</h1>
+      <a class="button button-block" href="create.html">Create</a>
+      <a class="button button-block" href="explore.html">Explore</a>
 
 
+  </div>
+  </div>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+    <div class="content-padded">
+
+     
+
+    <div class="tools">
+    </div>
+
+    <div>
+  
+    </div>
+     </div>
+
+
+  </body>
 
 
 <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
   <script type='text/javascript'>
     var fb = new FingerBlast ('body');
   </script>
-</html>
+</html>s
