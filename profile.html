@@ -25,6 +25,8 @@
     <!-- Include the compiled Ratchet JS -->
     <script src="js/libs/ratchet.js"></script>
 
+     <script src="js/libs/jquery.js"></script>
+
     <!-- Include the Fingerblast so push.js works -->
     <script src="js/libs/fingerblast.js"></script>
 
@@ -42,6 +44,10 @@
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
     <h1 class="title">Profile</h1>
+
+      <a class="button"href="fakeplay.html"><img src="img/back.png" class="back"</a>
+     
+
      <a class="button" href="#settings">Settings</a>
   </header>
 
@@ -63,25 +69,16 @@
   <input type="text" placeholder="password">
   <p class="form"> confirm new password:</p>
   <input type="text" placeholder="password">
-  <a class="button button-block">save</a>
+  <a class="button button-block save">save</a>
+  <div class="save-div">
+  </div>
 </form>
 
 
   </div>
   
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-  <div class="content">
-    <div class="content-padded">
-     
-
-
-
-
-
-
-    </div>
-
-  </div>
+  
 
   </body>
 
@@ -89,5 +86,10 @@
 <!-- Requires fingerblast to be loaded into the body. Makes our slide transitions work -->
   <script type='text/javascript'>
     var fb = new FingerBlast ('body');
+  </script>
+  <script type='text/javascript'>
+  $('.save').click(function(){
+    $('.save-div').html("Saved!");
+  });
   </script>
 </html>
