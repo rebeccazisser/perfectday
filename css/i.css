@@ -37,8 +37,14 @@
 /* ==========================================================================
    Site styles
    ========================================================================== */
-img .logo {
-  margin-left: 40px; }
+.button_block {
+  background-color: #2e3092; }
+
+.logo {
+  width: 300px;
+  left: 50%;
+  position: absolute;
+  margin-left: -150px; }
 
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
@@ -324,59 +330,6 @@ body {
   -moz-transition: opacity 0.3s, color 0.3s;
   transition: opacity 0.3s, color 0.3s; }
 
-<<<<<<< HEAD
-/*Universal Styles*/
-.button-block {
-  margin-top: 10px;
-  font-size: 14px;
-  width: 250px;
-  height: 22px;
-  padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.back{
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-  /*================================================================================
-  Intro Screen Styles
-  ==================================================================================*/
-
-  .introtext p{
-    width: 90%;
-    font-size: 18pt;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-
-  /*================================================================================
-  Explore Screen Styles
-  ==================================================================================*/
-
-  .list{
-    margin-top: 70px;
-    height: 100px;
-  }
-
-
-  .left{
- margin-left: 10px;
- height: 100px;
-  }
-
-  .right{
-    margin-left: 200px;
-  }
-/*================================================================================
-form styles
-  ==================================================================================*/
-
-=======
 .csstransforms .cn-wrapper li a span {
   font-size: 1.1em;
   opacity: 0.7; }
@@ -494,7 +447,6 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   .no-csstransforms .cn-wrapper {
     width: 15.15px;
     margin-left: -7.5em; }
->>>>>>> Stashing
 
   .no-csstransforms .cn-wrapper li {
     height: 3em;
