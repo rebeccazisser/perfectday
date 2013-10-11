@@ -8,6 +8,7 @@
    ========================================================================== */
 /* Don't use black */
 /* Gray scale */
+/* Our colors */
 /* Type Scale
    ========================================================================== */
 /**
@@ -241,7 +242,7 @@ body {
 .cn-button {
   border: none;
   background: none;
-  color: #f06060;
+  color: #2e3192;
   text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
@@ -332,25 +333,18 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   -moz-transform: rotate(135deg) skew(45deg);
   transform: rotate(135deg) skew(45deg); }
 
-.csstransforms .cn-wrapper li:nth-child(odd) a {
-  background-color: #a11313;
-  background-color: #f44e4e; }
-
-.csstransforms .cn-wrapper li:nth-child(even) a {
-  background-color: #a61414;
-  background-color: #f45757; }
+.csstransforms .cn-wrapper li a {
+  background-color: #2e3192; }
 
 /* active style */
 .csstransforms .cn-wrapper li.active a {
-  background-color: #b31515;
-  background-color: #f66f6f; }
+  background-color: #3a3eb9; }
 
 /* hover style */
 .csstransforms .cn-wrapper li:not(.active) a:hover,
 .csstransforms .cn-wrapper li:not(.active) a:active,
 .csstransforms .cn-wrapper li:not(.active) a:focus {
-  background-color: #b31515;
-  background-color: #f66f6f; }
+  background-color: #3a3eb9; }
 
 /* fallback */
 .no-csstransforms .cn-button {
