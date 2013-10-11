@@ -39,30 +39,6 @@
   transform: scale(1);
 }
 
-// Commented out code controls black overly on page.
-// Do we want this?
-// .cn-overlay {
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0,0,0,0.6);
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   opacity: 0;
-//   visibility: hidden;
-//   -webkit-transition: all .3s ease;
-//   -moz-transition: all .3s ease;
-//   transition: all .3s ease;
-//   z-index: 2;
-// }
-
-// .cn-overlay.on-overlay {
-//   visibility: visible;
-//   opacity: 1;
-// }
-
 .cn-button {
   border: none;
   background: none;
@@ -85,7 +61,7 @@
 .cn-button:hover,
 .cn-button:active,
 .cn-button:focus {
-  color: #aa1010;
+  background-color: white;
 }
 
 .csstransforms .cn-wrapper li {
@@ -263,6 +239,13 @@ $angle4: 135deg;
   z-index: 10;
   left: 50%;
   border: 1px solid #ddd;
+}
+
+#tools {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 40px;
 }
 
 @media screen and (max-width:480px) {

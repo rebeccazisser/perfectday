@@ -259,7 +259,7 @@ body {
 .cn-button:hover,
 .cn-button:active,
 .cn-button:focus {
-  color: #aa1010; }
+  background-color: white; }
 
 .csstransforms .cn-wrapper li {
   position: absolute;
@@ -398,6 +398,12 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   z-index: 10;
   left: 50%;
   border: 1px solid #ddd; }
+
+#tools {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  top: 40px; }
 
 @media screen and (max-width: 480px) {
   .csstransforms .cn-wrapper {
