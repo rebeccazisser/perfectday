@@ -46,6 +46,10 @@
   position: absolute;
   margin-left: -150px; }
 
+.back {
+  z-index: 5000000;
+  width: 20px; }
+
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
@@ -254,13 +258,13 @@ body {
   text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
-  height: 3.5em;
-  width: 3.5em;
+  height: 7em;
+  width: 7em;
   background-color: #fff;
   position: fixed;
   left: 50%;
-  margin-left: -1.75em;
-  bottom: -1.75em;
+  margin-left: -3.5em;
+  bottom: -3.5em;
   border-radius: 50%;
   cursor: pointer;
   z-index: 11; }
@@ -299,7 +303,7 @@ body {
   border-radius: 50%;
   text-decoration: none;
   color: #fff;
-  padding-top: 1.8em;
+  padding-top: 1.2em;
   text-align: center;
   -webkit-transform: skew(-45deg) rotate(-67.5deg) scale(1);
   -ms-transform: skew(-45deg) rotate(-67.5deg) scale(1);
