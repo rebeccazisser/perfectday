@@ -120,10 +120,12 @@
   color: #fff;
   padding-top: 1.8em;
   text-align: center;
-  -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
-  -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
-  -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
-  transform: skew(-50deg) rotate(-70deg) scale(1);
+  $iconskew: -45deg;
+  $iconrotate: -67.5deg;
+  -webkit-transform: skew($iconskew) rotate($iconrotate) scale(1);
+  -ms-transform: skew($iconskew) rotate($iconrotate) scale(1);
+  -moz-transform: skew($iconskew) rotate($iconrotate) scale(1);
+  transform: skew($iconskew) rotate($iconrotate) scale(1);
   -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.3s, color 0.3s;
   -moz-transition: opacity 0.3s, color 0.3s;
@@ -139,40 +141,50 @@
 in our case x=40deg so skew angle is 50deg
 items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 
+$skew: 45deg;
+
+$angle1: 0deg;
+
+$angle2: 45deg;
+
+$angle3: 90deg;
+
+$angle4: 135deg;
+
 .csstransforms .cn-wrapper li:first-child {
-  -webkit-transform: rotate(-10deg) skew(50deg);
-  -ms-transform: rotate(-10deg) skew(50deg);
-  -moz-transform: rotate(-10deg) skew(50deg);
-  transform: rotate(-10deg) skew(50deg);
+  -webkit-transform: rotate($angle1) skew($skew);
+  -ms-transform: rotate($angle1) skew($skew);
+  -moz-transform: rotate($angle1) skew($skew);
+  transform: rotate($angle1) skew($skew);
 }
 
 .csstransforms .cn-wrapper li:nth-child(2) {
-  -webkit-transform: rotate(30deg) skew(50deg);
-  -ms-transform: rotate(30deg) skew(50deg);
-  -moz-transform: rotate(30deg) skew(50deg);
-  transform: rotate(30deg) skew(50deg);
+  -webkit-transform: rotate($angle2) skew($skew);
+  -ms-transform: rotate($angle2) skew($skew);
+  -moz-transform: rotate($angle2) skew($skew);
+  transform: rotate($angle2) skew($skew);
 }
 
 .csstransforms .cn-wrapper li:nth-child(3) {
-  -webkit-transform: rotate(70deg) skew(50deg);
-  -ms-transform: rotate(70deg) skew(50deg);
-  -moz-transform: rotate(70deg) skew(50deg);
-  transform: rotate(70deg) skew(50deg)
+  -webkit-transform: rotate($angle3) skew($skew);
+  -ms-transform: rotate($angle3) skew($skew);
+  -moz-transform: rotate($angle3) skew($skew);
+  transform: rotate($angle3) skew($skew)
 }
 
 .csstransforms .cn-wrapper li:nth-child(4) {
-  -webkit-transform: rotate(110deg) skew(50deg);
-  -ms-transform: rotate(110deg) skew(50deg);
-  -moz-transform: rotate(110deg) skew(50deg);
-  transform: rotate(110deg) skew(50deg);
+  -webkit-transform: rotate($angle4) skew($skew);
+  -ms-transform: rotate($angle4) skew($skew);
+  -moz-transform: rotate($angle4) skew($skew);
+  transform: rotate($angle4) skew($skew);
 }
 
-.csstransforms .cn-wrapper li:nth-child(5) {
-  -webkit-transform: rotate(150deg) skew(50deg);
-  -ms-transform: rotate(150deg) skew(50deg);
-  -moz-transform: rotate(150deg) skew(50deg);
-  transform: rotate(150deg) skew(50deg);
-}
+// .csstransforms .cn-wrapper li:nth-child(5) {
+//   -webkit-transform: rotate(150deg) skew(50deg);
+//   -ms-transform: rotate(150deg) skew(50deg);
+//   -moz-transform: rotate(150deg) skew(50deg);
+//   transform: rotate(150deg) skew(50deg);
+// }
 
 .csstransforms .cn-wrapper li:nth-child(odd) a {
   background-color: #a11313;
