@@ -37,19 +37,6 @@
 /* ==========================================================================
    Site styles
    ========================================================================== */
-.button_block {
-  background-color: #2e3092; }
-
-.logo {
-  width: 300px;
-  left: 50%;
-  position: absolute;
-  margin-left: -150px; }
-
-.back {
-  z-index: 5000000;
-  width: 20px; }
-
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
