@@ -407,7 +407,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   position: absolute;
   left: 50%;
   margin-left: -20px;
-  top: 40px; }
+  top: 20px; }
 
 @media screen and (max-width: 480px) {
   .csstransforms .cn-wrapper {
