@@ -53,6 +53,10 @@ nav {
 .right {
   float: right; }
 
+.profile {
+  width: 30px;
+  height: 30px; }
+
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
