@@ -32,6 +32,8 @@
 
     <script src="js/libs/ratchet.js"></script>
 
+    <script src="js/libs/picturefill.js"></script>
+
 
   </head>
 
@@ -43,7 +45,18 @@
   <!-- Top navigation --> 
 
   <nav>
-    <li class="circle"><a href="#help" class="button-main"><img src="icons/help-w.png" /></a></li>
+    <a href="#help">
+      <span data-picture data-alt="Help">
+        <span data-src="icons/creator-small.png"></span>
+        <span data-src="icons/creator-small_2x.png"></span>
+
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+            <img src="icons/creator-small.png" alt="Help">
+        </noscript>
+      </span>
+    </a>
+    
     <li class="circle"><a href="profile.html" class="button-main">profile</a></li>
     <li class="circle"><a href="create.html" class="button-main">creator</a></li>
     <li class="circle"><a href="explore.html" class="button-main">explorer</a></li>
