@@ -16,6 +16,9 @@
 }
 
 .creator {
-	width: 50px;
-	height: 50px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: $creator;
+  padding: 12px;
 }
