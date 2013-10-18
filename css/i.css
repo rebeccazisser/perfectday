@@ -42,6 +42,23 @@
   background-color: #2e3192;
   background-image: none;
   border: 0px; }
+  .bar-title [class*="button"]:active {
+    background-color: #22246b;
+    border: 0px; }
+  .bar-title [class*="button"]:hover {
+    background-color: #22246b;
+    border: 0px; }
+
+.sidebar [class*="button"] {
+  background-color: #2e3192;
+  background-image: none;
+  border: 0px; }
+  .sidebar [class*="button"]:active {
+    background-color: #22246b;
+    border: 0px; }
+  .sidebar [class*="button"]:hover {
+    background-color: #22246b;
+    border: 0px; }
 
 .sprite {
   width: 30px;
@@ -51,24 +68,16 @@ body {
   background-image: none;
   background-color: transparent; }
 
-.ui-tabs .ui-tabs-hide {
-  position: absolute;
-  left: -10000px; }
-
-.ui-mobile-viewport {
-  background-color: transparent; }
-
-.ui-overlay-c {
-  background-color: transparent; }
-
-.ui-page {
-  background-color: transparent; }
-
-.ui-body-c {
-  background-color: transparent; }
-
-.ui-page-active {
-  background-color: transparent; }
+button {
+  background-color: #2e3192;
+  background-image: none;
+  border: 0px; }
+  button:active {
+    background-color: #22246b;
+    border: 0px; }
+  button:hover {
+    background-color: #22246b;
+    border: 0px; }
 
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org

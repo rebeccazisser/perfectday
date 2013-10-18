@@ -7,6 +7,28 @@
 	background-color: $creator;
 	background-image: none;
 	border: 0px;
+	&:active {
+		background-color: darken($creator, 10%);
+		border: 0px;
+	}
+	&:hover {
+		background-color: darken($creator, 10%);
+		border: 0px;
+	}
+}
+
+.sidebar [class*="button"] {
+	background-color: $creator;
+	background-image: none;
+	border: 0px;
+	&:active {
+		background-color: darken($creator, 10%);
+		border: 0px;
+	}
+	&:hover {
+		background-color: darken($creator, 10%);
+		border: 0px;
+	}
 }
 
 // Sprite resizes
@@ -20,27 +42,16 @@ body {
 	background-color: transparent;
 }
 
-.ui-tabs .ui-tabs-hide {
-    position: absolute;
-    left: -10000px;
-}
-
-.ui-mobile-viewport {
-	background-color: transparent;
-}
-
-.ui-overlay-c {
-	background-color: transparent;
-}
-
-.ui-page {
-	background-color: transparent;
-}
-
-.ui-body-c {
-	background-color: transparent;
-}
-
-.ui-page-active{
-	background-color: transparent;
+button {
+	background-color: $creator;
+	background-image: none;
+	border: 0px;
+	&:active {
+		background-color: darken($creator, 10%);
+		border: 0px;
+	}
+	&:hover {
+		background-color: darken($creator, 10%);
+		border: 0px;
+	}
 }
