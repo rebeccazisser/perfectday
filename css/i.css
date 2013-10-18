@@ -230,11 +230,11 @@ body {
     .sidebar ul .sprite {
       margin-right: 20px; }
       .sidebar ul .sprite:first-child {
-        margin-top: -7px; }
+        margin-top: -15px; }
       .sidebar ul .sprite:nth-child(2) {
-        margin-top: 2px; }
+        margin-top: -7px; }
       .sidebar ul .sprite:last-child {
-        margin-top: 5px; }
+        margin-top: -5px; }
     .sidebar ul li {
       padding: 25px;
       padding-left: 15px; }
