@@ -25,7 +25,13 @@
     .sprite {
       margin-right: 20px;
       &:first-child {
-        margin-top: -9px;
+        margin-top: -7px;
+      }
+      &:nth-child(2){
+        margin-top: 2px;
+      }
+      &:last-child{
+        margin-top: 5px;
       }
     }
     li {
