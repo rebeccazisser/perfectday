@@ -456,6 +456,12 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   width: 25px;
   height: 25px; }
 
+.component li {
+  border: 1px solid transparent; }
+.component img {
+  width: 30px;
+  height: 30px; }
+
 @media screen and (max-width: 480px) {
   .csstransforms .cn-wrapper {
     font-size: .68em; }

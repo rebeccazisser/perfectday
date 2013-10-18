@@ -241,6 +241,16 @@ $angle4: 135deg;
   height: 25px;
 }
 
+.component {
+  li {
+    border: 1px solid transparent;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 @media screen and (max-width:480px) {
   .csstransforms .cn-wrapper {
     font-size: .68em;

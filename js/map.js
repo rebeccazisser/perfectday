@@ -11,9 +11,15 @@ function initialize() {
   directionsService = new google.maps.DirectionsService();
 
   var mapOptions = {
-    zoom: 12,
+    zoom: 18,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    disableDefaultUI: false,
+    disableDefaultUI: true,
+    panControl: false,
+    zoomControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    overviewMapControl: false,
     mapTypeControl: false,
   };
 
@@ -24,13 +30,13 @@ function initialize() {
   // Custom pin jank
   var image = 'js/marker.png';
 
-  var pinMarker = new google.maps.Marker({
-    // hardcoded for now
-      position: americanLatLng,
-      map: map,
-      title: "American University",
-      icon: image
-  });
+  // var pinMarker = new google.maps.Marker({
+  //   // hardcoded for now
+  //     position: americanLatLng,
+  //     map: map,
+  //     title: "American University",
+  //     icon: image
+  // });
 
   // HTML5 geolocation
   if(navigator.geolocation) {
