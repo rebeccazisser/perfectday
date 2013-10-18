@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Perfect day</title>
+    <title>Perfect Day App</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -19,20 +19,23 @@
 
     <!-- Include the compiled Ratchet CSS -->
     <link rel="stylesheet" href="css/ratchet.css">
+    <link rel="stylesheet" href="css/slide.css">
 
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
 
     <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
     <!-- <script src="js/map.js"></script> -->
-
     <script src="js/libs/jquery.js"></script>
+
+    <script src="js/libs/jquery-ui.js"></script>
 
     <script src="js/libs/modernizr.js"></script>
 
     <script src="js/libs/ratchet.js"></script>
 
     <script src="js/libs/picturefill.js"></script>
+
 
   </head>
 
@@ -41,61 +44,48 @@
   <!-- <div id="map-canvas"></div> -->
 
 
+<section class="sidebar">
+  <a class="button" href="#" id="sidebarToggle2">toggle</a>
+  <a href="#create">
+    <img src="icons/creator-small_2x.png" class="creator" />
+  </a>
+    
+  <a href="#explorer">
+    <img src="icons/explorer-small_2x.png" class="creator" />
+  </a>
+
+  <a href="#help">
+    <img src="icons/help-small_2x.png" class="creator" />
+  </a>
+</section>
+
   <!-- Top navigation --> 
-
   <header class="bar-title">
-  
-
+    <a class="button" href="#" id="sidebarToggle">toggle</a>
     <h1 class="title">Perfect Day</h1>
-    <a href="#profile"><img src="icons/profile_2x.png" class="profile right" />
-      </span>  
-    </a>
-   
-
+    <a class="button" href="#profile">profile</a>
   </header>
 
-  <nav>
-    <a href="#create">
-      <img src="icons/creator-small_2x.png" class="creator" />
-    </a>
-    
-    <a href="#explorer">
-      <img src="icons/explorer-small_2x.png" class="creator" />
-    </a>
-
-
-    <a href="#help">
-      <img src="icons/help-small_2x.png" class="creator" />
-    </a>
-
-  </nav>
-
-
-<div class="component">
-        <!-- Start Nav Structure -->
-        <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
-        <div class="cn-wrapper" id="cn-wrapper">
-            <ul>
-              <li><a href="#play"><img src="icons/play-recording-w.png" /></a></li>
-              <li><a href="#directions"><img src="icons/step-by-step-w.png" /></a></li>
-              <li><a href="#share"><img src="icons/share-w.png" /></a></li>
-              <li><a href="#explore"><img src="icons/explore-w.png" /></a></li>
-             </ul>
-        </div>
-        <div id="cn-overlay" class="cn-overlay"></div>
-        <!-- End Nav Structure -->
-      </div>
-
-
-
+  <div class="component">
+    <!-- Start Nav Structure -->
+    <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
+    <div class="cn-wrapper" id="cn-wrapper">
+      <ul>
+        <li><a href="#play"><img src="icons/play-recording-w.png" /></a></li>
+        <li><a href="#directions"><img src="icons/step-by-step-w.png" /></a></li>
+        <li><a href="#share"><img src="icons/share-w.png" /></a></li>
+        <li><a href="#explore"><img src="icons/explore-w.png" /></a></li>
+      </ul>
+    </div>
+    <div id="cn-overlay" class="cn-overlay"></div>
+    <!-- End Nav Structure -->
+  </div>
 
   <!-- The help modal -->
   <div id="help" class="modal">
     <header class="bar-title">
       <h1 class="title">Help</h1>
-      <a class="button" href="#help">
-        Close
-      </a>
+      <a class="button" href="#help">Close</a>
     </header>
     
     <div class="content content-padded">
@@ -103,42 +93,35 @@
     </div>
   </div>
 
-
   <!-- The play modal -->
   <div id="play" class="modal">
-  <header class="bar-title">
-    <h1 class="title">Play</h1>
-    <a class="button" href="#play">
-      Close
-    </a>
-  </header>
+    <header class="bar-title">
+      <h1 class="title">Play</h1>
+      <a class="button" href="#play">Close</a>
+    </header>
   
-  <div class="content content-padded">
-    <p>The play stuff will go here.</p>
+    <div class="content content-padded">
+      <p>The play stuff will go here.</p>
+    </div>
   </div>
-</div>
 
-   <!-- The directions modal -->
+  <!-- The directions modal -->
   <div id="directions" class="modal">
-  <header class="bar-title">
-    <h1 class="title">Step-by-Step Directions</h1>
-    <a class="button" href="#directions">
-      Close
-    </a>
-  </header>
+    <header class="bar-title">
+      <h1 class="title">Step-by-Step Directions</h1>
+      <a class="button" href="#directions">Close</a>
+    </header>
   
-  <div class="content content-padded">
-    <p>Directions will go here.</p>
+    <div class="content content-padded">
+      <p>Directions will go here.</p>
+    </div>
   </div>
-</div>
 
-     <!-- The share modal -->
+  <!-- The share modal -->
   <div id="share" class="modal">
     <header class="bar-title">
       <h1 class="title">Share</h1>
-      <a class="button" href="#share">
-        Close
-      </a>
+      <a class="button" href="#share">Close</a>
     </header>
     
     <div class="content content-padded">
@@ -146,13 +129,11 @@
     </div>
   </div>
 
-     <!-- The explorer modal -->
+  <!-- The explorer modal -->
   <div id="explorer" class="modal">
     <header class="bar-title">
       <h1 class="title">Explorer Mode</h1>
-      <a class="button" href="#explorer">
-        Close
-      </a>
+      <a class="button" href="#explorer">Close</a>
     </header>
     
     <div class="content content-padded">
@@ -164,9 +145,7 @@
   <div id="create" class="modal">
     <header class="bar-title">
       <h1 class="title">Create</h1>
-      <a class="button" href="#create">
-        Close
-      </a>
+      <a class="button" href="#create">Close</a>
     </header>
     
     <div class="content content-padded">
@@ -177,72 +156,64 @@
       <textarea rows="5" placeholder="what should they bring, how to prepare, etc."></textarea>
       <p>facebook, twitter, foursquare, email</p>
       <a class="button button-block" href="profile.html">submit</a>
-</form>
+      </form>
     </div>
   </div>
 
-     <!-- The explore modal -->
+  <!-- The explore modal -->
   <div id="explore" class="modal">
     <header class="bar-title">
       <h1 class="title">Explore</h1>
-      <a class="button" href="#explore">
-        Close
-      </a>
+      <a class="button" href="#explore">Close</a>
     </header>
     
     <div class="content content-padded">
-                <ul class="list">
+      <ul class="list">
+        <li><img src="img/explore_01.png" />
+          <a href="#">rooftops you shouldn't be on</a>
+          <img src="img/4stars.png">
+          <span class="chevron"></span>
+        </li>
 
-                    <a class="left" href="experience.html"><li><img src="img/explore_01.png" />
-                        <a class="right" href="ex1/play.html">dc ruins</a>
-                        <img class="right" src="img/3stars.png">
-                        <span class="chevron"></span>
-                    </li><a href="experience.html">
-                    <li>
-                      <img src="img/explore_02.png" />
-                        <a href="#">lazy saturdays in dc</a>
-                        <img src="img/5stars.png">
-                        <span class="chevron"></span>
-                    </li>
-                    <li>
-                      <img src="img/explore_03.png" />
-                        <a href="#">rooftops you shouldn't be on</a>
-                        <img src="img/4stars.png">
-                        <span class="chevron"></span>
-                    </li>
-                    <li>
-                      <img src="img/explore_04.png" />
-                        <a href="#">outdoors with kids</a>
-                        <img src="img/2stars.png">
-                        <span class="chevron"></span>
-                    </li>
-                    <li>
-                      <img src="img/explore_05.png" />
-                        <a href="#">cloudy day stroll</a>
-                        <img src="img/2stars.png">
-                        <span class="chevron"></span>
-                    </li>
-                    <li>
-                      <img src="img/explore_06.png" />
-                        <a href="#">fun in the sun</a>
-                        <img src="img/2stars.png">
-                        <span class="chevron"></span>
-                    </li>
-                </ul>
-            </div>
+        <li><img src="img/explore_02.png" />
+          <a href="#">lazy saturdays in dc</a>
+          <img src="img/5stars.png">
+          <span class="chevron"></span>
+        </li>
+
+        <li><img src="img/explore_03.png" />
+          <a href="#">rooftops you shouldn't be on</a>
+          <img src="img/4stars.png">
+          <span class="chevron"></span>
+        </li>
+
+        <li><img src="img/explore_04.png" />
+          <a href="#">outdoors with kids</a>
+          <img src="img/2stars.png">
+          <span class="chevron"></span>
+        </li>
+
+        <li><img src="img/explore_05.png" />
+          <a href="#">cloudy day stroll</a>
+          <img src="img/2stars.png">
+          <span class="chevron"></span>
+        </li>
+
+        <li><img src="img/explore_06.png" />
+          <a href="#">fun in the sun</a>
+          <img src="img/2stars.png">
+          <span class="chevron"></span>
+        </li>
+      </ul>
     </div>
   </div>
 
-     <!-- The profile modal -->
+  <!-- The profile modal -->
   <div id="profile" class="modal">
     <header class="bar-title">
-      <a class="button" href="#profile">
-        Back
-      </a>
+      <a class="button" href="#profile">Back</a>
       <h1 class="title">Profile</h1>
-      <a class="button" href="#settings">
-        Settings
-      </a>
+      <a class="button" href="#settings">Settings</a>
     </header>
     
     <div class="content content-padded">
@@ -250,34 +221,41 @@
     </div>
   </div>
 
-  <!-- The profile modal -->
+  <!-- The settings modal -->
   <div id="settings" class="modal">
     <header class="bar-title">
-      <a class="button" href="#settings">
-        Back
-      </a>
+      <a class="button" href="#settings">Back</a>
       <h1 class="title">Settings</h1>
     </header>
     
     <div class="content content-padded">
       <form>
-  <p class="form"> new username:</p>
-  <input type="text" placeholder="username">
-  <p class="form"> new password:</p>
-  <input type="text" placeholder="password">
-  <p class="form"> confirm new password:</p>
-  <input type="text" placeholder="password">
-  <a class="button button-block save">save</a>
-  <div class="save-div">
-  </div>
-</form>
+        <p class="form"> new username:</p>
+          <input type="text" placeholder="username">
+        <p class="form"> new password:</p>
+          <input type="text" placeholder="password">
+        <p class="form"> confirm new password:</p>
+          <input type="text" placeholder="password">
+        <a class="button button-block save">save</a>
+        <div class="save-div">
+        </div>
+      </form>
     </div>
   </div>
 
 
-
-  <!-- Our scrips -->
+  <!-- Our scripts -->
   <script src="js/nav.js"></script>
+  <script src="js/libs/ui-slide.js"></script>
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
+  <script type="text/javascript">
+  $('#sidebarToggle').click(function() {
+    $('.sidebar').toggle("slide", { direction: "left" }, 500);
+  });
+  $('#sidebarToggle2').click(function() {
+    $('.sidebar').toggle("slide", { direction: "left" }, 500);
+  });
+
+  </script>
 </html>

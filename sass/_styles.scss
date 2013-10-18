@@ -2,26 +2,14 @@
    Site styles
    ========================================================================== */
 
-// Changing colors of Ratchet stuff
-.button-main {
+// Changing colors of Ratchet buttons
+.bar-title [class*="button"] {
 	background-color: $creator;
 	background-image: none;
 	border: 0px;
 }
 
-nav {
-	position: absolute;
-	top: 50px;
-	left: 0px;
-	a {
-		display: block;
-	}
-}
-
-.right {
-	float: right;
-}
-
+// Sprite resizes
 .profile {
 	width: 30px;
 	height: 30px;
