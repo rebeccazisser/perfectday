@@ -54,14 +54,14 @@ function initialize() {
       var pos = new google.maps.LatLng(position.coords.latitude,
                                        position.coords.longitude);
 
-      // Creates the popup
+      // Creates the marker
       var youMarker = new google.maps.Marker({
         map: map,
         position: pos,
         icon: image
       });
 
-      youMarker.set('id', 'astring');
+      // youMarker.set('id', 'astring');
 
       map.setCenter(pos);
     }, function() {
