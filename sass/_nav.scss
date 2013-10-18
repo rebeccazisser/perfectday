@@ -19,7 +19,6 @@
   width: 200px;
   height: 100%;
   z-index: 5000000;
-  color: $white;
   ul {
     background-color: $creator;
     .sprite {
@@ -45,6 +44,7 @@
       }
       a {
         left: 0;
+        color: $white;
       }
     }
   }

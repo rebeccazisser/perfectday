@@ -236,8 +236,7 @@ html {
   background-color: #2e3192;
   width: 200px;
   height: 100%;
-  z-index: 5000000;
-  color: white; }
+  z-index: 5000000; }
   .sidebar ul {
     background-color: #2e3192; }
     .sidebar ul .sprite {
@@ -256,7 +255,8 @@ html {
       .sidebar ul li:hover {
         background-color: #22246b; }
       .sidebar ul li a {
-        left: 0; }
+        left: 0;
+        color: white; }
 
 * {
   -moz-box-sizing: border-box;
