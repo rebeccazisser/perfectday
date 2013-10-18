@@ -38,6 +38,16 @@ function initialize() {
   //     icon: image
   // });
 
+  
+      // Creates the popup
+      // var youMarker = new google.maps.Marker({
+      //   map: map,
+      //   position: pos,
+      //   icon: image
+      // });
+
+      // youMarker.set('id', 'astring');
+
   // HTML5 geolocation
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -45,11 +55,13 @@ function initialize() {
                                        position.coords.longitude);
 
       // Creates the popup
-      var infowindow = new google.maps.InfoWindow({
+      var youMarker = new google.maps.Marker({
         map: map,
         position: pos,
-        content: 'You'
+        icon: image
       });
+
+      youMarker.set('id', 'astring');
 
       map.setCenter(pos);
     }, function() {
