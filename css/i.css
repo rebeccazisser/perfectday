@@ -48,11 +48,9 @@
   height: 30px; }
 
 .creator {
-  border-radius: 50%;
   width: 60px;
   height: 60px;
-  background-color: #2e3192;
-  padding: 12px; }
+  background-color: #2e3192; }
 
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
@@ -227,7 +225,7 @@ body {
   left: 0;
   display: none;
   position: absolute;
-  background-color: red;
+  background-color: #2e3192;
   width: 200px;
   height: 100%;
   z-index: 5000000; }
