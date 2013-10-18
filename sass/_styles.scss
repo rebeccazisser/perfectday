@@ -15,6 +15,9 @@
 		background-color: darken($creator, 10%);
 		border: 0px;
 	}
+	.sprite {
+	width: 20px;
+	}
 }
 
 .sidebar [class*="button"] {
@@ -28,6 +31,9 @@
 	&:hover {
 		background-color: darken($creator, 10%);
 		border: 0px;
+	}
+	.sprite {
+	width: 20px;
 	}
 }
 

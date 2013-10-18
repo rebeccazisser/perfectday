@@ -48,6 +48,8 @@
   .bar-title [class*="button"]:hover {
     background-color: #22246b;
     border: 0px; }
+  .bar-title [class*="button"] .sprite {
+    width: 20px; }
 
 .sidebar [class*="button"] {
   background-color: #2e3192;
@@ -59,6 +61,8 @@
   .sidebar [class*="button"]:hover {
     background-color: #22246b;
     border: 0px; }
+  .sidebar [class*="button"] .sprite {
+    width: 20px; }
 
 .sprite {
   width: 30px;
