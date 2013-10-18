@@ -19,4 +19,21 @@
   width: 200px;
   height: 100%;
   z-index: 5000000;
+  color: $white;
+  ul {
+    background-color: $creator;
+    .sprite {
+      margin-right: 20px;
+      &:first-child {
+        margin-top: -9px;
+      }
+    }
+    li {
+      padding: 25px;
+      padding-left: 15px;
+      a {
+        left: 0;
+      }
+    }
+  }
 }

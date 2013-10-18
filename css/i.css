@@ -43,14 +43,9 @@
   background-image: none;
   border: 0px; }
 
-.profile {
+.sprite {
   width: 30px;
-  height: 30px; }
-
-.creator {
-  width: 60px;
-  height: 60px;
-  background-color: #2e3192; }
+  float: left; }
 
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
@@ -228,7 +223,19 @@ body {
   background-color: #2e3192;
   width: 200px;
   height: 100%;
-  z-index: 5000000; }
+  z-index: 5000000;
+  color: white; }
+  .sidebar ul {
+    background-color: #2e3192; }
+    .sidebar ul .sprite {
+      margin-right: 20px; }
+      .sidebar ul .sprite:first-child {
+        margin-top: -9px; }
+    .sidebar ul li {
+      padding: 25px;
+      padding-left: 15px; }
+      .sidebar ul li a {
+        left: 0; }
 
 * {
   -moz-box-sizing: border-box;
