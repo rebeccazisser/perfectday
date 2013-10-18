@@ -28,7 +28,7 @@ function initialize() {
   directionsDisplay.setMap(map);
 
   // Custom pin jank
-  var image = '../icons/map_marker-b.png';
+  var image = 'js/marker.png';
 
   // var pinMarker = new google.maps.Marker({
   //   // hardcoded for now
@@ -45,13 +45,11 @@ function initialize() {
                                        position.coords.longitude);
 
       // Creates the popup
-      var youMarker = new google.maps.Marker({
+      var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        icon: image
+        content: 'You'
       });
-
-      youMarker.set('id', 'astring');
 
       map.setCenter(pos);
     }, function() {
