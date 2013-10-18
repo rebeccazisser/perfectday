@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="css/i.css">
 
     <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
-    <!-- <script src="js/map.js"></script> -->
     <script src="js/libs/jquery.js"></script>
 
     <script src="js/libs/jquery-ui.js"></script>
@@ -36,34 +35,24 @@
 
     <script src="js/libs/picturefill.js"></script>
 
-
+    <script src="js/map.js"></script> 
   </head>
 
   <body> 
   <!-- Our Map -->
-  <!-- <div id="map-canvas"></div> -->
-
+  <div id="map-canvas"></div> 
 
 <section class="sidebar">
   <ul class="list">
   <li>
     <a class="button" href="#" id="sidebarToggle2">toggle</a>
   </li>
-  <li>
-    <a href="#create">
-    <img src="icons/creator.png" class="sprite" /> create mode
-  </a>
-  </li>
-  <li>
-    <a href="#explorer">
-    <img src="icons/explorer.png" class="sprite" /> explore mode
-  </a>
-  </li>
-  <li>
-    <a href="#help">
-    <img src="icons/help.png" class="sprite" /> Help
-  </a>
-  </li>
+  <a href="#"><li class="action">
+    <img src="icons/creator.png" class="sprite" /> create mode</li></a>
+  <a href="#"><li class="action">
+    <img src="icons/explorer.png" class="sprite" /> explore mode</li></a>
+  <a href="#help"><li class="action">
+    <img src="icons/help.png" class="sprite" /> Help</li></a>
 </ul>
 
 </section>
@@ -135,37 +124,6 @@
     
     <div class="content content-padded">
       <p>This will give links to share where you're at</p>
-    </div>
-  </div>
-
-  <!-- The explorer modal -->
-  <div id="explorer" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Explorer Mode</h1>
-      <a class="button" href="#explorer">Close</a>
-    </header>
-    
-    <div class="content content-padded">
-      <p>This will swap you to explorer mode; this is a placeholder</p>
-    </div>
-  </div>
-
-   <!-- The share modal -->
-  <div id="create" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Create</h1>
-      <a class="button" href="#create">Close</a>
-    </header>
-    
-    <div class="content content-padded">
-      <form>
-      <p>Title your experience</p>
-      <input type="text" placeholder="be creative and descriptive">
-      <p>Additional Notes</p>
-      <textarea rows="5" placeholder="what should they bring, how to prepare, etc."></textarea>
-      <p>facebook, twitter, foursquare, email</p>
-      <a class="button button-block" href="profile.html">submit</a>
-      </form>
     </div>
   </div>
 
@@ -260,10 +218,16 @@
   <script src="js/libs/circlenav.js"></script>
   <script type="text/javascript">
   $('#sidebarToggle').click(function() {
-    $('.sidebar').toggle("slide", 50);
+    $('.sidebar').show("slide", 50);
   });
   $('#sidebarToggle2').click(function() {
-    $('.sidebar').toggle("slide", 50);
+    $('.sidebar').hide("slide", 50);
+  });
+
+  action = $('.action');
+
+  action.click(function() {
+    $('.sidebar').delay(50).hide("slide", 50);
   });
 
   </script>

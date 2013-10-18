@@ -14,3 +14,33 @@
 	width: 30px;
 	float: left;
 }
+
+body {
+	background-image: none;
+	background-color: transparent;
+}
+
+.ui-tabs .ui-tabs-hide {
+    position: absolute;
+    left: -10000px;
+}
+
+.ui-mobile-viewport {
+	background-color: transparent;
+}
+
+.ui-overlay-c {
+	background-color: transparent;
+}
+
+.ui-page {
+	background-color: transparent;
+}
+
+.ui-body-c {
+	background-color: transparent;
+}
+
+.ui-page-active{
+	background-color: transparent;
+}

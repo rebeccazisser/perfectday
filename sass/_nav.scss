@@ -37,6 +37,12 @@
     li {
       padding: 25px;
       padding-left: 15px;
+      &:active {
+        background-color: darken($creator, 10%);
+      }
+      &:hover {
+        background-color: darken($creator, 10%);
+      }
       a {
         left: 0;
       }
