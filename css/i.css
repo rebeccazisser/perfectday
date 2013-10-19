@@ -83,6 +83,18 @@ button {
     background-color: #22246b;
     border: 0px; }
 
+.first {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 2%; }
+
+.second {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 90%; }
+
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
