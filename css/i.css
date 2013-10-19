@@ -83,6 +83,9 @@ button {
     background-color: #22246b;
     border: 0px; }
 
+.circleplayer {
+  display: none; }
+
 .first {
   position: absolute;
   top: 50%;

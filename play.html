@@ -86,7 +86,7 @@
     <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
     <div class="cn-wrapper" id="cn-wrapper">
       <ul>
-        <li><a href="#play"><img src="icons/play.png" /></a></li>
+        <li><a id="play"><img src="icons/play.png" /></a></li>
         <li><a href="#directions"><img src="icons/step-by-step.png" /></a></li>
         <li><a href="#share"><img src="icons/share.png" /></a></li>
         <li><a href="#explore"><img src="icons/explore.png" /></a></li>
@@ -109,25 +109,18 @@
   </div>
 
   <!-- The play modal -->
-  <div id="play" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Play</h1>
-      <a class="button" href="#play">Close</a>
-    </header>
-  
-    <div class="content content-padded">
+ 
  <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
+ <a id="circleplayer">
     <div id="jquery_jplayer_1" class="cp-jplayer"></div>
 
-    <!-- This is the 2nd instance's jPlayer div -->
-    <div id="jquery_jplayer_2" class="cp-jplayer"></div>
 
     <div class="prototype-wrapper"> <!-- A wrapper to emulate use in a webpage and center align -->
 
 
       <!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
 
-      <div id="cp_container_1" class="cp-container">
+      <div id="cp_container_1" class="cp-container circleplayer">
         <div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
           <div class="cp-buffer-1"></div>
           <div class="cp-buffer-2"></div>
@@ -143,8 +136,7 @@
         </ul>
       </div>
     </div>
-    </div>
-  </div>
+  </a>
 
   <!-- The directions modal -->
   <div id="directions" class="modal">
@@ -282,6 +274,11 @@
         cssSelectorAncestor: "#cp_container_1"
       });
 
+    });
+
+    $('#play').click(function(){
+      $('.circleplayer').css('display','block');
+      $(this).replaceWith($('#circleplayer'));
     });
     </script>
 </html>
