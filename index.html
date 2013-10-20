@@ -19,13 +19,19 @@
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
 
-    <!-- Scripts -->
+    <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
     <script src="js/libs/jquery.js"></script>
+
     <script src="js/libs/jquery-ui.js"></script>
+
     <script src="js/libs/modernizr.js"></script>
+
     <script src="js/libs/ratchet.js"></script>
+
     <script src="js/libs/picturefill.js"></script>
+
     <script src="js/map.js"></script> 
+
     <script src="js/libs/jquery.transform2d.js"></script>
     <script src="js/libs/jquery.grab.js"></script>
     <script src="js/libs/jquery.jplayer.js"></script>
@@ -37,24 +43,20 @@
   <!-- Our Map -->
   <div id="map-canvas"></div> 
 
-  <section class="sidebar">
-    <ul class="list">
-      <li>
-        <a class="button" href="#" id="sidebarToggle2"><img src="icons/hamburger.png" class="sprite" /></a>
-      </li>
-      <a href="#">
-        <li class="action"><img src="icons/creator.png" class="sprite" /> create mode</li>
-      </a>
-      <a href="#"><li class="action">
-        <img src="icons/explorer.png" class="sprite" /> explore mode</li>
-      </a>
-      <a href="#help">
-        <li class="action">
-          <img src="icons/help.png" class="sprite" /> Help
-        </li>
-      </a>
-    </ul>
-  </section>
+<section class="sidebar">
+  <ul class="list">
+  <li>
+    <a class="button" href="#" id="sidebarToggle2"><img src="icons/hamburger.png" class="sprite" /></a>
+  </li>
+  <a href="#"><li class="action">
+    <img src="icons/creator.png" class="sprite" /> create mode</li></a>
+  <a href="#"><li class="action">
+    <img src="icons/explorer.png" class="sprite" /> explore mode</li></a>
+  <a href="#help"><li class="action">
+    <img src="icons/help.png" class="sprite" /> Help</li></a>
+</ul>
+
+</section>
 
   <!-- Top navigation --> 
   <header class="bar-title">
@@ -103,7 +105,6 @@
   </div>
 
   <!-- The share modal -->
-  <!-- The share modal -->
   <div id="share" class="modal">
     <header class="bar-title">
       <h1 class="title">Share</h1>
@@ -111,15 +112,14 @@
     </header>
     
     <div class="content content-padded">
-      <div class="media"><span class="icon"><img class="icon" src="icons/facebook_pink.png"></span><span class="name">Share on <span class="bold">Facebook</span></span></div>
-    <div class="media"><span class="icon"><img   class="icon"src="icons/twitter_pink.png"></span><span class="name">Share on <span class="bold">Twitter</span></span></div>
-    <div class="media"><span class="icon"><img class="icon" src="icons/foursquare_pink.png"></span><span class="name">Check In on <span class="bold">Foursquare</span></span></div>
-    <div class="media"><span class="icon"><img  class="icon" src="icons/gmail_pink.png"></span><span class="name">Share with <span class="bold">Email</span></span></div>
+      <div class="media"><span class="icon"><img src="icons/facebook_pink.png"></span><span class="name">Share on <span class="bold">Facebook</span></span></div>
+    <div class="media"><span class="icon"><img src="icons/twitter_pink.png"></span><span class="name">Share on <span class="bold">Twitter</span></span></div>
+    <div class="media"><span class="icon"><img src="icons/foursquare_pink.png"></span><span class="name">Check In on <span class="bold">Foursquare</span></span></div>
+    <div class="media"><span class="icon"><img src="icons/gmail_pink.png"></span><span class="name">Share with <span class="bold">Email</span></span></div>
     </div>
   </div>
 
   <!-- The explore modal -->
- <!-- The explore modal -->
   <div id="explore" class="modal">
     <header class="bar-title">
       <h1 class="title">Explore</h1>
@@ -140,39 +140,39 @@
                    <li>
                       <img  class="left" src="img/explore_02.png" />
                       <div class="right"
-                        <a href="#">Lazy Saturdays in DC at the Museum</a>
+                        <a href="#">Lazy Saturdays in DC</a>
                         <img class="stars2" src="img/3stars.png"></div>
                         <span class="chevron"></span>
                     </li>
                     <li>
                       <img class="left" src="img/explore_03.png" />
                       <div class="right">
-                        <a href="#">Rooftops You Shouldn't Be On at Night</a>
-                        <img class="stars2" src="img/4stars.png"></div>
+                        <a href="#">Rooftops You Shouldn't Be On</a>
+                        <img class="stars2" src="img/4stars.png">
                         <span class="chevron"></span>
                     </li>
                     <li>
                       <img class="left" src="img/explore_04.png" />
                       <div class="right">
-                        <a href="#">Being Outdoors with Kids in the Fall</a>
-                        <img class="stars2" src="img/2stars.png"></div>
-              
+                        <a href="#">Being Outdoors with Kids</a>
+                        <img class="stars2" src="img/2stars.png">
+                    </div>
                         <span class="chevron"></span>
                     </li>
                     <li>
                       <img class="left" src="img/explore_05.png" />
                       <div class="right">
-                        <a href="#">Cloudy Day Stroll in Dupont Cirlce</a>
-                        <img class="stars2" src="img/2stars.png"></div>
-                  
+                        <a href="#">Cloudy Day Stroll in Dupont</a>
+                        <img class="stars2" src="img/2stars.png">
+                    </div>
                         <span class="chevron"></span>
                     </li>
                     <li>
                       <img class="left" src="img/explore_06.png" />
                       <div class="right">
-                        <a href="#">Fun Times in the Sun (or Under and Umbrella)</a>
-                        <img class="stars2" src="img/2stars.png"></div>
-                
+                        <a href="#">Fun Times in the Sun</a>
+                        <img class="stars2" src="img/2stars.png">
+                    </right>
                         <span class="chevron"></span>
                     </li>
                 </ul>
@@ -220,5 +220,27 @@
   <script src="js/libs/ui-slide.js"></script>
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
-  <script type="js/inits.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#sidebarToggle').click(function() {
+      $('.sidebar').show("slide", 50);
+    });
+
+    $('#sidebarToggle2').click(function() {
+      $('.sidebar').hide("slide", 50);
+    });
+
+    action = $('.action');
+
+    action.click(function() {
+      $('.sidebar').hide("slide", 25);
+    });
+
+    var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+    { m4a: "js/libs/thrift.m4a" }, 
+    { cssSelectorAncestor: "#cp_container_1" });
+  
+  });
+
+  </script>
 </html>
