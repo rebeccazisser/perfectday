@@ -1957,6 +1957,9 @@ button.button-block {
     width: 20px;
     border-bottom: 0px; }
 
+.gray {
+  background-color: #eeeeee; }
+
 .sidebar [class*="button"] {
   background-color: #8d8199;
   background-image: none;

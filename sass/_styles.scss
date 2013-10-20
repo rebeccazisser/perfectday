@@ -21,6 +21,10 @@
 	}
 }
 
+.gray {
+	background-color: $gray-light;
+}
+
 .sidebar [class*="button"] {
 	background-color: $creator;
 	background-image: none;
