@@ -39,27 +39,27 @@
    Site styles
    ========================================================================== */
 .bar-title [class*="button"] {
-  background-color: #2e3192;
+  background-color: #8d8199;
   background-image: none;
   border: 0px; }
   .bar-title [class*="button"]:active {
-    background-color: #22246b;
+    background-color: #746780;
     border: 0px; }
   .bar-title [class*="button"]:hover {
-    background-color: #22246b;
+    background-color: #746780;
     border: 0px; }
   .bar-title [class*="button"] .sprite {
     width: 20px; }
 
 .sidebar [class*="button"] {
-  background-color: #2e3192;
+  background-color: #8d8199;
   background-image: none;
   border: 0px; }
   .sidebar [class*="button"]:active {
-    background-color: #22246b;
+    background-color: #746780;
     border: 0px; }
   .sidebar [class*="button"]:hover {
-    background-color: #22246b;
+    background-color: #746780;
     border: 0px; }
   .sidebar [class*="button"] .sprite {
     width: 20px; }
@@ -73,14 +73,14 @@ body {
   background-color: transparent; }
 
 button {
-  background-color: #2e3192;
+  background-color: #8d8199;
   background-image: none;
   border: 0px; }
   button:active {
-    background-color: #22246b;
+    background-color: #746780;
     border: 0px; }
   button:hover {
-    background-color: #22246b;
+    background-color: #746780;
     border: 0px; }
 
 .circleplayer {
@@ -252,7 +252,7 @@ html {
    Navigation styles
    ========================================================================== */
 .bar-title {
-  background-color: #2e3192;
+  background-color: #8d8199;
   background-image: none;
   border: none; }
 
@@ -261,12 +261,12 @@ html {
   left: 0;
   display: none;
   position: absolute;
-  background-color: #2e3192;
+  background-color: #8d8199;
   width: 200px;
   height: 100%;
   z-index: 5000000; }
   .sidebar ul {
-    background-color: #2e3192; }
+    background-color: #8d8199; }
     .sidebar ul .sprite {
       margin-right: 20px; }
       .sidebar ul .sprite:first-child {
@@ -279,9 +279,9 @@ html {
       padding: 25px;
       padding-left: 15px; }
       .sidebar ul li:active {
-        background-color: #22246b; }
+        background-color: #746780; }
       .sidebar ul li:hover {
-        background-color: #22246b; }
+        background-color: #746780; }
       .sidebar ul li a {
         left: 0;
         color: white; }
@@ -325,7 +325,7 @@ html {
 .cn-button {
   border: none;
   background: none;
-  color: #2e3192;
+  color: #8d8199;
   text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
@@ -417,17 +417,17 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   transform: rotate(135deg) skew(45deg); }
 
 .csstransforms .cn-wrapper li a {
-  background-color: #2e3192; }
+  background-color: #8d8199; }
 
 /* active style */
 .csstransforms .cn-wrapper li.active a {
-  background-color: #3a3eb9; }
+  background-color: #a79db0; }
 
 /* hover style */
 .csstransforms .cn-wrapper li:not(.active) a:hover,
 .csstransforms .cn-wrapper li:not(.active) a:active,
 .csstransforms .cn-wrapper li:not(.active) a:focus {
-  background-color: #3a3eb9; }
+  background-color: #a79db0; }
 
 /* fallback */
 .no-csstransforms .cn-button {
