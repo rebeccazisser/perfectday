@@ -16,11 +16,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
-    <link rel="stylesheet" href="css/slide.css">
-
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
 
@@ -75,7 +70,7 @@
     <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
     <div class="cn-wrapper" id="cn-wrapper">
       <ul>
-        <li><img src="icons/play.png" /></li>
+        <li><a href="#"><img src="icons/play.png" /></a></li>
         <li><a href="#directions"><img src="icons/step-by-step.png" /></a></li>
         <li><a href="#share"><img src="icons/share.png" /></a></li>
         <li><a href="#explore"><img src="icons/explore.png" /></a></li>
@@ -226,31 +221,25 @@
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
   <script type="text/javascript">
-  $('#sidebarToggle').click(function() {
-    $('.sidebar').show("slide", 50);
-  });
-  $('#sidebarToggle2').click(function() {
-    $('.sidebar').hide("slide", 50);
-  });
-
-  action = $('.action');
-
-  action.click(function() {
-    $('.sidebar').hide("slide", 25);
-  });
-
   $(document).ready(function(){
-      var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-      {
-        m4a: "js/libs/thrift.m4a"
-      }, {
-        cssSelectorAncestor: "#cp_container_1"
-      });
-
+    $('#sidebarToggle').click(function() {
+      $('.sidebar').show("slide", 50);
     });
 
-  $('#play').click(function(){
-    $('.cp_container_1').css('display', 'block');
+    $('#sidebarToggle2').click(function() {
+      $('.sidebar').hide("slide", 50);
+    });
+
+    action = $('.action');
+
+    action.click(function() {
+      $('.sidebar').hide("slide", 25);
+    });
+
+    var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+    { m4a: "js/libs/thrift.m4a" }, 
+    { cssSelectorAncestor: "#cp_container_1" });
+  
   });
 
   </script>
