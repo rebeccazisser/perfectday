@@ -28,7 +28,7 @@ function initialize() {
   directionsDisplay.setMap(map);
 
   // Custom pin jank
-  var image = 'js/map_marker-b.png';
+  var image = 'js/map_marker-a.png';
 
   // var pinMarker = new google.maps.Marker({
   //   // hardcoded for now
