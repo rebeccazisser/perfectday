@@ -111,7 +111,7 @@
   <!-- The play modal -->
  
  <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
- <a id="circleplayer">
+ <div class="changePosition">
     <div id="jquery_jplayer_1" class="cp-jplayer"></div>
 
 
@@ -136,7 +136,6 @@
         </ul>
       </div>
     </div>
-  </a>
 
   <!-- The directions modal -->
   <div id="directions" class="modal">
@@ -278,7 +277,7 @@
 
     $('#play').click(function(){
       $('.circleplayer').css('display','block');
-      $(this).replaceWith($('#circleplayer'));
+      $('.circleplayer').css('position', 'absolute');
     });
     </script>
 </html>
