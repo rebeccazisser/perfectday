@@ -21,8 +21,13 @@
 	}
 }
 
-.gray {
-	background-color: $gray-light;
+.csstransforms .cn-wrapper li {
+	a.gray {
+		background-color: darken($gray-light, 20%);
+		&:active {
+			background-color: darken($gray-light, 40%);
+		}
+	}
 }
 
 .sidebar [class*="button"] {
