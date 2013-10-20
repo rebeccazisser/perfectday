@@ -2005,7 +2005,8 @@ button {
 
 .title {
   float: left;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-left: 50px; }
 
 .stars {
   float: left;
@@ -2031,6 +2032,10 @@ tr {
   text-align: right;
   padding-right: 10px; }
 
+.back {
+  height: 30px;
+  margin-top: -5px; }
+
 .left {
   width: 20%; }
 
@@ -2043,8 +2048,19 @@ tr {
 .stars2 {
   width: 40%; }
 
-.blue {
-  background-color: #D6A392; }
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 70px; }
+
+.name {
+  margin-left: 20px;
+  bottom: 40px;
+  font-size: 20px; }
+
+.bold {
+  font-weight: bold; }
 
 .B {
   width: 50px;
