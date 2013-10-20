@@ -27,6 +27,9 @@
 		&:active {
 			background-color: darken($gray-light, 40%);
 		}
+		&:hover {
+			background-color: darken($gray-light, 40%);
+		}
 	}
 }
 
