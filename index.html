@@ -221,7 +221,7 @@
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
   <script type="text/javascript">
-  // $(document).ready(function(){
+  $(document).ready(function(){
     $('#sidebarToggle').click(function() {
       $('.sidebar').show("slide", 50);
     });
@@ -236,11 +236,11 @@
       $('.sidebar').hide("slide", 25);
     });
 
-    // var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-    // { m4a: "js/libs/thrift.m4a" }, 
-    // { cssSelectorAncestor: "#cp_container_1" });
+    var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+    { m4a: "js/libs/thrift.m4a" }, 
+    { cssSelectorAncestor: "#cp_container_1" });
   
-  // });
+  });
 
   </script>
 </html>
