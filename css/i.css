@@ -1928,9 +1928,6 @@ button.button-block {
    ========================================================================== */
 /* Copy
    ========================================================================== */
-body {
-  font-size: 24px; }
-
 /* Headings
    ========================================================================== */
 /* ==========================================================================
@@ -2005,6 +2002,10 @@ button {
   top: 50%;
   margin-top: -50px;
   margin-left: 90%; }
+
+ul li a {
+  color: white;
+  font-size: 24px; }
 
 a.ulAnchors {
   top: -75px; }
@@ -2395,8 +2396,6 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   width: 25px;
   height: 25px; }
 
-.component li {
-  border: 1px solid transparent; }
 .component img {
   width: 30px;
   height: 30px; }
