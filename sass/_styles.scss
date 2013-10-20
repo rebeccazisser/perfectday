@@ -79,3 +79,119 @@ button {
 	margin-top: -50px;
 	margin-left: 90%;
 }
+
+
+///Experience Page///
+
+.title{
+	float:left;
+	font-size:20px;
+
+
+}
+
+.stars{
+	float:left;
+	width:30%;
+	padding-left:10px;
+	margin-top:5px;
+
+}
+
+.table{
+	clear:both;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+td{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+tr{
+	text-align:top;
+}
+
+.section{
+	font-weight:bold;
+	width:40%;
+	text-align:right;
+	padding-right:10px;
+}
+
+
+///EXPLORE///
+
+.left{
+	width:20%;
+
+}
+
+.right{
+	width:60%;
+	float:right;
+	margin-top:15px;
+	margin-right:40px;
+}
+
+.stars2{
+	width:40%;
+}
+
+//SHARE//
+
+.blue{
+	background-color:#D6A392;
+}
+
+
+//END PLAY//
+
+.B{
+	width:50px;
+	height:50px;
+	padding-right:20px;
+}
+.C p{
+	height:100px;
+}
+
+#rule{
+	width:100%;
+	height:1px;
+	background-color:$near-black;
+}
+
+.subhead{
+
+	margin-left:100px;
+}
+
+.head{
+	margin-left:120px;
+}
+
+.endshare{
+	margin-left:100px;
+	padding-top:20px;
+}
+
+.rate{
+	margin-left:210px;
+	padding-top:30px;
+	padding-bottom:10px;
+
+}
+
+.stars3{
+	height:50px;
+	margin-left:40px;
+	padding-bottom:20px;
+
+}
+
+.next{
+	margin-left:190px;
+	padding-bottom:10px;
+}
