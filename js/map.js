@@ -135,6 +135,6 @@ function loadScript() {
 
 window.onload = loadScript;
 
-google.maps.event.trigger(map, 'resize');
+// google.maps.event.trigger(map, 'resize');
 
 // google.maps.event.addDomListener(window, 'load', initialize);
