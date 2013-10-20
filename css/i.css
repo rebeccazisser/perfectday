@@ -35,69 +35,6 @@
    ========================================================================== */
 /* Tablet
    ========================================================================== */
-/* ==========================================================================
-   Site styles
-   ========================================================================== */
-.bar-title [class*="button"] {
-  background-color: #8d8199;
-  background-image: none;
-  border: 0px; }
-  .bar-title [class*="button"]:active {
-    background-color: #746780;
-    border: 0px; }
-  .bar-title [class*="button"]:hover {
-    background-color: #746780;
-    border: 0px; }
-  .bar-title [class*="button"] .sprite {
-    width: 20px; }
-
-.sidebar [class*="button"] {
-  background-color: #8d8199;
-  background-image: none;
-  border: 0px; }
-  .sidebar [class*="button"]:active {
-    background-color: #746780;
-    border: 0px; }
-  .sidebar [class*="button"]:hover {
-    background-color: #746780;
-    border: 0px; }
-  .sidebar [class*="button"] .sprite {
-    width: 20px; }
-
-.sprite {
-  width: 30px;
-  float: left; }
-
-body {
-  background-image: none;
-  background-color: transparent; }
-
-button {
-  background-color: #8d8199;
-  background-image: none;
-  border: 0px; }
-  button:active {
-    background-color: #746780;
-    border: 0px; }
-  button:hover {
-    background-color: #746780;
-    border: 0px; }
-
-.circleplayer {
-  display: none; }
-
-.first {
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  margin-left: 2%; }
-
-.second {
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  margin-left: 90%; }
-
 /*!
  * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
  * Released under MIT license, http://cubiq.org/license
