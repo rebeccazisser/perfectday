@@ -1954,7 +1954,8 @@ button.button-block {
     background-color: #746780;
     border: 0px; }
   .bar-title [class*="button"] .sprite {
-    width: 20px; }
+    width: 20px;
+    border-bottom: 0px; }
 
 .sidebar [class*="button"] {
   background-color: #8d8199;
