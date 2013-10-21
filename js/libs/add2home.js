@@ -28,7 +28,7 @@ var addToHome = (function (w) {
 			animationIn: 'drop',		// drop || bubble || fade
 			animationOut: 'fade',		// drop || bubble || fade
 			startDelay: 500,			// 2 seconds from page load before the balloon appears
-			lifespan: 15000,			// 15 seconds before it is automatically destroyed
+			lifespan: 15000000,			// 15 seconds before it is automatically destroyed
 			bottomOffset: 0,			// Distance of the balloon from bottom
 			expire: 0,					// Minutes to wait before showing the popup again (0 = always displayed)
 			message: '',				// Customize your message or force a language ('' = automatic)
@@ -40,7 +40,7 @@ var addToHome = (function (w) {
 		},
 
 		intl = {
-			en_us: '<img src="image.png" /><p>Perfect Day is an app that lets you play and create experiences for others. To play, find an experience and walk to each destination, where you can find audio notes others have left for you. To create, go places and leave audio notes for others to play later.</p> <p>Install this web app on your %device: tap %icon and then <strong>Add to Home Screen</strong>.</p>',
+			en_us: '<img src="../../img/image.png" /><p>Perfect Day is an app that lets you play and create experiences for others. To play, find an experience and walk to each destination, where you can find audio notes others have left for you. To create, go places and leave audio notes for others to play later.</p> <p>Install this web app on your %device: tap %icon and then <strong>Add to Home Screen</strong>.</p>',
 			es_es: 'Para instalar esta app en su %device, pulse %icon y seleccione <strong>Añadir a pantalla de inicio</strong>.',
 			fr_fr: 'Ajoutez cette application sur votre %device en cliquant sur %icon, puis <strong>Ajouter à l\'écran d\'accueil</strong>.'
 		};
