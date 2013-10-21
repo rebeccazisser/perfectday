@@ -328,6 +328,7 @@ a {
 // profile jank
 
 #profile {
+	font-size: $body * 2;
 	img {
 		float: left;
 		width: 150px;
@@ -341,6 +342,6 @@ a {
 	}
 
 	.miles-walked {
-		font-size: $body * 2;
+		font-size: $body * 4;
 	}
 }
