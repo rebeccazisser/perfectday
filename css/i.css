@@ -1979,6 +1979,8 @@ button.button-block {
     border: 0px; }
   .sidebar [class*="button"] .sprite {
     width: 20px; }
+  .sidebar [class*="button"] a {
+    color: white; }
 
 .sprite {
   width: 30px;
