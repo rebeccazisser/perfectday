@@ -2534,7 +2534,7 @@ a.ulAnchors {
   color: #999999; }
 
 #profile {
-  font-size: 32px; }
+  font-size: 16px; }
   #profile img {
     float: left;
     width: 150px; }
@@ -2542,5 +2542,4 @@ a.ulAnchors {
     font-size: 16px;
     float: left;
     line-height: 300px;
-    display: inline-block;
-    vertical-align: bottom; }
+    display: inline-block; }

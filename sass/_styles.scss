@@ -334,7 +334,7 @@ a {
 // profile jank
 
 #profile {
-	font-size: $body * 2;
+	font-size: $body;
 	img {
 		float: left;
 		width: 150px;
@@ -344,6 +344,5 @@ a {
 		float: left;
 		line-height: 300px;
 		display:inline-block;
-  		vertical-align:bottom;	
-	}
+  		}
 }
