@@ -1966,6 +1966,9 @@ button.button-block {
   .csstransforms .cn-wrapper li a.gray:hover {
     background-color: #888888; }
 
+.sidebar a {
+  color: white; }
+
 .sidebar [class*="button"] {
   background-color: #8d8199;
   background-image: none;
@@ -1979,8 +1982,6 @@ button.button-block {
     border: 0px; }
   .sidebar [class*="button"] .sprite {
     width: 20px; }
-  .sidebar [class*="button"] a {
-    color: white; }
 
 .sprite {
   width: 30px;

@@ -35,6 +35,12 @@
 	}
 }
 
+.sidebar {
+	a {
+		color: $white;
+	}
+}
+
 .sidebar [class*="button"] {
 	background-color: $creator;
 	background-image: none;
@@ -50,9 +56,6 @@
 	}
 	.sprite {
 	width: 20px;
-	}
-	a {
-		color: $white;
 	}
 }
 
