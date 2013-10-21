@@ -18,8 +18,9 @@
 		border: 0px;
 	}
 	.sprite {
-	width: 20px;
-	border-bottom: 0px;
+		width: 20px;
+		border-bottom: 0px;
+		margin-top: 5px;
 	}
 }
 
@@ -44,6 +45,7 @@
 .sidebar [class*="button"] {
 	background-color: $creator;
 	background-image: none;
+	border: 0px;
 	text-shadow: none;
 	box-shadow: none;
 	&:active {

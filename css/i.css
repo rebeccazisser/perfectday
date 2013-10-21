@@ -2364,7 +2364,8 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     border: 0px; }
   .bar-title [class*="button"] .sprite {
     width: 20px;
-    border-bottom: 0px; }
+    border-bottom: 0px;
+    margin-top: 5px; }
 
 .csstransforms .cn-wrapper li a.gray {
   background-color: #bbbbbb; }
@@ -2379,6 +2380,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .sidebar [class*="button"] {
   background-color: #8d8199;
   background-image: none;
+  border: 0px;
   text-shadow: none;
   box-shadow: none; }
   .sidebar [class*="button"]:active {
@@ -2524,6 +2526,7 @@ ul li a {
 
 a.ulAnchors {
   top: -75px; }
+<<<<<<< HEAD
 
 .icon_help {
   width: 50px;
@@ -2566,3 +2569,5 @@ a.ulAnchors {
 .light {
   margin-left: 230px;
   color: #999999; }
+=======
+>>>>>>> Grand experiments
