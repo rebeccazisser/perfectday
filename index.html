@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Perfect Day App</title>
+    <title>Perfect Day</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -23,8 +23,11 @@
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/jquery-ui.js"></script>
     <script src="js/libs/modernizr.js"></script>
+    <script src="js/libs/chart.js"></script>
+
     <script src="js/libs/ratchet.js"></script>
     <script src="js/libs/picturefill.js"></script>
+
     <script src="js/map.js"></script> 
     <script src="js/libs/jquery.transform2d.js"></script>
     <script src="js/libs/jquery.grab.js"></script>
@@ -65,7 +68,7 @@
 
   <div class="component">
     <!-- Start Nav Structure -->
-    <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
+    <button class="cn-button" id="cn-button"><img src="icons/tools-a.png" id="tools" /></button>
     <div class="cn-wrapper" id="cn-wrapper">
       <ul>
         <li><a href="#" class="gray"><img src="icons/play.png" /></a></li>
@@ -109,7 +112,18 @@
     </header>
     
     <div class="content content-padded">
-      your name, settings
+      <img src="img/profile.png" /> <p class="name">@helenvholmes</a><br />
+      <p class="miles-walked">30</p>
+      <p class="left miles">miles walked</p><br />
+      <canvas id="experiences" width="150" height="150"></canvas><br />
+      <p class="left experiences">played: 58%
+        <br />created: 42%</p>
+      <ul class="list">
+        <li class="list-divider">Places Visited</li>
+        <li>Adams Morgan</li>
+        <li>Annandale</li>
+        <li>Tenleytown</li>
+      </ul>
     </div>
   </div>
 
@@ -165,5 +179,7 @@
   <script src="js/libs/ui-slide.js"></script>
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
-  <script type="js/inits.js"></script>
+  <script src="js/inits.js"></script>
+  <link rel="stylesheet" href="add2home.css">
+    <script src="add2home.js"></script>
 </html>

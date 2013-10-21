@@ -1,93 +1,2572 @@
-/*
-Syntax error: Invalid CSS after "		$": expected identifier, was ":first-child{"
-        on line 23 of sass/_styles.scss
-        from line 14 of sass/i.scss
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+/**
+ * ==================================
+ * Ratchet v1.0.2
+ * Licensed under The MIT License
+ * http://opensource.org/licenses/MIT
+ * ==================================
+ */
+/* Hard reset
+-------------------------------------------------- */
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+section,
+summary,
+time,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  border: 0; }
 
-18: 		border: 0px;
-19: 	}
-20: 	.sprite {
-21: 		width: 20px;
-22: 		border-bottom: 0px;
-23: 		$:first-child{
-24: 			margin-top: 2px;
-25: 		}
-26: 	}
-27: }
-28: 
+/* Prevents iOS text size adjust after orientation change, without disabling (Thanks to @necolas) */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
-Backtrace:
-sass/_styles.scss:23
-sass/i.scss:14
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:1147:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:1083:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:1078:in `tok!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:510:in `variable'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:553:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:545:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:534:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:528:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:590:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:1121:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:1121:in `rethrow'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:591:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:553:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:545:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:534:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:528:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:552:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:542:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:82:in `stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:274:in `to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:225:in `visit_import'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `map'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:53:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:109:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:121:in `with_environment'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:108:in `visit_children'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:128:in `visit_root'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:100:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/visitors/perform.rb:7:in `visit'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/tree/root_node.rb:20:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:203:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `each'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:283:in `watch'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `call'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:108:in `on_change'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:117:in `initialize_adapter'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `call'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:198:in `report_changes'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `initialize'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `new'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/adapters/darwin.rb:38:in `start'
-/Library/Ruby/Gems/1.8/gems/listen-0.7.3/lib/listen/multi_listener.rb:44:in `start'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin/compiler.rb:291:in `watch'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin.rb:107:in `send'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/plugin.rb:107:in `method_missing'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:455:in `watch_or_update'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:318:in `process_result'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:41:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/../lib/sass/../sass/exec.rb:21:in `parse!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.10/bin/sass:9
-/usr/bin/sass:19:in `load'
-/usr/bin/sass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"		$\": expected identifier, was \":first-child{\"\A         on line 23 of sass/_styles.scss\A         from line 14 of sass/i.scss\A \A 18: 		border: 0px;\A 19: 	}\A 20: 	.sprite {\A 21: 		width: 20px;\A 22: 		border-bottom: 0px;\A 23: 		$:first-child{\A 24: 			margin-top: 2px;\A 25: 		}\A 26: 	}\A 27: }\A 28: "; }
+/* Base styles
+-------------------------------------------------- */
+body {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font: 14px/1.25 "Helvetica Neue", sans-serif;
+  color: #222;
+  background-color: #fff; }
+
+/* Universal link styling */
+a {
+  color: #0882f0;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Removes the dark touch outlines on links */ }
+
+/* Wrapper to be used around all content not in .bar-title and .bar-tab */
+.content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  background-color: #fff;
+  -webkit-transition-property: top, bottom;
+  transition-property: top, bottom;
+  -webkit-transition-duration: .2s, .2s;
+  transition-duration: .2s, .2s;
+  -webkit-transition-timing-function: linear, linear;
+  transition-timing-function: linear, linear;
+  -webkit-overflow-scrolling: touch; }
+
+/* Hack to force all relatively and absolutely positioned elements still render while scrolling
+   Note: This is a bug for "-webkit-overflow-scrolling: touch" */
+.content > * {
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px); }
+
+/* Utility wrapper to pad in components like forms, block buttons and segmented-controllers so they're not full-bleed */
+.content-padded {
+  padding: 10px; }
+
+/* Pad top/bottom of content so it doesn't hide behind .bar-title and .bar-tab.
+   Note: For these to work, content must come after both bars in the markup */
+.bar-title ~ .content {
+  top: 44px; }
+
+.bar-tab ~ .content {
+  bottom: 51px; }
+
+.bar-header-secondary ~ .content {
+  top: 88px; }
+
+ /* General bar styles
+-------------------------------------------------- */
+[class*="bar-"] {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 44px;
+  padding: 5px;
+  box-sizing: border-box; }
+
+/* Modifier class to dock any bar below .bar-title */
+.bar-header-secondary {
+  top: 45px; }
+
+/* Modifier class to dock any bar to bottom of viewport */
+.bar-footer {
+  bottom: 0; }
+
+/* Generic bar for wrapping buttons, segmented controllers, etc. */
+.bar-standard {
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(top, #f2f2f2 0, #e5e5e5 100%);
+  background-image: linear-gradient(to bottom, #f2f2f2 0, #e5e5e5 100%);
+  border-bottom: 1px solid #aaa;
+  box-shadow: inset 0 1px 1px -1px #fff; }
+
+/* Flip border position to top for footer bars */
+.bar-footer.bar-standard,
+.bar-footer-secondary.bar-standard {
+  border-top: 1px solid #aaa;
+  border-bottom-width: 0; }
+
+/* Title bar
+-------------------------------------------------- */
+/* Bar docked to top of viewport for showing page title and actions */
+.bar-title {
+  top: 0;
+  display: -webkit-box;
+  display: box;
+  background-color: #1eb0e9;
+  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #109adc 100%);
+  background-image: linear-gradient(to bottom, #1eb0e9 0, #109adc 100%);
+  border-bottom: 1px solid #0e5895;
+  box-shadow: inset 0 1px 1px -1px rgba(255, 255, 255, 0.8);
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal; }
+
+/* Centered text in the .bar-title */
+.bar-title .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  white-space: nowrap; }
+
+.bar-title > a:not([class*="button"]) {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+/* Retain specified title color */
+.bar-title .title a {
+  color: inherit; }
+
+/* Tab bar
+-------------------------------------------------- */
+/* Bar docked to bottom used for primary app navigation */
+.bar-tab {
+  bottom: 0;
+  height: 50px;
+  padding: 0;
+  background-color: #393939;
+  background-image: -webkit-linear-gradient(top, #393939 0, #2b2b2b 100%);
+  background-image: linear-gradient(to bottom, #393939 0, #2b2b2b 100%);
+  border-top: 1px solid #000;
+  border-bottom-width: 0;
+  box-shadow: inset 0 1px 1px -1px rgba(255, 255, 255, 0.6); }
+
+/* Wrapper for individual tab */
+.tab-inner {
+  display: -webkit-box;
+  display: box;
+  height: 100%;
+  list-style: none;
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal; }
+
+/* Navigational tab */
+.tab-item {
+  height: 100%;
+  padding-top: 9px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  box-flex: 1; }
+
+/* Active state for tab */
+.tab-item.active {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); }
+
+/* Icon for tab  */
+.tab-icon {
+  display: block;
+  height: 18px;
+  margin: 0 auto; }
+
+/* Label for tab */
+.tab-label {
+  margin-top: 1px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3); }
+
+/* Buttons in title bars
+-------------------------------------------------- */
+/* Generic style for all buttons in .bar-title */
+.bar-title [class*="button"] {
+  position: relative;
+  z-index: 10;
+  /* Places buttons over full width title */
+  font-size: 12px;
+  line-height: 23px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background-color: #1eb0e9;
+  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #0984c6 100%);
+  background-image: linear-gradient(to bottom, #1eb0e9 0, #0984c6 100%);
+  border: 1px solid #0e5895;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  -webkit-box-flex: 0;
+  box-flex: 0; }
+
+/* Hacky way to right align buttons outside of flex-box system
+   Note: is only absolutely positioned button, would be better if flex-box had an "align right" option */
+.bar-title .title + [class*="button"]:last-child,
+.bar-title .button + [class*="button"]:last-child,
+.bar-title [class*="button"].pull-right {
+  position: absolute;
+  top: 5px;
+  right: 5px; }
+
+/* Override standard button active states */
+.bar-title .button:active {
+  color: #fff;
+  background-color: #0876b1; }
+
+/* Directional buttons in title bars (thanks to @GregorAdams for solution - http://cssnerd.com/2011/11/30/the-best-pure-css3-ios-style-arrow-back-button/)
+-------------------------------------------------- */
+/* Add relative positioning so :before content is positioned properly */
+.bar-title .button-prev,
+.bar-title .button-next {
+  position: relative; }
+
+/* Prev/next button base styles */
+.bar-title .button-prev {
+  margin-left: 7px;
+  /* Push over to make room for :before content */
+  border-left: 0;
+  border-bottom-left-radius: 10px 15px;
+  border-top-left-radius: 10px 15px; }
+
+.bar-title .button-next {
+  margin-right: 7px;
+  /* Push over to make room for :before content */
+  border-right: 0;
+  border-top-right-radius: 10px 15px;
+  border-bottom-right-radius: 10px 15px; }
+
+/* Pointed part of directional button */
+.bar-title .button-prev:before,
+.bar-title .button-next:before {
+  position: absolute;
+  top: 2px;
+  width: 27px;
+  height: 27px;
+  border-radius: 30px 100px 2px 40px / 2px 40px 30px 100px;
+  content: '';
+  box-shadow: inset 1px 0 #0e5895, inset 0 1px #0e5895;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(0.33, black), color-stop(0.5, transparent), to(transparent));
+  mask-image: gradient(linear, left top, right bottom, from(black), color-stop(0.33, black), color-stop(0.5, transparent), to(transparent)); }
+
+.bar-title .button-prev:before {
+  left: -5px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#0984c6), to(#1eb0e9));
+  background-image: gradient(linear, left bottom, right top, from(#0984c6), to(#1eb0e9));
+  border-left: 1.5px solid rgba(255, 255, 255, 0.25);
+  -webkit-transform: rotate(-45deg) skew(-10deg, -10deg);
+  transform: rotate(-45deg) skew(-10deg, -10deg); }
+
+.bar-title .button-next:before {
+  right: -5px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#1eb0e9), to(#0984c6));
+  background-image: gradient(linear, left bottom, right top, from(#1eb0e9), to(#0984c6));
+  border-top: 1.5px solid rgba(255, 255, 255, 0.25);
+  -webkit-transform: rotate(135deg) skew(-10deg, -10deg);
+  transform: rotate(135deg) skew(-10deg, -10deg); }
+
+/* Active states for the directional buttons */
+.bar-title .button-prev:active,
+.bar-title .button-next:active,
+.bar-title .button-prev:active:before,
+.bar-title .button-next:active:before {
+  color: #fff;
+  background-color: #0876b1;
+  background-image: none; }
+
+.bar-title .button-prev:active:before,
+.bar-title .button-next:active:before {
+  content: ''; }
+
+.bar-title .button-prev:active:before {
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2); }
+
+.bar-title .button-next:active:before {
+  box-shadow: inset 0 -3px 3px rgba(0, 0, 0, 0.2); }
+
+/* Block buttons in any bar
+-------------------------------------------------- */
+/* Add proper padding and replace buttons normal dropshadow with a shine from bar */
+[class*="bar"] .button-block {
+  padding: 7px 0;
+  margin-bottom: 0;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 1px rgba(255, 255, 255, 0.8); }
+
+/* Override standard padding changes for .button-blocks */
+[class*="bar"] .button-block:active {
+  padding: 7px 0; }
+
+/* Segmented controller in any bar
+-------------------------------------------------- */
+/* Remove standard segmented bottom margin */
+[class*="bar-"] .segmented-controller {
+  margin-bottom: 0; }
+
+/* Add margins between segmented controllers and buttons */
+[class*="bar-"] .segmented-controller + [class*="button"],
+[class*="bar-"] [class*="button"] + .segmented-controller {
+  margin-left: 5px; }
+
+/* Segmented controller in a title bar
+-------------------------------------------------- */
+.bar-title .segmented-controller {
+  line-height: 18px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background-color: #1eb0e9;
+  background-image: -webkit-linear-gradient(top, #1eb0e9 0, #0984c6 100%);
+  background-image: linear-gradient(to bottom, #1eb0e9 0, #0984c6 100%);
+  border: 1px solid #0e5895;
+  border-radius: 3px;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  -webkit-box-flex: 1;
+  box-flex: 1; }
+
+/* Set color for tab border and highlight */
+.bar-title .segmented-controller li {
+  border-left: 1px solid #0e5895;
+  box-shadow: inset 1px 0 rgba(255, 255, 255, 0.25); }
+
+/* Remove inset shadow from first tab or one to the right of the active tab  */
+.bar-title .segmented-controller .active + li,
+.bar-title .segmented-controller li:first-child {
+  box-shadow: none; }
+
+/* Remove left-hand border from first tab */
+.bar-title .segmented-controller li:first-child {
+  border-left-width: 0; }
+
+/* Depressed state (active) */
+.bar-title .segmented-controller li.active {
+  background-color: #0082c4;
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.3); }
+
+/* Set color of links to white */
+.bar-title .segmented-controller li > a {
+  color: #fff; }
+
+/* Search forms in standard bar
+-------------------------------------------------- */
+/* Position/size search bar within the bar */
+.bar-standard input[type=search] {
+  height: 32px;
+  margin: 0; }
+
+ /* Lists
+-------------------------------------------------- */
+/* Remove usual bullet styles from list */
+.list {
+  margin-bottom: 10px;
+  list-style: none;
+  background-color: #fff; }
+
+/* Pad each list item and add dividers */
+.list li {
+  position: relative;
+  padding: 11px 60px 11px 10px;
+  /* Given extra right padding to accomodate counts, chevrons or buttons */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* Give top border to first list items */
+.list li:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* If a list of links, make sure the child <a> takes up full list item tap area (want to avoid selecting child buttons though) */
+.list li > a:not([class*="button"]) {
+  position: relative;
+  display: block;
+  padding: inherit;
+  margin: -11px -60px -11px -10px;
+  color: inherit; }
+
+/* Inset list
+-------------------------------------------------- */
+.list.inset {
+  width: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-sizing: border-box; }
+
+/* Remove border from first/last standard list items to avoid double border at top/bottom of lists */
+.list.inset li:first-child {
+  border-top-width: 0; }
+
+.list.inset li:last-child {
+  border-bottom-width: 0; }
+
+/* List dividers
+-------------------------------------------------- */
+.list .list-divider {
+  position: relative;
+  top: -1px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0, #eeeeee 100%);
+  background-image: linear-gradient(to bottom, #f8f8f8 0, #eeeeee 100%);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4); }
+
+/* Rounding first divider on inset lists and remove border on the top */
+.list.inset .list-divider:first-child {
+  top: 0;
+  border-top-width: 0;
+  border-radius: 6px 6px 0 0; }
+
+/* Rounding last divider on inset lists */
+.list.inset .list-divider:last-child {
+  border-radius: 0 0 6px 6px; }
+
+/* Right-aligned subcontent in lists (chevrons, buttons, counts and toggles)
+-------------------------------------------------- */
+.list .chevron,
+.list [class*="button"],
+.list [class*="count"],
+.list .toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px; }
+
+/* Position chevrons/counts vertically centered on the right in list items */
+.list .chevron,
+.list [class*="count"] {
+  margin-top: -10px;
+  /* Half height of chevron */ }
+
+/* Push count over if there's a sibling chevron */
+.list .chevron + [class*="count"] {
+  right: 30px; }
+
+/* Position buttons vertically centered on the right in list items */
+.list [class*="button"] {
+  left: auto;
+  margin-top: -14px;
+  /* Half height of button */ }
+
+.list .toggle {
+  margin-top: -15px;
+  /* Half height of toggle */ }
+
+ /* Forms
+-------------------------------------------------- */
+/* Force form elements to inherit font styles */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit; }
+
+/* Stretch inputs/textareas to full width and add height to maintain a consistent baseline */
+select,
+textarea,
+input[type="text"],
+input[type=search],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="color"],
+.input-group {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2), inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  outline: none; }
+
+/* Fully round search input */
+input[type=search] {
+  height: 34px;
+  font-size: 14px;
+  border-radius: 30px; }
+
+/* Allow text area's height to grow larger than a normal input */
+textarea {
+  height: auto; }
+
+/* Style select button to look like part of the Ratchet's style */
+select {
+  height: auto;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0%, #d4d4d4 100%);
+  background-image: linear-gradient(to bottom, #f8f8f8 0%, #d4d4d4 100%);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+/* Input groups (cluster multiple inputs together into a single group)
+-------------------------------------------------- */
+/* Reset from initial form setup styles */
+.input-group {
+  width: auto;
+  height: auto;
+  padding: 0; }
+
+/* Remove spacing, borders, shadows and rounding since it all belongs on the .input-group not the input */
+.input-group input {
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  box-shadow: none; }
+
+/* Remove bottom border on last input to avoid double bottom border */
+.input-group input:last-child {
+  border-bottom-width: 0; }
+
+/* Input groups with labels
+-------------------------------------------------- */
+/* To use labels with input groups, wrap a label and an input in an .input-row */
+.input-row {
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+/* Remove bottom border on last input-row to avoid double bottom border */
+.input-row:last-child {
+  border-bottom-width: 0; }
+
+/* Labels get floated left with a set percentage width */
+.input-row label {
+  float: left;
+  width: 25%;
+  padding: 11px 10px 9px 13px;
+  /* Optimizing the baseline for mobile. */
+  font-weight: bold; }
+
+/* Actual inputs float to right of labels and also have a set percentage */
+.input-row label + input {
+  float: right;
+  width: 65%;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-bottom: 0; }
+
+ /* General button styles
+-------------------------------------------------- */
+[class*="button"] {
+  position: relative;
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 0;
+  font-weight: bold;
+  line-height: 18px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  vertical-align: top;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0, #d4d4d4 100%);
+  background-image: linear-gradient(to bottom, #f8f8f8 0, #d4d4d4 100%);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+/* Active */
+[class*="button"]:active {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  color: #333;
+  background-color: #ccc;
+  background-image: none;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2); }
+
+/* Button modifiers
+-------------------------------------------------- */
+/* Overriding styles for buttons with modifiers  */
+.button-main,
+.button-positive,
+.button-negative {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
+
+/* Main button */
+.button-main {
+  background-color: #1eafe7;
+  background-image: -webkit-linear-gradient(top, #1eafe7 0, #1a97c8 100%);
+  background-image: linear-gradient(to bottom, #1eafe7 0, #1a97c8 100%);
+  border: 1px solid #117aaa; }
+
+/* Positive button  */
+.button-positive {
+  background-color: #34ba15;
+  background-image: -webkit-linear-gradient(top, #34ba15 0, #2da012 100%);
+  background-image: linear-gradient(to bottom, #34ba15 0, #2da012 100%);
+  border: 1px solid #278f0f; }
+
+/* Negative button  */
+.button-negative {
+  background-color: #e71e1e;
+  background-image: -webkit-linear-gradient(top, #e71e1e 0, #c71a1a 100%);
+  background-image: linear-gradient(to bottom, #e71e1e 0, #c71a1a 100%);
+  border: 1px solid #b51a1a; }
+
+/* Active state for buttons with modifiers */
+.button-main:active,
+.button-positive:active,
+.button-negative:active {
+  color: #fff; }
+
+.button-main:active {
+  background-color: #0876b1; }
+
+.button-positive:active {
+  background-color: #298f11; }
+
+.button-negative:active {
+  background-color: #b21a1a; }
+
+/* Block level buttons (full width buttons) */
+.button-block {
+  display: block;
+  padding: 11px 0 13px;
+  margin-bottom: 10px;
+  font-size: 16px; }
+
+/* Active state for block level buttons */
+.button-block:active {
+  padding: 12px 0; }
+
+/* Make button elements go full width when given .button-block class */
+button.button-block {
+  width: 100%; }
+
+/* Counts in buttons
+-------------------------------------------------- */
+/* Generic styles for all counts within buttons */
+[class*="button"] [class*="count"] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-right: -4px;
+  margin-left: 4px;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 1px -1px #000000, 0 1px 1px -1px #fff; }
+
+/* Position counts within block level buttons
+   Note: These are absolutely positioned so that text of button isn't "pushed" by count and always
+   stays at true center of button */
+.button-block [class*="count"] {
+  position: absolute;
+  right: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 10px; }
+
+ /* Chevrons
+-------------------------------------------------- */
+.chevron {
+  display: block;
+  height: 20px; }
+
+/* Base styles for both 1/2's of the chevron */
+.chevron:before,
+.chevron:after {
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-color: #999;
+  content: ''; }
+
+/* Position and rotate respective 1/2's of the chevron */
+.chevron:before {
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.chevron:after {
+  top: 7px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+ /* General count styles
+-------------------------------------------------- */
+[class*="count"] {
+  display: inline-block;
+  padding: 4px 9px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 13px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100px; }
+
+/* Count modifiers
+-------------------------------------------------- */
+/* Overriding styles for counts with modifiers  */
+.count-main,
+.count-positive,
+.count-negative {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3); }
+
+/* Main count  */
+.count-main {
+  background-color: #1eafe7;
+  background-image: -webkit-linear-gradient(top, #1eafe7 0, #1a97c8 100%);
+  background-image: linear-gradient(to bottom, #1eafe7 0, #1a97c8 100%); }
+
+/* Positive count  */
+.count-positive {
+  background-color: #34ba15;
+  background-image: -webkit-linear-gradient(top, #34ba15 0, #2da012 100%);
+  background-image: linear-gradient(to bottom, #34ba15 0, #2da012 100%); }
+
+/* Negative count  */
+.count-negative {
+  background-color: #e71e1e;
+  background-image: -webkit-linear-gradient(top, #e71e1e 0, #c71a1a 100%);
+  background-image: linear-gradient(to bottom, #e71e1e 0, #c71a1a 100%); }
+
+ /* Segmented controllers
+-------------------------------------------------- */
+.segmented-controller {
+  display: -webkit-box;
+  display: box;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  list-style: none;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top, #f8f8f8 0, #d4d4d4 100%);
+  background-image: linear-gradient(to bottom, #f8f8f8 0, #d4d4d4 100%);
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.8);
+  -webkit-box-orient: horizontal;
+  box-orient: horizontal; }
+
+/* Section within controller */
+.segmented-controller li {
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  border-left: 1px solid #aaa;
+  box-shadow: inset 1px 0 rgba(255, 255, 255, 0.5);
+  -webkit-box-flex: 1;
+  box-flex: 1; }
+
+/* Link that fills each section */
+.segmented-controller li > a {
+  display: block;
+  padding: 8px 16px;
+  overflow: hidden;
+  line-height: 15px;
+  color: #333;
+  text-overflow: ellipsis; }
+
+/* Remove border-left and shadow from first section */
+.segmented-controller li:first-child {
+  border-left-width: 0;
+  box-shadow: none; }
+
+/* Active segment of controller */
+.segmented-controller li.active {
+  background-color: #ccc;
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3); }
+
+.segmented-controller-item {
+  display: none; }
+
+.segmented-controller-item.active {
+  display: block; }
+
+ /* Popovers (to be used with popovers.js)
+-------------------------------------------------- */
+.popover {
+  position: fixed;
+  top: 55px;
+  left: 50%;
+  z-index: 20;
+  display: none;
+  width: 280px;
+  padding: 5px;
+  margin-left: -146px;
+  background-color: #555;
+  background-image: -webkit-linear-gradient(top, #555555 5%, #555555 6%, #111111 30%);
+  background-image: linear-gradient(to bottom, #555555 5%, #555555 6%, #111111 30%);
+  border: 1px solid #111;
+  border-radius: 6px;
+  opacity: 0;
+  box-shadow: inset 0 1px 1px -1px white, 0 3px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; }
+
+/* Caret on top of popover using CSS triangles (thanks to @chriscoyier for solution) */
+.popover:before,
+.popover:after {
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: ''; }
+
+.popover:before {
+  top: -20px;
+  margin-left: -21px;
+  border-right: 21px solid transparent;
+  border-bottom: 21px solid #111;
+  border-left: 21px solid transparent; }
+
+.popover:after {
+  top: -19px;
+  margin-left: -20px;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #555;
+  border-left: 20px solid transparent; }
+
+/* Wrapper for a title and buttons */
+.popover-header {
+  display: -webkit-box;
+  display: box;
+  height: 34px;
+  margin-bottom: 5px; }
+
+/* Centered title for popover */
+.popover-header .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 12px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5); }
+
+/* Generic style for all buttons in .popover-header */
+.popover-header [class*="button"] {
+  z-index: 25;
+  font-size: 12px;
+  line-height: 22px;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background-color: #454545;
+  background-image: -webkit-linear-gradient(top, #454545 0, #353535 100%);
+  background-image: linear-gradient(to bottom, #454545 0, #353535 100%);
+  border: 1px solid #111;
+  -webkit-box-flex: 0;
+  box-flex: 0; }
+
+/* Hacky way to right align buttons outside of flex-box system
+   Note: is only absolutely positioned button, would be better if flex-box had an "align right" option */
+.popover-header .title + [class*="button"]:last-child,
+.popover-header .button + [class*="button"]:last-child,
+.popover-header [class*="button"].pull-right {
+  position: absolute;
+  top: 5px;
+  right: 5px; }
+
+/* Active state for popover header buttons */
+.popover-header .button:active {
+  color: #fff;
+  background-color: #0876b1; }
+
+/* Popover animation
+-------------------------------------------------- */
+.popover.visible {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* Backdrop (used as invisible touch escape)
+-------------------------------------------------- */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10; }
+
+/* Block level buttons in popovers
+-------------------------------------------------- */
+/* Positioning and giving darker border to look sharp against dark popover */
+.popover .button-block {
+  margin-bottom: 5px;
+  border: 1px solid #111; }
+
+/* Remove extra margin on bottom of last button */
+.popover .button-block:last-child {
+  margin-bottom: 0; }
+
+/* Lists in popovers
+-------------------------------------------------- */
+.popover .list {
+  width: auto;
+  max-height: 250px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  -webkit-overflow-scrolling: touch; }
+
+ /* Modals
+-------------------------------------------------- */
+.modal {
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  z-index: 11;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  -webkit-transition: -webkit-transform .25s ease-in-out, opacity 1ms .25s;
+  transition: transform .25s ease-in-out, opacity 1ms .25s; }
+
+/* Modal - When active
+-------------------------------------------------- */
+.modal.active {
+  opacity: 1;
+  height: 100%;
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25 ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+ /* Slider styles (to be used with sliders.js)
+-------------------------------------------------- */
+/* Width/height of slider */
+.slider,
+.slider > li {
+  width: 100%;
+  height: 200px; }
+
+/* Outer wrapper for slider */
+.slider {
+  overflow: hidden;
+  background-color: #000; }
+
+/* Inner wrapper for slider (width of all slides together) */
+.slider > ul {
+  position: relative;
+  font-size: 0;
+  /* Remove spaces from inline-block children */
+  white-space: nowrap;
+  -webkit-transition: all 0 linear;
+  transition: all 0 linear; }
+
+/* Individual slide */
+.slider > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  /* Ensure that li always aligns to top */
+  width: 100%;
+  height: 100%; }
+
+/* Required reset of font-size to same as standard body */
+.slider > ul > li > * {
+  font-size: 14px; }
+
+ /* Toggle styles (to be used with toggles.js)
+-------------------------------------------------- */
+.toggle {
+  position: relative;
+  width: 75px;
+  height: 28px;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1); }
+
+/* Text indicating "on" or "off". Default is "off" */
+.toggle:before {
+  position: absolute;
+  right: 13px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #777;
+  text-shadow: 0 1px #fff;
+  text-transform: uppercase;
+  content: "Off"; }
+
+/* Sliding handle */
+.toggle-handle {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(top, white 0, #f2f2f2 100%);
+  background-image: linear-gradient(to bottom, white 0, #f2f2f2 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out, border 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, border 0.1s ease-in-out; }
+
+/* Active state for toggle */
+.toggle.active {
+  background-color: #19a8e4;
+  background-image: -webkit-linear-gradient(top, #088cd4 0, #19a8e4 100%);
+  background-image: linear-gradient(to bottom, #088cd4 0, #19a8e4 100%);
+  border: 1px solid #096c9d;
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.25); }
+
+/* Active state for toggle handle */
+.toggle.active .toggle-handle {
+  border-color: #0a76ad;
+  -webkit-transform: translate3d(48px, 0, 0);
+  transform: translate3d(48px, 0, 0); }
+
+/* Change "off" to "on" for active state */
+.toggle.active:before {
+  right: auto;
+  left: 15px;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+  content: "On"; }
+
+ /* Push styles (to be used with push.js)
+-------------------------------------------------- */
+/* Fade animation */
+.content.fade {
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out; }
+
+.content.fade.in {
+  opacity: 1; }
+
+/* Slide animation */
+.content.slide {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out; }
+
+.content.slide.left {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+
+.content.slide.right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+
+/*! jQuery UI - v1.10.3 - 2013-10-17
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS%2CTahoma%2CVerdana%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=gloss_wave&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=highlight_soft&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=glass&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=glass&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=highlight_soft&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=diagonals_thick&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=diagonals_thick&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=flat&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
+* Copyright 2013 jQuery Foundation and other contributors; Licensed MIT */
+.ui-helper-hidden {
+  display: none; }
+
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none; }
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse; }
+
+.ui-helper-clearfix:after {
+  clear: both; }
+
+.ui-helper-clearfix {
+  min-height: 0; }
+
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0); }
+
+.ui-front {
+  z-index: 100; }
+
+.ui-state-disabled {
+  cursor: default !important; }
+
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat; }
+
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.ui-widget {
+  font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 1.1em; }
+
+.ui-widget .ui-widget {
+  font-size: 1em; }
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+  font-size: 1em; }
+
+.ui-widget-content {
+  border: 1px solid #ddd;
+  background: #eeeeee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;
+  color: #333; }
+
+.ui-widget-content a {
+  color: #333; }
+
+.ui-widget-header {
+  border: 1px solid #e78f08;
+  background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+  color: #fff;
+  font-weight: bold; }
+
+.ui-widget-header a {
+  color: #fff; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #ccc;
+  background: #f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #1c94c4; }
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #1c94c4;
+  text-decoration: none; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #fbcb09;
+  background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #c77405; }
+
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited {
+  color: #c77405;
+  text-decoration: none; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #fbd850;
+  background: white url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #eb8f00; }
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #eb8f00;
+  text-decoration: none; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #fed22f;
+  background: #ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;
+  color: #363636; }
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #363636; }
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #cd0a0a;
+  background: #b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;
+  color: #fff; }
+
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #fff; }
+
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #fff; }
+
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold; }
+
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: normal; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  background-image: none; }
+
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35); }
+
+.ui-icon {
+  width: 16px;
+  height: 16px; }
+
+.ui-icon, .ui-widget-content .ui-icon {
+  background-image: url(images/ui-icons_222222_256x240.png); }
+
+.ui-widget-header .ui-icon {
+  background-image: url(images/ui-icons_ffffff_256x240.png); }
+
+.ui-state-default .ui-icon {
+  background-image: url(images/ui-icons_ef8c08_256x240.png); }
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+  background-image: url(images/ui-icons_ef8c08_256x240.png); }
+
+.ui-state-active .ui-icon {
+  background-image: url(images/ui-icons_ef8c08_256x240.png); }
+
+.ui-state-highlight .ui-icon {
+  background-image: url(images/ui-icons_228ef1_256x240.png); }
+
+.ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
+  background-image: url(images/ui-icons_ffd27a_256x240.png); }
+
+.ui-icon-blank {
+  background-position: 16px 16px; }
+
+.ui-icon-carat-1-n {
+  background-position: 0 0; }
+
+.ui-icon-carat-1-ne {
+  background-position: -16px 0; }
+
+.ui-icon-carat-1-e {
+  background-position: -32px 0; }
+
+.ui-icon-carat-1-se {
+  background-position: -48px 0; }
+
+.ui-icon-carat-1-s {
+  background-position: -64px 0; }
+
+.ui-icon-carat-1-sw {
+  background-position: -80px 0; }
+
+.ui-icon-carat-1-w {
+  background-position: -96px 0; }
+
+.ui-icon-carat-1-nw {
+  background-position: -112px 0; }
+
+.ui-icon-carat-2-n-s {
+  background-position: -128px 0; }
+
+.ui-icon-carat-2-e-w {
+  background-position: -144px 0; }
+
+.ui-icon-triangle-1-n {
+  background-position: 0 -16px; }
+
+.ui-icon-triangle-1-ne {
+  background-position: -16px -16px; }
+
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px; }
+
+.ui-icon-triangle-1-se {
+  background-position: -48px -16px; }
+
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px; }
+
+.ui-icon-triangle-1-sw {
+  background-position: -80px -16px; }
+
+.ui-icon-triangle-1-w {
+  background-position: -96px -16px; }
+
+.ui-icon-triangle-1-nw {
+  background-position: -112px -16px; }
+
+.ui-icon-triangle-2-n-s {
+  background-position: -128px -16px; }
+
+.ui-icon-triangle-2-e-w {
+  background-position: -144px -16px; }
+
+.ui-icon-arrow-1-n {
+  background-position: 0 -32px; }
+
+.ui-icon-arrow-1-ne {
+  background-position: -16px -32px; }
+
+.ui-icon-arrow-1-e {
+  background-position: -32px -32px; }
+
+.ui-icon-arrow-1-se {
+  background-position: -48px -32px; }
+
+.ui-icon-arrow-1-s {
+  background-position: -64px -32px; }
+
+.ui-icon-arrow-1-sw {
+  background-position: -80px -32px; }
+
+.ui-icon-arrow-1-w {
+  background-position: -96px -32px; }
+
+.ui-icon-arrow-1-nw {
+  background-position: -112px -32px; }
+
+.ui-icon-arrow-2-n-s {
+  background-position: -128px -32px; }
+
+.ui-icon-arrow-2-ne-sw {
+  background-position: -144px -32px; }
+
+.ui-icon-arrow-2-e-w {
+  background-position: -160px -32px; }
+
+.ui-icon-arrow-2-se-nw {
+  background-position: -176px -32px; }
+
+.ui-icon-arrowstop-1-n {
+  background-position: -192px -32px; }
+
+.ui-icon-arrowstop-1-e {
+  background-position: -208px -32px; }
+
+.ui-icon-arrowstop-1-s {
+  background-position: -224px -32px; }
+
+.ui-icon-arrowstop-1-w {
+  background-position: -240px -32px; }
+
+.ui-icon-arrowthick-1-n {
+  background-position: 0 -48px; }
+
+.ui-icon-arrowthick-1-ne {
+  background-position: -16px -48px; }
+
+.ui-icon-arrowthick-1-e {
+  background-position: -32px -48px; }
+
+.ui-icon-arrowthick-1-se {
+  background-position: -48px -48px; }
+
+.ui-icon-arrowthick-1-s {
+  background-position: -64px -48px; }
+
+.ui-icon-arrowthick-1-sw {
+  background-position: -80px -48px; }
+
+.ui-icon-arrowthick-1-w {
+  background-position: -96px -48px; }
+
+.ui-icon-arrowthick-1-nw {
+  background-position: -112px -48px; }
+
+.ui-icon-arrowthick-2-n-s {
+  background-position: -128px -48px; }
+
+.ui-icon-arrowthick-2-ne-sw {
+  background-position: -144px -48px; }
+
+.ui-icon-arrowthick-2-e-w {
+  background-position: -160px -48px; }
+
+.ui-icon-arrowthick-2-se-nw {
+  background-position: -176px -48px; }
+
+.ui-icon-arrowthickstop-1-n {
+  background-position: -192px -48px; }
+
+.ui-icon-arrowthickstop-1-e {
+  background-position: -208px -48px; }
+
+.ui-icon-arrowthickstop-1-s {
+  background-position: -224px -48px; }
+
+.ui-icon-arrowthickstop-1-w {
+  background-position: -240px -48px; }
+
+.ui-icon-arrowreturnthick-1-w {
+  background-position: 0 -64px; }
+
+.ui-icon-arrowreturnthick-1-n {
+  background-position: -16px -64px; }
+
+.ui-icon-arrowreturnthick-1-e {
+  background-position: -32px -64px; }
+
+.ui-icon-arrowreturnthick-1-s {
+  background-position: -48px -64px; }
+
+.ui-icon-arrowreturn-1-w {
+  background-position: -64px -64px; }
+
+.ui-icon-arrowreturn-1-n {
+  background-position: -80px -64px; }
+
+.ui-icon-arrowreturn-1-e {
+  background-position: -96px -64px; }
+
+.ui-icon-arrowreturn-1-s {
+  background-position: -112px -64px; }
+
+.ui-icon-arrowrefresh-1-w {
+  background-position: -128px -64px; }
+
+.ui-icon-arrowrefresh-1-n {
+  background-position: -144px -64px; }
+
+.ui-icon-arrowrefresh-1-e {
+  background-position: -160px -64px; }
+
+.ui-icon-arrowrefresh-1-s {
+  background-position: -176px -64px; }
+
+.ui-icon-arrow-4 {
+  background-position: 0 -80px; }
+
+.ui-icon-arrow-4-diag {
+  background-position: -16px -80px; }
+
+.ui-icon-extlink {
+  background-position: -32px -80px; }
+
+.ui-icon-newwin {
+  background-position: -48px -80px; }
+
+.ui-icon-refresh {
+  background-position: -64px -80px; }
+
+.ui-icon-shuffle {
+  background-position: -80px -80px; }
+
+.ui-icon-transfer-e-w {
+  background-position: -96px -80px; }
+
+.ui-icon-transferthick-e-w {
+  background-position: -112px -80px; }
+
+.ui-icon-folder-collapsed {
+  background-position: 0 -96px; }
+
+.ui-icon-folder-open {
+  background-position: -16px -96px; }
+
+.ui-icon-document {
+  background-position: -32px -96px; }
+
+.ui-icon-document-b {
+  background-position: -48px -96px; }
+
+.ui-icon-note {
+  background-position: -64px -96px; }
+
+.ui-icon-mail-closed {
+  background-position: -80px -96px; }
+
+.ui-icon-mail-open {
+  background-position: -96px -96px; }
+
+.ui-icon-suitcase {
+  background-position: -112px -96px; }
+
+.ui-icon-comment {
+  background-position: -128px -96px; }
+
+.ui-icon-person {
+  background-position: -144px -96px; }
+
+.ui-icon-print {
+  background-position: -160px -96px; }
+
+.ui-icon-trash {
+  background-position: -176px -96px; }
+
+.ui-icon-locked {
+  background-position: -192px -96px; }
+
+.ui-icon-unlocked {
+  background-position: -208px -96px; }
+
+.ui-icon-bookmark {
+  background-position: -224px -96px; }
+
+.ui-icon-tag {
+  background-position: -240px -96px; }
+
+.ui-icon-home {
+  background-position: 0 -112px; }
+
+.ui-icon-flag {
+  background-position: -16px -112px; }
+
+.ui-icon-calendar {
+  background-position: -32px -112px; }
+
+.ui-icon-cart {
+  background-position: -48px -112px; }
+
+.ui-icon-pencil {
+  background-position: -64px -112px; }
+
+.ui-icon-clock {
+  background-position: -80px -112px; }
+
+.ui-icon-disk {
+  background-position: -96px -112px; }
+
+.ui-icon-calculator {
+  background-position: -112px -112px; }
+
+.ui-icon-zoomin {
+  background-position: -128px -112px; }
+
+.ui-icon-zoomout {
+  background-position: -144px -112px; }
+
+.ui-icon-search {
+  background-position: -160px -112px; }
+
+.ui-icon-wrench {
+  background-position: -176px -112px; }
+
+.ui-icon-gear {
+  background-position: -192px -112px; }
+
+.ui-icon-heart {
+  background-position: -208px -112px; }
+
+.ui-icon-star {
+  background-position: -224px -112px; }
+
+.ui-icon-link {
+  background-position: -240px -112px; }
+
+.ui-icon-cancel {
+  background-position: 0 -128px; }
+
+.ui-icon-plus {
+  background-position: -16px -128px; }
+
+.ui-icon-plusthick {
+  background-position: -32px -128px; }
+
+.ui-icon-minus {
+  background-position: -48px -128px; }
+
+.ui-icon-minusthick {
+  background-position: -64px -128px; }
+
+.ui-icon-close {
+  background-position: -80px -128px; }
+
+.ui-icon-closethick {
+  background-position: -96px -128px; }
+
+.ui-icon-key {
+  background-position: -112px -128px; }
+
+.ui-icon-lightbulb {
+  background-position: -128px -128px; }
+
+.ui-icon-scissors {
+  background-position: -144px -128px; }
+
+.ui-icon-clipboard {
+  background-position: -160px -128px; }
+
+.ui-icon-copy {
+  background-position: -176px -128px; }
+
+.ui-icon-contact {
+  background-position: -192px -128px; }
+
+.ui-icon-image {
+  background-position: -208px -128px; }
+
+.ui-icon-video {
+  background-position: -224px -128px; }
+
+.ui-icon-script {
+  background-position: -240px -128px; }
+
+.ui-icon-alert {
+  background-position: 0 -144px; }
+
+.ui-icon-info {
+  background-position: -16px -144px; }
+
+.ui-icon-notice {
+  background-position: -32px -144px; }
+
+.ui-icon-help {
+  background-position: -48px -144px; }
+
+.ui-icon-check {
+  background-position: -64px -144px; }
+
+.ui-icon-bullet {
+  background-position: -80px -144px; }
+
+.ui-icon-radio-on {
+  background-position: -96px -144px; }
+
+.ui-icon-radio-off {
+  background-position: -112px -144px; }
+
+.ui-icon-pin-w {
+  background-position: -128px -144px; }
+
+.ui-icon-pin-s {
+  background-position: -144px -144px; }
+
+.ui-icon-play {
+  background-position: 0 -160px; }
+
+.ui-icon-pause {
+  background-position: -16px -160px; }
+
+.ui-icon-seek-next {
+  background-position: -32px -160px; }
+
+.ui-icon-seek-prev {
+  background-position: -48px -160px; }
+
+.ui-icon-seek-end {
+  background-position: -64px -160px; }
+
+.ui-icon-seek-start {
+  background-position: -80px -160px; }
+
+.ui-icon-seek-first {
+  background-position: -80px -160px; }
+
+.ui-icon-stop {
+  background-position: -96px -160px; }
+
+.ui-icon-eject {
+  background-position: -112px -160px; }
+
+.ui-icon-volume-off {
+  background-position: -128px -160px; }
+
+.ui-icon-volume-on {
+  background-position: -144px -160px; }
+
+.ui-icon-power {
+  background-position: 0 -176px; }
+
+.ui-icon-signal-diag {
+  background-position: -16px -176px; }
+
+.ui-icon-signal {
+  background-position: -32px -176px; }
+
+.ui-icon-battery-0 {
+  background-position: -48px -176px; }
+
+.ui-icon-battery-1 {
+  background-position: -64px -176px; }
+
+.ui-icon-battery-2 {
+  background-position: -80px -176px; }
+
+.ui-icon-battery-3 {
+  background-position: -96px -176px; }
+
+.ui-icon-circle-plus {
+  background-position: 0 -192px; }
+
+.ui-icon-circle-minus {
+  background-position: -16px -192px; }
+
+.ui-icon-circle-close {
+  background-position: -32px -192px; }
+
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px; }
+
+.ui-icon-circle-triangle-s {
+  background-position: -64px -192px; }
+
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px; }
+
+.ui-icon-circle-triangle-n {
+  background-position: -96px -192px; }
+
+.ui-icon-circle-arrow-e {
+  background-position: -112px -192px; }
+
+.ui-icon-circle-arrow-s {
+  background-position: -128px -192px; }
+
+.ui-icon-circle-arrow-w {
+  background-position: -144px -192px; }
+
+.ui-icon-circle-arrow-n {
+  background-position: -160px -192px; }
+
+.ui-icon-circle-zoomin {
+  background-position: -176px -192px; }
+
+.ui-icon-circle-zoomout {
+  background-position: -192px -192px; }
+
+.ui-icon-circle-check {
+  background-position: -208px -192px; }
+
+.ui-icon-circlesmall-plus {
+  background-position: 0 -208px; }
+
+.ui-icon-circlesmall-minus {
+  background-position: -16px -208px; }
+
+.ui-icon-circlesmall-close {
+  background-position: -32px -208px; }
+
+.ui-icon-squaresmall-plus {
+  background-position: -48px -208px; }
+
+.ui-icon-squaresmall-minus {
+  background-position: -64px -208px; }
+
+.ui-icon-squaresmall-close {
+  background-position: -80px -208px; }
+
+.ui-icon-grip-dotted-vertical {
+  background-position: 0 -224px; }
+
+.ui-icon-grip-dotted-horizontal {
+  background-position: -16px -224px; }
+
+.ui-icon-grip-solid-vertical {
+  background-position: -32px -224px; }
+
+.ui-icon-grip-solid-horizontal {
+  background-position: -48px -224px; }
+
+.ui-icon-gripsmall-diagonal-se {
+  background-position: -64px -224px; }
+
+.ui-icon-grip-diagonal-se {
+  background-position: -80px -224px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-bottom-left-radius: 4px; }
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 4px; }
+
+.ui-widget-overlay {
+  background: #666666 url(images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;
+  opacity: .5;
+  filter: Alpha(Opacity=50); }
+
+.ui-widget-shadow {
+  margin: -5px 0 0 -5px;
+  padding: 5px;
+  background: black url(images/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x;
+  opacity: .2;
+  filter: Alpha(Opacity=20);
+  border-radius: 5px; }
+
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+/* Colors
+   ========================================================================== */
+/* Don't use black */
+/* Gray scale */
+/* Perfect Day colors */
+/* Type Scale
+   ========================================================================== */
+/**
+ * 12 & 16 as roots then powers of two.
+ */
+/* Mobile */
+/* Tablet */
+/* ==========================================================================
+   TYPE
+   - Copy
+   - Headings
+   ========================================================================== */
+/* Copy
+   ========================================================================== */
+/* Headings
+   ========================================================================== */
+/* ==========================================================================
+   Media Queries
+
+   - Mobile
+   - Tablets
+   ========================================================================== */
+/* Mobile
+   ========================================================================== */
+/* Tablet
+   ========================================================================== */
+/*!
+ * Add to Homescreen v1.0.8 ~ Copyright (c) 2011 Matteo Spinelli, http://cubiq.org
+ * Released under MIT license, http://cubiq.org/license
+ */
+html {
+  -webkit-text-size-adjust: none; }
+
+/**
+ *
+ * Main container
+ *
+ */
+#addToHomeScreen {
+  z-index: 9999;
+  -webkit-user-select: none;
+  -webkit-box-sizing: border-box;
+  width: 208px;
+  font-size: 13px;
+  padding: 10px;
+  text-align: left;
+  font-family: helvetica;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, white), color-stop(0.02, #eeeeee), color-stop(0.98, #cccccc), color-stop(1, #a3a3a3));
+  border: 1px solid #505050;
+  -webkit-border-radius: 8px;
+  -webkit-background-clip: padding-box;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  line-height: 130%;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5); }
+
+/**
+ *
+ * The 'wide' class is added when the popup contains the touch icon
+ *
+ */
+#addToHomeScreen.wide {
+  width: 240px; }
+
+/**
+ *
+ * The balloon arrow
+ *
+ */
+#addToHomeScreen .arrow {
+  position: absolute;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, rgba(204, 204, 204, 0)), color-stop(0.4, rgba(204, 204, 204, 0)), color-stop(0.4, #cccccc));
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #505050;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: rotateZ(45deg);
+  bottom: -9px;
+  left: 50%;
+  margin-left: -8px;
+  -webkit-box-shadow: inset -1px -1px 0 #a9a9a9;
+  -webkit-border-bottom-right-radius: 2px; }
+
+/**
+ *
+ * The balloon arrow for iPad
+ *
+ */
+#addToHomeScreen.ipad .arrow {
+  -webkit-transform: rotateZ(-135deg);
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, rgba(238, 238, 238, 0)), color-stop(0.4, rgba(238, 238, 238, 0)), color-stop(0.4, #eeeeee));
+  -webkit-box-shadow: inset -1px -1px 0 #fff;
+  top: -9px;
+  bottom: auto;
+  left: 50%; }
+
+/**
+ *
+ * Close button
+ *
+ */
+#addToHomeScreen .close {
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  line-height: 10px;
+  text-align: center;
+  text-indent: 1px;
+  font-size: 14px;
+  -webkit-border-radius: 7px;
+  background: rgba(0, 0, 0, 0.12);
+  color: #707070;
+  -webkit-box-shadow: 0 1px 0 #fff;
+  font-size: 13px; }
+
+/**
+ *
+ * The '+' icon, displayed only on iOS < 4.2
+ *
+ */
+#addToHomeScreen .plus {
+  font-weight: bold;
+  font-size: 1.3em; }
+
+/**
+ *
+ * The 'share' icon, displayed only on iOS >= 4.2
+ *
+ */
+#addToHomeScreen .share {
+  display: inline-block;
+  width: 18px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAQAAABDj1eZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUdJREFUKFNtkLtLw1AYxS/qJLhXVKr2ZRulUNtiqgSb3CziICI6ucTFVYcOnaQOFRwUnNTRwUWXgpP/QdHNUEQUHGxofYBTlRs83iZNjKTncOGe7/vx3QchXUWn6FL3jhfKUdCCr5zuifV5oDiHQM+c+CIhiiCSWNu08iq9oHXKLAiqrgR4UXqlOEYZt++ExEL0wW7+OW0G10muLv9gmqfe5FAWKmTMYQYiFL7PYwyLOD8lSjNh2gdnPzMII4QUBxc4OothbAF7GCBKQ0YbSWyPQsIhqvetS+y0ygGMo/KFZfviDvR4AhwgZU9dGYnA0J/6ndc15i3ouYIMcVVUcEXIoOxCeRCfwP8sXBSdjtpUv/1QW+K16kCCIUC4id9Fa0JtkluwVkSfqPL6RwfSDA0aNlx7k/bWgViB7bMS2/1vk5sdsZLN/ALSuL3tylO4RAAAAABJRU5ErkJggg==);
+  background-size: 18px 15px;
+  text-indent: -9999em;
+  overflow: hidden; }
+
+/**
+ *
+ * The touch icon (if available)
+ *
+ */
+#addToHomeScreen .touchIcon {
+  display: block;
+  float: left;
+  -webkit-border-radius: 8px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 0 2px rgba(255, 255, 255, 0.9);
+  background-repeat: none;
+  width: 44px;
+  height: 44px;
+  -webkit-background-size: 44px 44px;
+  margin: 0 10px 5px 0;
+  border: 1px solid #333;
+  -webkit-background-clip: padding-box; }
+
+/**
+ *
+ * The 'share' icon for retina display
+ *
+ */
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  #addToHomeScreen .share {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAQAAADu6HTYAAADPElEQVR4Xq3TX2gcRRzA8e/M7mVv2+TSNpc/TZtrY6jUGqgaSAmEChKLrYK0YH0RFC2CSCkEfCghiKU04J8qNigq6os+iQV98MHWFwVBrQQRWs21lBw5cw3NNb1/udu72RGG5Y77IzXW77D7sAwf5scyYoL6BGXSDKFZwaGpLvIUaeoCkvX1MmsM0Ny6oRSQYOLuIS+YZOpfQdqslpUxcZrzTVAz4qPwW2O3CeIwC/RSzeY6Ow1QhUrkr+YOWfEKDkEP8Rij7CHKJmrFSDHBdwGEE5wiGChPN+PnT8VdRtEIl1d4gRj/1EVe5ZSBKGh8iqQpo/Fo5+3C/gz0MYg4zgwbqday1/Q4B8BGQ45d/Hi54lakCrU5obOcidJpu1+Lg9whjabyaOYLnrIBFFaRD+xe2ybMDWY66GmP/WA9cGfGp0CWhy0wkMN8inepFiH2rV1j0NQSNQbFLRQnS8/8YSDBBpadfv4CYDub2fmeHDNAsL1MBWUel0iA+Xik6eHcyvD3vAMSU1TGuA/YRS+dD7ovCQN43GKRFCU20Kd3V/avDVVyAZ5niTEuLA5/zBGWg9EEEhfJKN200Tat8CmRAQb9+wv7soPlHt2tQorsz1uPbr0HTY4sJwrH47zJZwABBAKLMBoQXepwgTwdHCo+fXMkQ4lrxEmQ5AaXipPqDY9V2vn09tgvTPI71EEGYxM+/uMJLJ4svpgaWGKOi/xKgmqLSUGSUd5f2vIVJ/CgBaTIUsZ7ZBsn0+NzfMOXLFCXQyTcybN6ep5ZZgUOHn7jpfUpsZshdugPGf+E5zjbyHTSRyQ8xfRPPM/s63RHeuknSoT22mjmmnAOIMkUZ6D1xSfPPAfd1WFKM3sO2CMaHx8M1NjnXKHaAGGkOW0C02WeYHUz4qMtx+w5gUDS8NckYe5lHsMYwCZEPyEEmjLDZFmAS7CDviMdxyTkMNVBKEmYLvbiQQBIBBbCQG04bGQvFWz6CfsCQLWCigILFwcfkGYBiOpbYuOizTAyYyDdCtrGaRG1LCkIgMYEFhI0WqQZoSlbGRyHKe4qOx7iv2bVQW9dp4dlM/x6kmwnWQcd/Q3FCqwTEiT5s+6D5v/pb0SSHyg7uhMWAAAAAElFTkSuQmCC); } }
+/* ==========================================================================
+   Map styles
+   ========================================================================== */
+#map-canvas {
+  width: 100%;
+  height: 100%; }
+
+/* ==========================================================================
+   Navigation styles
+   ========================================================================== */
+.bar-title {
+  background-color: #8d8199;
+  background-image: none;
+  border: none; }
+
+.sidebar {
+  top: 0;
+  left: 0;
+  display: none;
+  position: absolute;
+  background-color: #8d8199;
+  width: 200px;
+  height: 100%;
+  z-index: 5000000; }
+  .sidebar ul {
+    background-color: #8d8199; }
+    .sidebar ul .sprite {
+      margin-right: 20px; }
+      .sidebar ul .sprite:first-child {
+        margin-top: -15px; }
+      .sidebar ul .sprite:nth-child(2) {
+        margin-top: -7px; }
+      .sidebar ul .sprite:last-child {
+        margin-top: -5px; }
+    .sidebar ul li {
+      padding: 25px;
+      padding-left: 15px; }
+      .sidebar ul li:active {
+        background-color: #746780; }
+      .sidebar ul li:hover {
+        background-color: #746780; }
+      .sidebar ul li a {
+        left: 0;
+        color: white; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative; }
+
+.csstransforms .cn-wrapper {
+  font-size: 1em;
+  width: 26em;
+  height: 26em;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  bottom: -13em;
+  left: 50%;
+  border-radius: 50%;
+  margin-left: -13em;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  transform: scale(0.1);
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease; }
+
+.csstransforms .opened-nav {
+  border-radius: 50%;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.cn-button {
+  border: none;
+  background: none;
+  color: #8d8199;
+  text-align: center;
+  font-size: 1.8em;
+  padding-bottom: 1em;
+  height: 7em;
+  width: 7em;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  margin-left: -3.5em;
+  bottom: -3.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 11; }
+
+.cn-button:hover,
+.cn-button:active,
+.cn-button:focus {
+  background-color: white; }
+
+.csstransforms .cn-wrapper li {
+  position: absolute;
+  font-size: 1.5em;
+  width: 10em;
+  height: 10em;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  margin-top: -1.3em;
+  margin-left: -10em;
+  -webkit-transition: border .3s ease;
+  -moz-transition: border .3s ease;
+  transition: border .3s ease; }
+
+.csstransforms .cn-wrapper li a {
+  display: block;
+  font-size: 1.18em;
+  height: 14.5em;
+  width: 14.5em;
+  position: absolute;
+  bottom: -7.25em;
+  right: -7.25em;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1.2em;
+  text-align: center;
+  -webkit-transform: skew(-45deg) rotate(-67.5deg) scale(1);
+  -ms-transform: skew(-45deg) rotate(-67.5deg) scale(1);
+  -moz-transform: skew(-45deg) rotate(-67.5deg) scale(1);
+  transform: skew(-45deg) rotate(-67.5deg) scale(1);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity 0.3s, color 0.3s;
+  -moz-transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s; }
+
+.csstransforms .cn-wrapper li a span {
+  font-size: 1.1em;
+  opacity: 0.7; }
+
+/* for a central angle x, the list items must be skewed by 90-x degrees
+in our case x=40deg so skew angle is 50deg
+items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+.csstransforms .cn-wrapper li:first-child {
+  -webkit-transform: rotate(0deg) skew(45deg);
+  -ms-transform: rotate(0deg) skew(45deg);
+  -moz-transform: rotate(0deg) skew(45deg);
+  transform: rotate(0deg) skew(45deg); }
+
+.csstransforms .cn-wrapper li:nth-child(2) {
+  -webkit-transform: rotate(45deg) skew(45deg);
+  -ms-transform: rotate(45deg) skew(45deg);
+  -moz-transform: rotate(45deg) skew(45deg);
+  transform: rotate(45deg) skew(45deg); }
+
+.csstransforms .cn-wrapper li:nth-child(3) {
+  -webkit-transform: rotate(90deg) skew(45deg);
+  -ms-transform: rotate(90deg) skew(45deg);
+  -moz-transform: rotate(90deg) skew(45deg);
+  transform: rotate(90deg) skew(45deg); }
+
+.csstransforms .cn-wrapper li:nth-child(4) {
+  -webkit-transform: rotate(135deg) skew(45deg);
+  -ms-transform: rotate(135deg) skew(45deg);
+  -moz-transform: rotate(135deg) skew(45deg);
+  transform: rotate(135deg) skew(45deg); }
+
+.csstransforms .cn-wrapper li a {
+  background-color: #8d8199; }
+
+/* active style */
+.csstransforms .cn-wrapper li.active a {
+  background-color: #a79db0; }
+
+/* hover style */
+.csstransforms .cn-wrapper li:not(.active) a:hover,
+.csstransforms .cn-wrapper li:not(.active) a:active,
+.csstransforms .cn-wrapper li:not(.active) a:focus {
+  background-color: #a79db0; }
+
+/* fallback */
+.no-csstransforms .cn-button {
+  display: none; }
+
+.no-csstransforms .cn-wrapper li {
+  position: static;
+  float: left;
+  font-size: 1em;
+  height: 5em;
+  width: 5em;
+  background-color: #eee;
+  text-align: center;
+  line-height: 5em; }
+
+.no-csstransforms .cn-wrapper li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3em;
+  border-right: 1px solid #ddd; }
+
+.no-csstransforms .cn-wrapper li a:last-child {
+  border: none; }
+
+.no-csstransforms .cn-wrapper li a:hover,
+.no-csstransforms .cn-wrapper li a:active,
+.no-csstransforms .cn-wrapper li a:focus {
+  background-color: white; }
+
+.no-csstransforms .cn-wrapper li.active a {
+  background-color: #6F325C;
+  color: #fff; }
+
+.no-csstransforms .cn-wrapper {
+  font-size: 1em;
+  height: 5em;
+  width: 25.15em;
+  bottom: 0;
+  margin-left: -12.5em;
+  overflow: hidden;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  border: 1px solid #ddd; }
+
+#tools {
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  top: 15px;
+  width: 25px;
+  height: 25px; }
+
+.component img {
+  width: 30px;
+  height: 30px; }
+
+@media screen and (max-width: 480px) {
+  .csstransforms .cn-wrapper {
+    font-size: .68em; }
+
+  .cn-button {
+    font-size: 1em; }
+
+  .csstransforms .cn-wrapper li {
+    font-size: 1.52em; } }
+@media screen and (max-width: 320px) {
+  .no-csstransforms .cn-wrapper {
+    width: 15.15px;
+    margin-left: -7.5em; }
+
+  .no-csstransforms .cn-wrapper li {
+    height: 3em;
+    width: 3em; } }
+/* ==========================================================================
+   Site styles
+   ========================================================================== */
+.bar-title [class*="button"] {
+  background-color: #8d8199;
+  background-image: none;
+  border: 0px;
+  text-shadow: none;
+  box-shadow: none; }
+  .bar-title [class*="button"]:active {
+    background-color: #746780;
+    border: 0px; }
+  .bar-title [class*="button"]:hover {
+    background-color: #746780;
+    border: 0px; }
+  .bar-title [class*="button"] .sprite {
+    width: 20px;
+    border-bottom: 0px; }
+    .bar-title [class*="button"] .sprite:first-child {
+      margin-top: 2px; }
+
+.csstransforms .cn-wrapper li a.gray {
+  background-color: #bbbbbb; }
+  .csstransforms .cn-wrapper li a.gray:active {
+    background-color: #888888; }
+  .csstransforms .cn-wrapper li a.gray:hover {
+    background-color: #888888; }
+
+.sidebar a {
+  color: white; }
+
+.sidebar [class*="button"] {
+  background-color: #8d8199;
+  background-image: none;
+  border: 0px;
+  text-shadow: none;
+  box-shadow: none;
+  margin-top: 1px; }
+  .sidebar [class*="button"]:active {
+    background-color: #746780;
+    border: 0px; }
+  .sidebar [class*="button"]:hover {
+    background-color: #746780;
+    border: 0px; }
+  .sidebar [class*="button"] .sprite {
+    width: 20px; }
+
+.sprite {
+  width: 30px;
+  float: left; }
+
+body {
+  background-image: none;
+  background-color: transparent; }
+
+button {
+  background-color: #8d8199;
+  background-image: none;
+  border: 0px; }
+  button:active {
+    background-color: #746780;
+    border: 0px; }
+  button:hover {
+    background-color: #746780;
+    border: 0px; }
+
+.circleplayer {
+  display: none; }
+
+.first {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 2%; }
+
+.second {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 90%; }
+
+.title {
+  float: left;
+  font-size: 20px;
+  margin-left: 90px; }
+
+.stars {
+  float: left;
+  width: 30%;
+  padding-left: 10px;
+  margin-top: 5px; }
+
+.table {
+  clear: both;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 170px;
+  padding-right: 110px; }
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+tr {
+  text-align: top; }
+
+.section {
+  font-weight: bold;
+  width: 40%;
+  text-align: right;
+  padding-right: 10px; }
+
+.back {
+  height: 30px;
+  margin-top: -5px; }
+
+.left {
+  width: 20%; }
+
+.right {
+  width: 60%;
+  float: right;
+  margin-top: 15px;
+  margin-right: 40px; }
+
+.stars2 {
+  width: 40%; }
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 70px; }
+
+.name {
+  margin-left: 20px;
+  bottom: 40px;
+  font-size: 20px; }
+
+.bold {
+  font-weight: bold; }
+
+.B {
+  width: 50px;
+  height: 50px;
+  padding-right: 20px; }
+
+.C p {
+  height: 100px; }
+
+#rule {
+  width: 100%;
+  height: 1px;
+  background-color: #111111; }
+
+.subhead {
+  margin-left: 100px; }
+
+.head {
+  margin-left: 120px; }
+
+.endshare {
+  margin-left: 100px;
+  padding-top: 20px; }
+
+.rate {
+  margin-left: 210px;
+  padding-top: 30px;
+  padding-bottom: 10px; }
+
+.stars3 {
+  height: 50px;
+  margin-left: 40px;
+  padding-bottom: 20px; }
+
+ul li a {
+  color: #8d8199;
+  font-size: 16px; }
+
+a.ulAnchors {
+  top: -75px; }
+
+.icon_help {
+  width: 50px;
+  height: 50px;
+  margin-left: 90px;
+  top: 40px; }
+
+.name_help {
+  margin-left: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  margin-left: 50px;
+  top: 40px; }
+
+.help {
+  height: 150px; }
+
+.directionbold {
+  font-size: 40px;
+  color: #d6a392;
+  bottom: 70px;
+  right: 5px; }
+
+.icon_direction {
+  margin-top: 20px;
+  margin-left: 60px;
+  height: 200px;
+  padding-bottom: 20px; }
+
+.icon_dir {
+  width: 50px;
+  height: 50px;
+  margin-left: 120px; }
+
+.name_dir {
+  bottom: 20px;
+  padding-left: 30px;
+  margin-left: 30px; }
+
+.light {
+  margin-left: 230px;
+  color: #999999; }
