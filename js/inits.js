@@ -18,7 +18,7 @@ $(document).ready(function(){
   var experienceData = [
   {
     value: 35,
-    color:"#F7464A"
+    color:"#8d8199"
   }, 
   {
     value: 25,
