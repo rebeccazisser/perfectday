@@ -2575,8 +2575,8 @@ a.ulAnchors {
   float: left;
   width: 150px; }
 #profile .name {
-  font-size: 32px;
+  font-size: 16px;
   float: left;
-  line-height: 275px;
+  line-height: 150px;
   display: inline-block;
   vertical-align: bottom; }
