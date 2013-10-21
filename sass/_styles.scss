@@ -4,7 +4,9 @@
 
 // Changing colors of Ratchet buttons
 .bar-title {
-	text-shadow: 0 0;
+	.title {
+		text-shadow: none;
+	}
 }
 
 .bar-title [class*="button"] {
