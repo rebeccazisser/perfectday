@@ -62,9 +62,19 @@ function initialize() {
         size: (20,500)
       });
 
+      var contentString = 'You';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
       youMarker.set('id', 'astring');
 
       map.setCenter(pos);
+
+      google.maps.event.addListener(youMarker, 'click', function() {
+        infowindow.open(map,youMarker);
+      });
     }, function() {
       handleNoGeolocation(true);
     });
@@ -76,6 +86,7 @@ function initialize() {
 
   // getRoute();
 }
+
 
 function getRoute() {
   var start = new google.maps.LatLng(36, -77),
