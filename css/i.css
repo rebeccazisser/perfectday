@@ -2582,12 +2582,3 @@ a.ulAnchors {
     line-height: 150px;
     display: inline-block;
     vertical-align: bottom; }
-  #profile .miles-walked {
-<<<<<<< HEAD
-    font-size: 112px; }
-=======
-    font-size: 112px;
-    float: left; }
-  #profile .right {
-    float: right; }
->>>>>>> Profile page
