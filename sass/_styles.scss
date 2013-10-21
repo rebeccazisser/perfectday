@@ -3,6 +3,10 @@
    ========================================================================== */
 
 // Changing colors of Ratchet buttons
+.bar-title {
+	text-shadow: 0 0;
+}
+
 .bar-title [class*="button"] {
 	background-color: $creator;
 	background-image: none;

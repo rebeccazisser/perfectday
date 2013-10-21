@@ -2350,6 +2350,9 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 /* ==========================================================================
    Site styles
    ========================================================================== */
+.bar-title {
+  text-shadow: 0 0; }
+
 .bar-title [class*="button"] {
   background-color: #f7464a;
   background-image: none;
