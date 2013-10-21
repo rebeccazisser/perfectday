@@ -40,7 +40,7 @@ var addToHome = (function (w) {
 		},
 
 		intl = {
-			en_us: '<img src="../../img/intro.png" /><p>Perfect Day is an app that lets you play and create experiences for others. To play, find an experience and walk to each destination, where you can find audio notes others have left for you. To create, go places and leave audio notes for others to play later.</p> <p>Install this web app on your %device: tap %icon and then <strong>Add to Home Screen</strong>.</p>',
+			en_us: '<img src="intro.png" /><p>Perfect Day is an app that lets you play and create experiences for others. To play, find an experience and walk to each destination, where you can find audio notes others have left for you. To create, go places and leave audio notes for others to play later.</p> <p>Install this web app on your %device: tap %icon and then <strong>Add to Home Screen</strong>.</p>',
 			es_es: 'Para instalar esta app en su %device, pulse %icon y seleccione <strong>Añadir a pantalla de inicio</strong>.',
 			fr_fr: 'Ajoutez cette application sur votre %device en cliquant sur %icon, puis <strong>Ajouter à l\'écran d\'accueil</strong>.'
 		};
