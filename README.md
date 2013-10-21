@@ -4,9 +4,9 @@
 
 # Team
 * Helen V. Holmes
-Designer, Developer
-[Portfolio](http://helenvholmes.co)
+<br />Designer, Developer
+<br />[Portfolio](http://helenvholmes.co)
 
 * Rebecca Zisser
-Designer, Developer
-[Portfolio](http://rebeccazisser.carbonmade.com)
+<br />Designer, Developer
+<br />[Portfolio](http://rebeccazisser.carbonmade.com)

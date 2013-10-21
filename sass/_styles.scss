@@ -7,6 +7,8 @@
 	background-color: $creator;
 	background-image: none;
 	border: 0px;
+	text-shadow: none;
+	box-shadow: none;
 	&:active {
 		background-color: darken($creator, 10%);
 		border: 0px;
@@ -17,13 +19,33 @@
 	}
 	.sprite {
 	width: 20px;
+	border-bottom: 0px;
+	}
+}
+
+.csstransforms .cn-wrapper li {
+	a.gray {
+		background-color: darken($gray-light, 20%);
+		&:active {
+			background-color: darken($gray-light, 40%);
+		}
+		&:hover {
+			background-color: darken($gray-light, 40%);
+		}
+	}
+}
+
+.sidebar {
+	a {
+		color: $white;
 	}
 }
 
 .sidebar [class*="button"] {
 	background-color: $creator;
 	background-image: none;
-	border: 0px;
+	text-shadow: none;
+	box-shadow: none;
 	&:active {
 		background-color: darken($creator, 10%);
 		border: 0px;
@@ -79,6 +101,7 @@ button {
 	margin-top: -50px;
 	margin-left: 90%;
 }
+
 
 
 ///Experience Page///
@@ -211,9 +234,20 @@ tr{
 	margin-left:40px;
 	padding-bottom:20px;
 
+=======
+ul {
+	li {
+		img {
+		}
+		a {
+			color: $creator;
+			font-size: $body;
+		}
+	}
 }
 
-.next{
-	margin-left:190px;
-	padding-bottom:10px;
+a {
+	&.ulAnchors {
+		top: -75px;
+	}
 }

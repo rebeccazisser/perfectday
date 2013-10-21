@@ -68,9 +68,9 @@
     <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
     <div class="cn-wrapper" id="cn-wrapper">
       <ul>
-        <li><a href="#"><img src="icons/play.png" /></a></li>
-        <li><a href="#directions"><img src="icons/step-by-step.png" /></a></li>
-        <li><a href="#share"><img src="icons/share.png" /></a></li>
+        <li><a href="#" class="gray"><img src="icons/play.png" /></a></li>
+        <li><a href="#directions" class="gray"><img src="icons/step-by-step.png" /></a></li>
+        <li><a href="#share" class="gray"><img src="icons/share.png" /></a></li>
         <li><a href="#explore"><img src="icons/explore.png" /></a></li>
       </ul>
     </div>
@@ -90,35 +90,7 @@
     </div>
   </div>
 
-  <!-- The directions modal -->
-  <div id="directions" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Step-by-Step Directions</h1>
-      <a class="button" href="#directions">Close</a>
-    </header>
-  
-    <div class="content content-padded">
-      <p>Directions will go here.</p>
-    </div>
-  </div>
 
-  <!-- The share modal -->
-  <!-- The share modal -->
-  <div id="share" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Share</h1>
-      <a class="button" href="#share">Close</a>
-    </header>
-    
-    <div class="content content-padded">
-      <div class="media"><span class="icon"><img class="icon" src="icons/facebook_pink.png"></span><span class="name">Share on <span class="bold">Facebook</span></span></div>
-    <div class="media"><span class="icon"><img   class="icon"src="icons/twitter_pink.png"></span><span class="name">Share on <span class="bold">Twitter</span></span></div>
-    <div class="media"><span class="icon"><img class="icon" src="icons/foursquare_pink.png"></span><span class="name">Check In on <span class="bold">Foursquare</span></span></div>
-    <div class="media"><span class="icon"><img  class="icon" src="icons/gmail_pink.png"></span><span class="name">Share with <span class="bold">Email</span></span></div>
-    </div>
-  </div>
-
-  <!-- The explore modal -->
  <!-- The explore modal -->
   <div id="explore" class="modal">
     <header class="bar-title">
@@ -128,9 +100,10 @@
     
     <div class="content content-padded">
       <ul class="list">
-        <li><img class="left" src="img/explore_01.png" />
-          <div class="right">
-            <a href="experience.html">Lazy Sunday by the Cathedral</a>
+        <li>
+          <div class="containerObjectLists">
+            <img class="left" src="img/explore_01.png" />
+            <a href="experience.html" class="ulAnchors">Lazy Sunday by the Cathedral</a>
             <img class="stars2" src="img/5stars.png">
           </div>
           <span class="chevron"></span>
@@ -139,9 +112,12 @@
              
                    <li>
                       <img  class="left" src="img/explore_02.png" />
+
                       <div class="right"
                         <a href="#">Lazy Saturdays in DC at the Museum</a>
                         <img class="stars2" src="img/3stars.png"></div>
+
+                    
                         <span class="chevron"></span>
                     </li>
                     <li>
