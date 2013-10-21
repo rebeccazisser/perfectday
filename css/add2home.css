@@ -22,7 +22,7 @@
 }
 
 #addToHomeScreen.addToHomeIOS7 {
-	background-image:('image.png') 0 0 no-repeat !important;
+	background-image:('../img/intro.png') 0 0 no-repeat !important;
 	background:#fffcf7 !important;
 }
 
