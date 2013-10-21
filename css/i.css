@@ -2570,3 +2570,13 @@ a.ulAnchors {
 .light {
   margin-left: 230px;
   color: #999999; }
+
+#profile img {
+  float: left;
+  width: 150px; }
+#profile .name {
+  font-size: 32px;
+  float: left;
+  line-height: 275px;
+  display: inline-block;
+  vertical-align: bottom; }
