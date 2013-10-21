@@ -259,6 +259,7 @@ a {
 	width:50px;
 	height:50px;
 	margin-left:90px;
+	top:40px;
 
 }
 
@@ -267,6 +268,55 @@ a {
 	bottom:20px;
 	font-size:20px;
 	margin-left:50px;
+	top:40px;
+
 
 }
+
+.help{
+	height:150px;
+}
+
+
+///Directions///
+
+
+
+.directionbold{
+	font-size:40px;
+	color:$explorer;
+	bottom:70px;
+	right:5px;
+	
+
+}
+
+.icon_direction{
+	margin-top:20px;
+	margin-left:60px;
+	height:200px;
+	padding-bottom:20px;
+
+}
+
+.icon_dir{
+	width:50px;
+	height:50px;
+	margin-left:120px;
+
+}
+
+.name_dir{
+	bottom:20px;
+	padding-left:30px;
+	margin-left:30px;
+
+}
+
+.light{
+	margin-left:230px;
+	color:$gray-medium;
+
+}
+
 
