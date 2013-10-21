@@ -10,3 +10,10 @@
 * Rebecca Zisser
 <br />Designer, Developer
 <br />[Portfolio](http://rebeccazisser.carbonmade.com)
+
+
+# Credits
+* [Cubiq, Add to Homescreen](https://github.com/cubiq/add-to-homescreen)
+* [Ratchet Framework](https://github.com/maker/ratchet)
+* [Maboa, Circle Player](https://github.com/maboa/circleplayer)
+* [Codrops, Circle Navigation](https://github.com/SaraSoueidan/Circular-Navigation-with-CSS-transforms-Codrops?source=c)
