@@ -1,11 +1,11 @@
 $(document).ready(function(){
   // All related to getting the sidebar to pop out
   $('#sidebarToggle').click(function() {
-    $('.sidebar').show("slide", 50);
+    $('.sidebar').show("slide", 25);
   });
 
   $('#sidebarToggle2').click(function() {
-    $('.sidebar').hide("slide", 50);
+    $('.sidebar').hide("slide", 25);
   });
 
   action = $('.action');
