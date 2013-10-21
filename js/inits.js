@@ -22,7 +22,7 @@ $(document).ready(function(){
   }
 
   ]
-  var ctx = document.getElementById("milesWalked").getContext("2d");
+  var ctx = document.getElementById("experiences").getContext("2d");
   var myNewChart = new Chart(ctx).Doughnut(data);
 
 });
