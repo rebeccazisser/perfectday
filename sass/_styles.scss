@@ -11,6 +11,8 @@ body {
 	background-image: none;
 	color: $white;
 	border: 0;
+	text-shadow: none;
+	box-shadow: none;
 	&:active {
 		background-color: darken($creator, 10%);
 		border: 0px;
@@ -25,6 +27,8 @@ body {
 	background-color: $creator;
 	background-image: none;
 	color: $white;
+	text-shadow: none;
+	box-shadow: none;
 	&:active {
 		background-color: darken($creator, 10%);
 		border: 0px;
@@ -198,22 +202,19 @@ button {
 }
 
 //SHARE//
-
-.icon {
-	width:100px;
-	height:100px;
-	margin-top:50px;
-	margin-left:70px;
-}
-
-.name{
-	margin-left:20px;
-	bottom:40px;
-	font-size:20px;
-}
-
-.bold{
-	font-weight:bold;
+.media {
+	.icon {
+		width:100px;
+		height:100px;
+		float: left;
+		clear: both;
+		margin-top: 10px;
+	}
+	.name{
+		margin-left:20px;
+		float: left;
+		line-height: 150px;
+	}
 }
 
 

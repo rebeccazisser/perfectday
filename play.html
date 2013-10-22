@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Perfect Day App</title>
+    <title>Perfect Day</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,26 +16,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
-    <link rel="stylesheet" href="css/slide.css">
-
-    <link rel="stylesheet" href="js/circle.skin/circle.player.css">
-
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
 
-    <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
-    <script src="js/libs/jquery.js"></script>
+    <!-- Scripts -->
 
     <script src="js/libs/jquery-ui.js"></script>
-
     <script src="js/libs/modernizr.js"></script>
 
     <script src="js/libs/ratchet.js"></script>
-
-    <script src="js/libs/picturefill.js"></script>
 
     <script src="js/map.js"></script> 
 
@@ -81,7 +70,8 @@
   </section>
   
 
- <div class="component">
+ 
+  <div class="component">
     <!-- Start Nav Structure -->
     <button class="cn-button" id="cn-button"><img src="icons/tools-a.png" id="tools" /></button>
     <div class="cn-wrapper" id="cn-wrapper">
@@ -104,10 +94,10 @@
     </header>
     
     <div class="content content-padded">
-      <div class="media"><span class="icon"><img class="icon" src="icons/facebook_pink.png"></span><span class="name">Share on <span class="bold">Facebook</span></span></div>
-    <div class="media"><span class="icon"><img   class="icon"src="icons/twitter_pink.png"></span><span class="name">Share on <span class="bold">Twitter</span></span></div>
-    <div class="media"><span class="icon"><img class="icon" src="icons/foursquare_pink.png"></span><span class="name">Check In on <span class="bold">Foursquare</span></span></div>
-    <div class="media"><span class="icon"><img  class="icon" src="icons/gmail_pink.png"></span><span class="name">Share with <span class="bold">Email</span></span></div>
+      <div class="media"><span class="icon"><img class="icon" src="icons/facebook_pink.png"></span><span class="name">Share on <strong>Facebook</strong></span></div>
+    <div class="media"><span class="icon"><img   class="icon"src="icons/twitter_pink.png"></span><span class="name">Share on <strong>Twitter</strong></span></div>
+    <div class="media"><span class="icon"><img class="icon" src="icons/foursquare_pink.png"></span><span class="name">Check In on <strong>Foursquare</strong></span></div>
+    <div class="media"><span class="icon"><img  class="icon" src="icons/gmail_pink.png"></span><span class="name">Share with <strong>Email</strong></span></div>
     </div>
   </div>
 
@@ -243,34 +233,11 @@
     </div>
   </div>
 
-
   <!-- Our scripts -->
   <script src="js/nav.js"></script>
   <script src="js/libs/ui-slide.js"></script>
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
-  <script type="text/javascript">
-  $('#sidebarToggle').click(function() {
-    $('.sidebar').show("slide", 50);
-  });
-  $('#sidebarToggle2').click(function() {
-    $('.sidebar').hide("slide", 50);
-  });
+  <script src="js/inits.js"></script>
 
-  action = $('.action');
-
-  action.click(function() {
-    $('.sidebar').hide("slide", 25);
-  });
-
-    $(document).ready(function(){
-      var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-      {
-        m4a: "js/libs/thrift.m4a"
-      }, {
-        cssSelectorAncestor: "#cp_container_1"
-      });
-
-    });
-    </script>
 </html>

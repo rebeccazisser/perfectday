@@ -2316,7 +2316,9 @@ body {
   background-color: #e97770;
   background-image: none;
   color: white;
-  border: 0; }
+  border: 0;
+  text-shadow: none;
+  box-shadow: none; }
   .button-block:active {
     background-color: #e24d44;
     border: 0px; }
@@ -2327,7 +2329,9 @@ body {
 .button {
   background-color: #e97770;
   background-image: none;
-  color: white; }
+  color: white;
+  text-shadow: none;
+  box-shadow: none; }
   .button:active {
     background-color: #e24d44;
     border: 0px; }
@@ -2445,19 +2449,16 @@ button {
 .stars2 {
   width: 40%; }
 
-.icon {
+.media .icon {
   width: 100px;
   height: 100px;
-  margin-top: 50px;
-  margin-left: 70px; }
-
-.name {
+  float: left;
+  clear: both;
+  margin-top: 10px; }
+.media .name {
   margin-left: 20px;
-  bottom: 40px;
-  font-size: 20px; }
-
-.bold {
-  font-weight: bold; }
+  float: left;
+  line-height: 150px; }
 
 .B {
   width: 50px;
