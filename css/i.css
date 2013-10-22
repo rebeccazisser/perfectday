@@ -2541,5 +2541,19 @@ a.ulAnchors {
   #profile .name {
     font-size: 16px;
     float: left;
+<<<<<<< HEAD
     line-height: 300px;
     display: inline-block; }
+=======
+    line-height: 150px;
+    display: inline-block;
+    vertical-align: bottom; }
+  #profile .miles {
+    width: 50%; }
+  #profile .miles-walked {
+    font-size: 112px;
+    line-height: 30px;
+    float: left; }
+  #profile .right {
+    float: right; }
+>>>>>>> Wtf
