@@ -2390,11 +2390,14 @@ button {
   margin-top: -50px;
   margin-left: 90%; }
 
+<<<<<<< HEAD
 .title {
   float: left;
   font-size: 20px;
   margin-left: 90px; }
 
+=======
+>>>>>>> We're almost done
 .stars {
   float: left;
   width: 30%;
@@ -2489,8 +2492,46 @@ ul li a {
   font-size: 16px; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 a.ulAnchors {
   top: -75px; }
+=======
+#profile {
+  font-size: 16px; }
+  #profile img {
+    float: left;
+    width: 150px; }
+  #profile .name {
+    font-size: 16px;
+    float: left;
+    line-height: 200px;
+    display: inline-block;
+    vertical-align: bottom; }
+  #profile .miles-walked {
+    font-size: 112px;
+    float: left;
+    margin-top: -50px;
+    margin-left: 10px; }
+  #profile .miles {
+    float: left;
+    margin-top: -50px;
+    line-height: 200px; }
+  #profile #experiences {
+    margin-top: -75px; }
+  #profile .experiences {
+    margin-top: -48px;
+    margin-left: 160px;
+    float: left; }
+
+#explore img {
+  width: 100px;
+  margin-left: -20px; }
+#explore .ulAnchors {
+  margin-top: -20px;
+  margin-left: -10px; }
+#explore .stars {
+  margin-left: 75px; }
+>>>>>>> We're almost done
 
 .icon_help {
   width: 50px;
@@ -2533,6 +2574,7 @@ a.ulAnchors {
 .light {
   margin-left: 230px;
   color: #999999; }
+<<<<<<< HEAD
 
 =======
 >>>>>>> Whut
@@ -2576,3 +2618,5 @@ a.ulAnchors {
 #explore .stars {
   margin-left: 75px; }
 >>>>>>> Whut
+=======
+>>>>>>> We're almost done
