@@ -2403,28 +2403,22 @@ button {
   margin-top: -50px;
   margin-left: 90%; }
 
-.stars {
+.experience .stars {
   float: left;
   width: 30%;
-  padding-left: 10px;
+  padding-left: 5px;
   margin-top: 5px; }
-
-td {
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-tr {
-  text-align: top; }
-
-.section {
-  font-weight: bold;
-  width: 40%;
-  text-align: right;
-  padding-right: 10px; }
-
-.back {
-  height: 30px;
-  margin-top: -5px; }
+.experience table {
+  margin-top: 30px;
+  clear: both; }
+  .experience table td {
+    margin-top: 15px; }
+    .experience table td:first-child {
+      width: 40%;
+      vertical-align: top; }
+  .experience table tr {
+    clear: both;
+    margin-top: 50px; }
 
 .left {
   width: 20%; }
