@@ -2413,9 +2413,6 @@ tr {
   height: 30px;
   margin-top: -5px; }
 
-#explore img {
-  width: 100%; }
-
 .left {
   width: 20%; }
 
@@ -2560,8 +2557,7 @@ ul li a {
     display: inline-block; }
 
 #explore img {
-  width: 100px;
-  margin-left: -20px; }
+  width: 100%; }
 #explore .ulAnchors {
   margin-top: -20px;
   margin-left: -10px; }
