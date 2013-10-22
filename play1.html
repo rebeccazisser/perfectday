@@ -16,26 +16,16 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
-    <link rel="stylesheet" href="css/slide.css">
-
-    <link rel="stylesheet" href="js/circle.skin/circle.player.css">
-
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
+    <link rel="stylesheet" href="js/circle.skin/circle.player.css">
 
-    <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
+    <!-- Scripts -->
     <script src="js/libs/jquery.js"></script>
-
     <script src="js/libs/jquery-ui.js"></script>
-
     <script src="js/libs/modernizr.js"></script>
 
     <script src="js/libs/ratchet.js"></script>
-
-    <script src="js/libs/picturefill.js"></script>
 
     <script src="js/map.js"></script> 
 
@@ -83,7 +73,7 @@
 
   <div class="component">
     <!-- Start Nav Structure -->
-    <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
+    <button class="cn-button" id="cn-button"><img src="icons/tools-a.png" id="tools" /></button>
     <div class="cn-wrapper" id="cn-wrapper">
       <ul>
         <li><a href="#play"><img src="icons/play.png" /></a></li>
@@ -112,23 +102,21 @@
     </div>
   </div>
 
-<!-- The directions modal -->
+  <!-- The directions modal -->
   <div id="directions" class="modal">
     <header class="bar-title">
-      <h1 class="title">Directions</h1>
+      <h1 class="title">11 hr 4 min</h1>
       <a class="button" href="#directions">Close</a>
     </header>
   
-    <div class="content content-padded">
-      
-       <div class="media"><span ><img class="icon_direction" src="icons/direction1.png"></span><span class="directionbold">Head SouthWest</span></span></div>
-       <ul class="list"><li><div class="media"><span ><img class="icon_dir" src="icons/direction2.png"></span><span class="name_dir">Turn left towards Nebraska Ave. NW</br> <span class="light">269 ft</span></span></div></li>
-        <li><div class="media"><span ><img class="icon_dir" src="icons/direction3.png"></span><span class="name_dir">Slight right towards Massachusetts Ave. NW</br><span class="light">0.7 miles</span></span></div></li>
-         <li><div class="media"><span ><img class="icon_dir" src="icons/direction2.png"></span><span class="name_dir">Turn left towards Wisconson Ave. NW</br><span class="light">100 ft</span></span></div></li>
-          <li><div class="media"><span ><img class="icon_dir" src="icons/direction4.png"></span><span class="name_dir">Washington National Cathedral</br><span class="light">3701 Massachusetts Ave. NW</span></span></div></li></ul>
+    <div class="content">
+      <img src="img/directions.jpg" />
+    </div>
           
     </div>
   </div>
+
+
 <!-- The help modal -->
   <div id="help" class="modal">
     <header class="bar-title">
@@ -192,8 +180,7 @@
   
     <div class="content content-padded">
  <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
-    <div id="jquery_jplayer_1" class="cp-jplayer"></div>
-
+    <div id="jquery_jplayer_2" class="cp-jplayer"></div>
 
     <div class="prototype-wrapper"> <!-- A wrapper to emulate use in a webpage and center align -->
 
@@ -232,7 +219,7 @@
   </div>
 
   
-  <!-- The profile modal -->
+    <!-- The profile modal -->
   <div id="profile" class="modal">
     <header class="bar-title">
       <a class="button" href="#profile">Back</a>
@@ -241,7 +228,7 @@
     </header>
     
     <div class="content content-padded">
-      your name, settings
+      <img src="img/profile.png" />
     </div>
   </div>
 
@@ -273,28 +260,6 @@
   <script src="js/libs/ui-slide.js"></script>
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
-  <script type="text/javascript">
-  $('#sidebarToggle').click(function() {
-    $('.sidebar').show("slide", 50);
-  });
-  $('#sidebarToggle2').click(function() {
-    $('.sidebar').hide("slide", 50);
-  });
+  <script src="js/inits.js"></script>
 
-  action = $('.action');
-
-  action.click(function() {
-    $('.sidebar').hide("slide", 25);
-  });
-
-    $(document).ready(function(){
-      var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-      {
-        m4a: "js/libs/cathedral.m4a"
-      }, {
-        cssSelectorAncestor: "#cp_container_1"
-      });
-
-    });
-    </script>
 </html>
