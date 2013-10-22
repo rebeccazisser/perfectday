@@ -2309,6 +2309,9 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 /* ==========================================================================
    Site styles
    ========================================================================== */
+body {
+  font-family: 'helvetica', sans-serif; }
+
 .bar-title .title {
   text-shadow: none; }
 
@@ -2479,8 +2482,7 @@ ul li a {
 #profile {
   font-size: 16px; }
   #profile img {
-    float: left;
-    width: 150px; }
+    width: 100%; }
   #profile .name {
     font-size: 16px;
     float: left;
@@ -2544,17 +2546,6 @@ ul li a {
 .light {
   margin-left: 230px;
   color: #999999; }
-
-#profile {
-  font-size: 16px; }
-  #profile img {
-    float: left;
-    width: 150px; }
-  #profile .name {
-    font-size: 16px;
-    float: left;
-    line-height: 150px;
-    display: inline-block; }
 
 #explore li:first-child img {
   opacity: 1;

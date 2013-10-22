@@ -2,6 +2,10 @@
    Site styles
    ========================================================================== */
 
+body {
+	font-family: 'helvetica', sans-serif;
+}
+
 // Changing colors of Ratchet buttons
 .bar-title {
 	.title {
@@ -256,8 +260,7 @@ ul {
 #profile {
 	font-size: $body;
 	img {
-		float: left;
-		width: 150px;
+		width: 100%;
 	}
 	.name {
 		font-size: $body;
@@ -354,22 +357,6 @@ ul {
 
 }
 
-
-// profile jank
-
-#profile {
-	font-size: $body;
-	img {
-		float: left;
-		width: 150px;
-	}
-	.name {
-		font-size: $body;
-		float: left;
-		line-height: 150px;
-		display:inline-block;
-	}
-}
 
 // Explore
 
