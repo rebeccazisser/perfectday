@@ -2312,6 +2312,16 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 body {
   font-family: 'helvetica', sans-serif; }
 
+.button-block {
+  background-color: #e97770;
+  background-image: none;
+  color: white; }
+
+.button {
+  background-color: #e97770;
+  background-image: none;
+  color: white; }
+
 .bar-title .title {
   text-shadow: none; }
 

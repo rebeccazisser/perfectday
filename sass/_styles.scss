@@ -6,6 +6,18 @@ body {
 	font-family: 'helvetica', sans-serif;
 }
 
+.button-block {
+	background-color: $creator;
+	background-image: none;
+	color: $white;
+}
+
+.button {
+	background-color: $creator;
+	background-image: none;
+	color: $white;
+}
+
 // Changing colors of Ratchet buttons
 .bar-title {
 	.title {
