@@ -14,32 +14,24 @@ $(document).ready(function(){
     $('.sidebar').hide("slide", 25);
   });
 
-  // ChartJS data
-  var experienceData = [
-  {
-    value: 35,
-    color:"#8d8199"
-  }, 
-  {
-    value: 25,
-    color: "#D4CCC5"
-  }
-  ]
+  var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+    {
+      m4a: "js/libs/thrift.m4a"
+    }, {
+      cssSelectorAncestor: "#cp_container_1"
+  });
 
-  var placesData = [
-  {
-    value: 35,
-    color:"#F7464A"
-  }, 
-  {
-    value: 25,
-    color: "#D4CCC5"
-  }
-  ]
-  var ctx = document.getElementById("experiences").getContext("2d");
-  var myNewChart = new Chart(ctx).Doughnut(experienceData);
+  var myCirclePlayer = new CirclePlayer("#jquery_jplayer_2",
+    {
+      m4a: "js/libs/cathedral.m4a"
+    }, {
+      cssSelectorAncestor: "#cp_container_1"
+  });
 
-  var ctx = document.getElementById("placesBeen").getContext("2d");
-  var myNewChart = new Chart(ctx).Doughnut(placesData);
-
+  var myCirclePlayer = new CirclePlayer("#jquery_jplayer_3",
+    {
+      m4a: "js/libs/gardens.m4a"
+    }, {
+      cssSelectorAncestor: "#cp_container_1"
+  });
 });
