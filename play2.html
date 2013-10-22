@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Perfect Day App</title>
+    <title>Perfect Day</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,26 +16,16 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
-    <link rel="stylesheet" href="css/slide.css">
-
-    <link rel="stylesheet" href="js/circle.skin/circle.player.css">
-
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
+    <link rel="stylesheet" href="js/circle.skin/circle.player.css">
 
-    <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
+    <!-- Scripts -->
     <script src="js/libs/jquery.js"></script>
-
     <script src="js/libs/jquery-ui.js"></script>
-
     <script src="js/libs/modernizr.js"></script>
 
     <script src="js/libs/ratchet.js"></script>
-
-    <script src="js/libs/picturefill.js"></script>
 
     <script src="js/map.js"></script> 
 
@@ -77,13 +67,13 @@
   </section>
 
   <section class="second">
-    <a href="play3.html" class="button">next</a>
+    <a href="#end" class="button">end</a>
   </section>
   
 
   <div class="component">
     <!-- Start Nav Structure -->
-    <button class="cn-button" id="cn-button"><img src="icons/tools-b.png" id="tools" /></button>
+    <button class="cn-button" id="cn-button"><img src="icons/tools-a.png" id="tools" /></button>
     <div class="cn-wrapper" id="cn-wrapper">
       <ul>
         <li><a href="#play"><img src="icons/play.png" /></a></li>
@@ -96,24 +86,37 @@
     <!-- End Nav Structure -->
   </div>
 
-  <!-- The directions modal -->
-  <div id="directions" class="modal">
+  <!-- The share modal -->
+  <div id="share" class="modal">
     <header class="bar-title">
-      <h1 class="title">Directions</h1>
-      <a class="button" href="#directions">Close</a>
+      <h1 class="title">Share</h1>
+      <a class="button" href="#share">Close</a>
     </header>
-  
+    
     <div class="content content-padded">
-      
-       <div class="media"><span ><img class="icon_direction" src="icons/direction1.png"></span><span class="directionbold">Head SouthWest</span></span></div>
-       <ul class="list"><li><div class="media"><span ><img class="icon_dir" src="icons/direction2.png"></span><span class="name_dir">Turn left towards Nebraska Ave. NW</br> <span class="light">269 ft</span></span></div></li>
-        <li><div class="media"><span ><img class="icon_dir" src="icons/direction3.png"></span><span class="name_dir">Slight right towards Massachusetts Ave. NW</br><span class="light">0.7 miles</span></span></div></li>
-         <li><div class="media"><span ><img class="icon_dir" src="icons/direction2.png"></span><span class="name_dir">Turn left towards Wisconson Ave. NW</br><span class="light">100 ft</span></span></div></li>
-          <li><div class="media"><span ><img class="icon_dir" src="icons/direction4.png"></span><span class="name_dir">Washington National Cathedral</br><span class="light">3701 Massachusetts Ave. NW</span></span></div></li></ul>
-          
+      <div class="media"><span class="icon"><img class="icon" src="icons/facebook_pink.png"></span><span class="name">Share on <strong>Facebook</strong></span></div>
+    <div class="media"><span class="icon"><img   class="icon"src="icons/twitter_pink.png"></span><span class="name">Share on <strong>Twitter</strong></span></div>
+    <div class="media"><span class="icon"><img class="icon" src="icons/foursquare_pink.png"></span><span class="name">Check In on <strong>Foursquare</strong></span></div>
+    <div class="media"><span class="icon"><img  class="icon" src="icons/gmail_pink.png"></span><span class="name">Share with <strong>Email</strong></span></div>
     </div>
   </div>
-<!-- The help modal -->
+
+  <div id="end" class="modal">
+    <header class="bar-title">
+      <h1 class="title">End</h1>
+      <a class="button" href="#share">Close</a>
+    </header>
+    <div class="content">
+      <img src="img/ending.jpg" />
+      <div class="content-padded">
+        <a class="button button-block">Explore</a>
+        <a class="button button-block">Play</a>
+    </div>
+  </div>
+
+
+
+  <!-- The help modal -->
   <div id="help" class="modal">
     <header class="bar-title">
       <h1 class="title">Help</h1>
@@ -135,83 +138,7 @@
     </div>
   </div>
 
-  <!--The End Modal -->
-
-  <div id="end" class="modal">
-    <header class="bar-title">
-      <h1 class="title">end</h1>
-      <a class="button" href="#end">
-        Close
-      </a>
-
-    </header>
-    
-    <div class="content content-padded">
-      </br></br></br><h1 class="head">Congratulations!</h1>
-      <h2 class="subhead">You just finished <span class="highlight">DC Ruins</highlight></h2>
-      <div class="endshare"><img class="B" src="icons/facebook_pink.png"><img class="B" src="icons/twitter_pink.png"><img class="B" src="icons/foursquare_pink.png"><img class="B" src="icons/gmail_pink.png"></div>
-      <p class="rate">Rate</p>
-      <img class="stars3" src="img/1star.png">
-      <div id="rule">
-      </div>
-    </br>
-<p class="next">What Next?</p>
-
-      <a class="button button-block" href="create.html">Create</a>
-      <a class="button button-block" href="explore.html">Explore</a>
-
-
-  </div>
-  </div>
-
-  <!-- The explore modal -->
-  
-  <div id="explore" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Explore</h1>
-      <a class="button" href="#explore">Close</a>
-    </header>
-    
-    <div class="content content-padded">
-      <ul class="list">
-        <a href="experience.html"><li><img src="img/exp1.png"></li></a>
-        <li><img src="img/exp2.png"></li>
-          <li><img src="img/exp3.png"></li>
-           <li><img src="img/exp4.png"></li>
-            <li><img src="img/exp5.png"></li>
-             <li><img src="img/exp6.png"></li>
-      </ul></div></div>
-
-  
-  <!-- The share modal -->
-  <div id="share" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Share</h1>
-      <a class="button" href="#share">Close</a>
-    </header>
-    
-    <div class="content content-padded">
-      <div class="media"><span class="icon"><img class="icon" src="icons/facebook_pink.png"></span><span class="name">Share on <span class="bold">Facebook</span></span></div>
-    <div class="media"><span class="icon"><img   class="icon"src="icons/twitter_pink.png"></span><span class="name">Share on <span class="bold">Twitter</span></span></div>
-    <div class="media"><span class="icon"><img class="icon" src="icons/foursquare_pink.png"></span><span class="name">Check In on <span class="bold">Foursquare</span></span></div>
-    <div class="media"><span class="icon"><img  class="icon" src="icons/gmail_pink.png"></span><span class="name">Share with <span class="bold">Email</span></span></div>
-    </div>
-  </div>
-
-
-  <!-- The help modal -->
-  <div id="help" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Help</h1>
-      <a class="button" href="#help">Close</a>
-    </header>
-    
-    <div class="content content-padded">
-      <p>This is the help modal</p>
-    </div>
-  </div>
-
-   <!-- The play modal -->
+  <!-- The play modal -->
   <div id="play" class="modal">
     <header class="bar-title">
       <h1 class="title">Play</h1>
@@ -220,10 +147,7 @@
   
     <div class="content content-padded">
  <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
-    <div id="jquery_jplayer_1" class="cp-jplayer"></div>
-
-    <!-- This is the 2nd instance's jPlayer div -->
-    <div id="jquery_jplayer_2" class="cp-jplayer"></div>
+    <div id="jquery_jplayer_3" class="cp-jplayer"></div>
 
     <div class="prototype-wrapper"> <!-- A wrapper to emulate use in a webpage and center align -->
 
@@ -248,10 +172,42 @@
     </div>
     </div>
   </div>
+</div>
 
+  <!-- The directions modal -->
+  <div id="directions" class="modal">
+    <header class="bar-title">
+      <h1 class="title">11 hr 4 min</h1>
+      <a class="button" href="#directions">Close</a>
+    </header>
   
+    <div class="content">
+      <img src="img/directions.jpg" />
+    </div>
+          
+    </div>
+  </div>
 
-  <!-- The profile modal -->
+
+  <!-- The explore modal -->
+  
+  <div id="explore" class="modal">
+    <header class="bar-title">
+      <h1 class="title">Explore</h1>
+      <a class="button" href="#explore">Close</a>
+    </header>
+    
+    <div class="content content-padded">
+      <ul class="list">
+        <a href="experience.html"><li><img src="img/exp1.png"></li></a>
+        <li><img src="img/exp2.png"></li>
+          <li><img src="img/exp3.png"></li>
+           <li><img src="img/exp4.png"></li>
+            <li><img src="img/exp5.png"></li>
+             <li><img src="img/exp6.png"></li>
+      </ul></div></div>
+
+   <!-- The profile modal -->
   <div id="profile" class="modal">
     <header class="bar-title">
       <a class="button" href="#profile">Back</a>
@@ -260,7 +216,7 @@
     </header>
     
     <div class="content content-padded">
-      your name, settings
+      <img src="img/profile.png" />
     </div>
   </div>
 
@@ -286,34 +242,11 @@
     </div>
   </div>
 
-
   <!-- Our scripts -->
   <script src="js/nav.js"></script>
   <script src="js/libs/ui-slide.js"></script>
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
-  <script type="text/javascript">
-  $('#sidebarToggle').click(function() {
-    $('.sidebar').show("slide", 50);
-  });
-  $('#sidebarToggle2').click(function() {
-    $('.sidebar').hide("slide", 50);
-  });
+  <script src="js/inits.js"></script>
 
-  action = $('.action');
-
-  action.click(function() {
-    $('.sidebar').hide("slide", 25);
-  });
-
-    $(document).ready(function(){
-      var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-      {
-        m4a: "js/libs/gardens.m4a"
-      }, {
-        cssSelectorAncestor: "#cp_container_1"
-      });
-
-    });
-    </script>
 </html>
