@@ -2542,10 +2542,14 @@ a.ulAnchors {
     font-size: 16px;
     float: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
     line-height: 300px;
     display: inline-block; }
 =======
     line-height: 150px;
+=======
+    line-height: 300px;
+>>>>>>> SafarI
     display: inline-block;
     vertical-align: bottom; }
   #profile .miles {
