@@ -374,8 +374,18 @@ ul {
 // Explore
 
 #explore {
+	li {
+		&:first-child {
+			img {
+				opacity: 1;
+				filter: alpha(opacity=100); /* msie */
+			}
+		}
+	}
 	img {
 		width: 100%;
+		opacity: 0.4;
+    	filter: alpha(opacity=40); /* msie */
 	}
 	.ulAnchors {
 		margin-top: -20px;

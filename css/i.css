@@ -2556,8 +2556,15 @@ ul li a {
     line-height: 150px;
     display: inline-block; }
 
+#explore li:first-child img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* msie */ }
 #explore img {
-  width: 100%; }
+  width: 100%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* msie */ }
 #explore .ulAnchors {
   margin-top: -20px;
   margin-left: -10px; }
