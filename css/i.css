@@ -2539,6 +2539,9 @@ ul li a {
 .help {
   height: 150px; }
 
+#help img {
+  width: 100%; }
+
 #end img {
   width: 100%; }
 
