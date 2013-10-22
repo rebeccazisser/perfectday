@@ -42,4 +42,15 @@ $(document).ready(function(){
     }, {
       cssSelectorAncestor: "#cp_container_1"
   });
+
+  var myCirclePlayer = new CirclePlayer("#jquery_jplayer_4",
+    {
+      m4a: "js/libs/white_noise.m4a"
+    }, {
+      cssSelectorAncestor: "#cp_container_1"
+  });
+
+  $('#pin').click(function(){
+    $('.pin').show();
+  });
 });

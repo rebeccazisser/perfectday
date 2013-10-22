@@ -18,6 +18,7 @@
 
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
+    <link rel="stylesheet" href="js/circle.skin/circle.player.css">
 
     <!-- Scripts -->
     <script src="js/libs/jquery.js"></script>
@@ -75,7 +76,7 @@
     <div class="cn-wrapper" id="cn-wrapper">
       <ul>
         <li><a href="#record" class="creator-mode"><img src="icons/record.png" /></a></li>
-        <li><a href="#pin" class="creator-mode"><img src="icons/pin.png" /></a></li>
+        <li><a href="#" id="pin" class="creator-mode"><img src="icons/pin.png" /></a></li>
         <li><a href="#share" class="creator-mode"><img src="icons/share.png" /></a></li>
         <li><a href="#end" class="creator-mode"><img src="icons/end.png" /></a></li>
       </ul>
@@ -92,24 +93,38 @@
   <div id="record" class="modal">
     <header class="bar-title">
       <h1 class="title">Record</h1>
-      <a class="button" href="#explore">Close</a>
+      <a class="button" href="#record">Close</a>
     </header>
     
     <div class="content content-padded">
-      Record stuff in here
+       <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
+    <div id="jquery_jplayer_4" class="cp-jplayer"></div>
+
+    <div class="prototype-wrapper"> <!-- A wrapper to emulate use in a webpage and center align -->
+
+
+      <!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
+
+      <div id="cp_container_1" class="cp-container">
+        <div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+          <div class="cp-buffer-1"></div>
+          <div class="cp-buffer-2"></div>
+        </div>
+        <div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+          <div class="cp-progress-1"></div>
+          <div class="cp-progress-2"></div>
+        </div>
+        <div class="cp-circle-control"></div>
+        <ul class="cp-controls">
+          <li><a class="cp-play" tabindex="1">play</a></li>
+          <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+        </ul>
+      </div>
       </div></div>
-
-
-  <!-- The pin modal -->
-  <div id="pin" class="modal">
-    <header class="bar-title">
-      <h1 class="title">Pin</h1>
-    </header>
-    
-    <div class="content content-padded">
-      Add pin
     </div>
-  </div>
+
+    <div class="pin">
+    </div>
 
   <!-- The share modal -->
   <div id="share" class="modal">
@@ -126,14 +141,15 @@
     </div>
   </div>
 
-  <!-- The share modal -->
+  <!-- The end modal -->
   <div id="end" class="modal">
     <header class="bar-title">
       <h1 class="title">End</h1>
+      <a class="button" href="#end">Close</a>
     </header>
     
     <div class="content content-padded">
-      end
+      <img src="img/created_experience.png" />
     </div>
   </div>
 
@@ -181,8 +197,6 @@
   <script src="js/libs/circlenav.js"></script>
   <script src="js/inits.js"></script>
 
-  <link rel="stylesheet" href="add2home.css">
-    <script src="add2home.js"></script>
     <script type="text/javascript">
       $('.bar-title').addClass('creator-mode');
     </script>

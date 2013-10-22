@@ -68,7 +68,6 @@ function initialize() {
   // getRoute();
 }
 
-
 function getRoute() {
   var start = new google.maps.LatLng(36, -77),
       end = americanLatLng;

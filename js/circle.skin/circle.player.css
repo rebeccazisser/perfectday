@@ -17,6 +17,11 @@
  	background:url('bg.jpg') 0 0 repeat;
  }
 
+ #record .content {
+ 	background-color: transparent;
+ 	background:url('bg.jpg') 0 0 repeat;
+ }
+
 .cp-container {
 	position:absolute;
 	margin-top: 30%;
