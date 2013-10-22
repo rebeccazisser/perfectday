@@ -7,34 +7,34 @@ body {
 }
 
 .button-block {
-	background-color: $creator;
+	background-color: $explorer;
 	background-image: none;
 	color: $white;
 	border: 0;
 	text-shadow: none;
 	box-shadow: none;
 	&:active {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 	&:hover {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 }
 
 .button {
-	background-color: $creator;
+	background-color: $explorer;
 	background-image: none;
 	color: $white;
 	text-shadow: none;
 	box-shadow: none;
 	&:active {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 	&:hover {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 }
@@ -47,17 +47,17 @@ body {
 }
 
 .bar-title [class*="button"] {
-	background-color: $creator;
+	background-color: $explorer;
 	background-image: none;
 	border: 0px;
 	text-shadow: none;
 	box-shadow: none;
 	&:active {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 	&:hover {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 	.sprite {
@@ -88,18 +88,18 @@ body {
 }
 
 .sidebar [class*="button"] {
-	background-color: $creator;
+	background-color: $explorer;
 	background-image: none;
 	border: 0px;
 	text-shadow: none;
 	box-shadow: none;
 	margin-top: -10px;
 	&:active {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 	&:hover {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 	.sprite {
@@ -119,15 +119,15 @@ body {
 }
 
 button {
-	background-color: $creator;
+	background-color: $explorer;
 	background-image: none;
 	border: 0px;
 	&:active {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 	&:hover {
-		background-color: darken($creator, 10%);
+		background-color: darken($explorer, 10%);
 		border: 0px;
 	}
 }
@@ -267,7 +267,7 @@ ul {
 		img {
 		}
 		a {
-			color: $creator;
+			color: $explorer;
 			font-size: $body;
 		}
 	}
@@ -338,42 +338,10 @@ ul {
 ///Directions///
 
 
-
-.directionbold{
-	font-size:40px;
-	color:$explorer;
-	bottom:70px;
-	right:5px;
-	
-
-}
-
-.icon_direction{
-	margin-top:20px;
-	margin-left:60px;
-	height:200px;
-	padding-bottom:20px;
-
-}
-
-.icon_dir{
-	width:50px;
-	height:50px;
-	margin-left:120px;
-
-}
-
-.name_dir{
-	bottom:20px;
-	padding-left:30px;
-	margin-left:30px;
-
-}
-
-.light{
-	margin-left:230px;
-	color:$gray-medium;
-
+#directions {
+	img {
+		width: 100%;
+	}
 }
 
 

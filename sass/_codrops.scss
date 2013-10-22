@@ -41,7 +41,7 @@
 .cn-button {
   border: none;
   background: none;
-  color: $creator;
+  color: $explorer;
   text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
@@ -162,12 +162,12 @@ $angle4: 135deg;
 // }
 
 .csstransforms .cn-wrapper li a {
-  background-color: $creator;
+  background-color: $explorer;
 }
 
 /* active style */
 .csstransforms .cn-wrapper li.active a {
-  background-color: lighten($creator, 10%);
+  background-color: lighten($explorer, 10%);
 }
 
 
@@ -175,7 +175,7 @@ $angle4: 135deg;
 .csstransforms .cn-wrapper li:not(.active) a:hover,
 .csstransforms .cn-wrapper li:not(.active) a:active,
 .csstransforms .cn-wrapper li:not(.active) a:focus {
-  background-color: lighten($creator, 10%);
+  background-color: lighten($explorer, 10%);
 }
 
 /* fallback */

@@ -2539,31 +2539,8 @@ ul li a {
 .help {
   height: 150px; }
 
-.directionbold {
-  font-size: 40px;
-  color: #f9a243;
-  bottom: 70px;
-  right: 5px; }
-
-.icon_direction {
-  margin-top: 20px;
-  margin-left: 60px;
-  height: 200px;
-  padding-bottom: 20px; }
-
-.icon_dir {
-  width: 50px;
-  height: 50px;
-  margin-left: 120px; }
-
-.name_dir {
-  bottom: 20px;
-  padding-left: 30px;
-  margin-left: 30px; }
-
-.light {
-  margin-left: 230px;
-  color: #999999; }
+#directions img {
+  width: 100%; }
 
 #explore li:first-child img {
   opacity: 1;
