@@ -76,6 +76,20 @@ body {
 	box-shadow: none;
 	.bar-title [class*="button"] {
 		&:active {
+			background-color: lighten($creator, 10%);
+			border: 0px;
+		}
+		&:hover {
+			background-color: lighten($creator, 10%);
+			border: 0px;
+		}
+	}
+}
+
+.csstransforms .cn-wrapper li a {
+	&.creator-mode {
+		background-color: $creator;
+		&:active {
 			background-color: darken($creator, 10%);
 			border: 0px;
 		}

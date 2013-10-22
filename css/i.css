@@ -2366,9 +2366,18 @@ body {
   text-shadow: none;
   box-shadow: none; }
   .creator-mode .bar-title [class*="button"]:active {
-    background-color: #f78a12;
+    background-color: #fbba74;
     border: 0px; }
   .creator-mode .bar-title [class*="button"]:hover {
+    background-color: #fbba74;
+    border: 0px; }
+
+.csstransforms .cn-wrapper li a.creator-mode {
+  background-color: #f9a243; }
+  .csstransforms .cn-wrapper li a.creator-mode:active {
+    background-color: #f78a12;
+    border: 0px; }
+  .csstransforms .cn-wrapper li a.creator-mode:hover {
     background-color: #f78a12;
     border: 0px; }
 

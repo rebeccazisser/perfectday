@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Perfect day</title>
+    <title>Perfect Day</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,60 +16,175 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
 
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link rel="stylesheet" href="css/ratchet.css">
-
     <!-- Our CSS -->
     <link rel="stylesheet" href="css/i.css">
 
-    <!-- Google Maps auth token; gotta figure out how to hide this I guess -->
-    <!-- <script src="js/map.js"></script> -->
-
+    <!-- Scripts -->
     <script src="js/libs/jquery.js"></script>
-
+    <script src="js/libs/jquery-ui.js"></script>
     <script src="js/libs/modernizr.js"></script>
+    <script src="js/libs/chart.js"></script>
+
+    <script src="js/libs/chart.js"></script>
 
     <script src="js/libs/ratchet.js"></script>
-
     <script src="js/libs/picturefill.js"></script>
 
+    <script src="js/map.js"></script> 
+
+    <script src="js/libs/jquery.transform2d.js"></script>
+    <script src="js/libs/jquery.grab.js"></script>
+    <script src="js/libs/jquery.jplayer.js"></script>
+    <script src="js/libs/mod.csstransforms.min.js"></script>
+    <script src="js/libs/circle.player.js"></script>
   </head>
 
   <body> 
   <!-- Our Map -->
-  <!-- <div id="map-canvas"></div> -->
+  <div id="map-canvas"></div> 
 
+  <section class="sidebar">
+    <ul class="list">
+      <li>
+        <a class="button" href="#" id="sidebarToggle2"><img src="icons/hamburger.png" class="sprite" /></a>
+      </li>
+      <a href="#" id="creator-mode">
+        <li class="action"><img src="icons/creator.png" class="sprite" /> create mode</li>
+      </a>
+      <a href="index.html" data-ignore="push" id="explorer-mode"><li class="action">
+        <img src="icons/explorer.png" class="sprite" /> explore mode</li>
+      </a>
+      <a href="#help">
+        <li class="action">
+          <img src="icons/help.png" class="sprite" /> Help
+        </li>
+      </a>
+    </ul>
+  </section>
 
   <!-- Top navigation --> 
-
   <header class="bar-title">
-  
-
+    <a class="button" href="#" id="sidebarToggle"><img src="icons/hamburger.png" class="sprite" /></a>
     <h1 class="title">Perfect Day</h1>
-    <a href="#profile"><img src="icons/profile_2x.png" class="profile right" />
-      </span>  
-    </a>
-   
-
+    <a class="button" href="#profile"><img src="icons/profile.png" class="sprite" /></a>
   </header>
 
-  
-    <div class="content content-padded">
-     <form>
-      <p>Title your experience</p>
-      <input type="text" placeholder="be creative and descriptive">
-      <p>Additional Notes</p>
-      <textarea rows="5" placeholder="what should they bring, how to prepare, etc."></textarea>
-      <p>facebook, twitter, foursquare, email</p>
-      <a class="button button-block" href="profile.html">submit</a>
+  <div class="component">
+    <!-- Start Nav Structure -->
+    <button class="cn-button" id="cn-button"><img src="icons/tools-a.png" id="tools" /></button>
+    <div class="cn-wrapper" id="cn-wrapper">
+      <ul>
+        <li><a href="#record" class="creator-mode"><img src="icons/record.png" /></a></li>
+        <li><a href="#pin" class="creator-mode"><img src="icons/pin.png" /></a></li>
+        <li><a href="#share" class="creator-mode"><img src="icons/share.png" /></a></li>
+        <li><a href="#end" class="creator-mode"><img src="icons/end.png" /></a></li>
+      </ul>
+    </div>
+    <div id="cn-overlay" class="cn-overlay"></div>
+    <!-- End Nav Structure -->
+  </div>
 
+  
+
+
+ <!-- The record modal -->
+
+  <div id="record" class="modal">
+    <header class="bar-title">
+      <h1 class="title">Record</h1>
+      <a class="button" href="#explore">Close</a>
+    </header>
+    
+    <div class="content content-padded">
+      Record stuff in here
+      </div></div>
+
+
+  <!-- The pin modal -->
+  <div id="pin" class="modal">
+    <header class="bar-title">
+      <h1 class="title">Pin</h1>
+    </header>
+    
+    <div class="content content-padded">
+      Add pin
+    </div>
+  </div>
+
+  <!-- The share modal -->
+  <div id="share" class="modal">
+    <header class="bar-title">
+      <h1 class="title">Share</h1>
+      <a class="button" href="#share">Close</a>
+    </header>
+    
+    <div class="content content-padded">
+      <div class="media"><span class="icon"><img class="icon" src="icons/facebook_orange.png"></span><span class="name">Share on <strong>Facebook</strong></span></div>
+    <div class="media"><span class="icon"><img   class="icon"src="icons/twitter_orange.png"></span><span class="name">Share on <strong>Twitter</strong></span></div>
+    <div class="media"><span class="icon"><img class="icon" src="icons/foursquare_orange.png"></span><span class="name">Check In on <strong>Foursquare</strong></span></div>
+    <div class="media"><span class="icon"><img  class="icon" src="icons/gmail_orange.png"></span><span class="name">Share with <strong>Email</strong></span></div>
+    </div>
+  </div>
+
+  <!-- The share modal -->
+  <div id="end" class="modal">
+    <header class="bar-title">
+      <h1 class="title">End</h1>
+    </header>
+    
+    <div class="content content-padded">
+      end
+    </div>
+  </div>
+
+  <!-- The help modal -->
+  <div id="help" class="modal">
+    <header class="bar-title">
+      <h1 class="title">Help</h1>
+      <a class="button" href="#help">Close</a>
+    </header>
+    
+    <div class="content">
+      <img src="img/help.jpg" />
+    </div>
+  </div>
+
+
+  <!-- The settings modal -->
+  <div id="settings" class="modal">
+    <header class="bar-title">
+      <a class="button" href="#settings">Back</a>
+      <h1 class="title">Settings</h1>
+    </header>
+    
+    <div class="content content-padded">
+      <form>
+        <p class="form"> new username:</p>
+          <input type="text" placeholder="username">
+        <p class="form"> new password:</p>
+          <input type="text" placeholder="password">
+        <p class="form"> confirm new password:</p>
+          <input type="text" placeholder="password">
+        <a class="button button-block save">save</a>
+        <div class="save-div">
+        </div>
+      </form>
+    </div>
   </div>
 
 
 
   <!-- Our scripts -->
   <script src="js/nav.js"></script>
+  <script src="js/libs/ui-slide.js"></script>
   <script src="js/libs/polyfills.js"></script>
   <script src="js/libs/circlenav.js"></script>
+  <script src="js/inits.js"></script>
+
+  <link rel="stylesheet" href="add2home.css">
+    <script src="add2home.js"></script>
+    <script type="text/javascript">
+      $('.bar-title').addClass('creator-mode');
+    </script>
+
 </html>
