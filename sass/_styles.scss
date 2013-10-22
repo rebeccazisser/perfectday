@@ -160,6 +160,7 @@ tr{
 
 ///EXPLORE///
 
+
 .left{
 	width:20%;
 
@@ -251,11 +252,44 @@ ul {
 	}
 }
 
-// a {
-// 	&.ulAnchors {
-// 		top: -75px;
-// 	}
-// }
+
+// profile jank
+
+#profile {
+	font-size: $body;
+	img {
+		float: left;
+		width: 150px;
+	}
+	.name {
+		font-size: $body;
+		float: left;
+		line-height: 200px;
+		display:inline-block;
+  		vertical-align:bottom;	
+	}
+	.miles-walked {
+		font-size: $body * 7;
+		float: left;
+		margin-top: -50px;
+		margin-left: 10px;
+	}
+
+	.miles {
+		float: left;
+		margin-top: -50px;
+		line-height: 200px;
+	}
+	#experiences {
+		margin-top: -75px;
+	}
+	.experiences {
+		margin-top: -48px;
+		margin-left: 160px;
+		float: left;
+	}
+}
+
 
 ///HELP///
 .icon_help{
