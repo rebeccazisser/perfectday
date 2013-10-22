@@ -2315,12 +2315,25 @@ body {
 .button-block {
   background-color: #e97770;
   background-image: none;
-  color: white; }
+  color: white;
+  border: 0; }
+  .button-block:active {
+    background-color: #e24d44;
+    border: 0px; }
+  .button-block:hover {
+    background-color: #e24d44;
+    border: 0px; }
 
 .button {
   background-color: #e97770;
   background-image: none;
   color: white; }
+  .button:active {
+    background-color: #e24d44;
+    border: 0px; }
+  .button:hover {
+    background-color: #e24d44;
+    border: 0px; }
 
 .bar-title .title {
   text-shadow: none; }
@@ -2401,7 +2414,7 @@ button {
   position: absolute;
   top: 50%;
   margin-top: -50px;
-  margin-left: 90%; }
+  margin-left: 80%; }
 
 .experience .stars {
   float: left;
