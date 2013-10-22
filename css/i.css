@@ -2413,6 +2413,9 @@ tr {
   height: 30px;
   margin-top: -5px; }
 
+#explore img {
+  width: 100%; }
+
 .left {
   width: 20%; }
 
