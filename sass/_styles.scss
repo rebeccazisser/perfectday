@@ -259,11 +259,11 @@ ul {
 	}
 }
 
-a {
-	&.ulAnchors {
-		top: -75px;
-	}
-}
+// a {
+// 	&.ulAnchors {
+// 		top: -75px;
+// 	}
+// }
 
 ///HELP///
 .icon_help{
@@ -344,5 +344,21 @@ a {
 		float: left;
 		line-height: 150px;
 		display:inline-block;
+	}
+}
+
+// Explore
+
+#explore {
+	img {
+		width: 100px;
+		margin-left: -20px;
+	}
+	.ulAnchors {
+		margin-top: -20px;
+		margin-left: -10px;
+	}
+	.stars {
+		margin-left: 75px;
 	}
 }

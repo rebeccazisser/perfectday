@@ -2488,6 +2488,7 @@ ul li a {
   color: #8d8199;
   font-size: 16px; }
 
+<<<<<<< HEAD
 a.ulAnchors {
   top: -75px; }
 
@@ -2533,6 +2534,8 @@ a.ulAnchors {
   margin-left: 230px;
   color: #999999; }
 
+=======
+>>>>>>> Whut
 #profile {
   font-size: 16px; }
   #profile img {
@@ -2541,5 +2544,35 @@ a.ulAnchors {
   #profile .name {
     font-size: 16px;
     float: left;
+<<<<<<< HEAD
     line-height: 150px;
     display: inline-block; }
+=======
+    line-height: 200px;
+    display: inline-block;
+    vertical-align: bottom; }
+  #profile .miles-walked {
+    font-size: 112px;
+    float: left;
+    margin-top: -50px;
+    margin-left: 10px; }
+  #profile .miles {
+    float: left;
+    margin-top: -50px;
+    line-height: 200px; }
+  #profile #experiences {
+    margin-top: -75px; }
+  #profile .experiences {
+    margin-top: -48px;
+    margin-left: 160px;
+    float: left; }
+
+#explore img {
+  width: 100px;
+  margin-left: -20px; }
+#explore .ulAnchors {
+  margin-top: -20px;
+  margin-left: -10px; }
+#explore .stars {
+  margin-left: 75px; }
+>>>>>>> Whut
