@@ -18,6 +18,10 @@ $(document).ready(function(){
     $('.bar-title').addClass('creator-mode');
   });
 
+  $('#explorer-mode').click(function(){
+    $('.bar-title').removeClass('creator-mode');
+  });
+
   var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
     {
       m4a: "js/libs/thrift.m4a"

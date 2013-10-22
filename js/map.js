@@ -30,24 +30,6 @@ function initialize() {
   // Custom pin jank
   var image = new google.maps.MarkerImage('js/map_marker-a.png',null, null, null, new google.maps.Size(50,50));
 
-  // var pinMarker = new google.maps.Marker({
-  //   // hardcoded for now
-  //     position: americanLatLng,
-  //     map: map,
-  //     title: "American University",
-  //     icon: image
-  // });
-
-  
-      // Creates the popup
-      // var youMarker = new google.maps.Marker({
-      //   map: map,
-      //   position: pos,
-      //   icon: image
-      // });
-
-      // youMarker.set('id', 'astring');
-
   // HTML5 geolocation
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -79,8 +61,7 @@ function initialize() {
       handleNoGeolocation(true);
     });
   } else {
-    // Browser doesn't support Geolocation
-    // Need try-catch here; default to position coords at American U
+    americanLatLng = new google.maps.LatLng(38.939287, -77.087184);
     handleNoGeolocation(true);
   }
 
