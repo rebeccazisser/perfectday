@@ -2053,7 +2053,7 @@ button.button-block {
    Navigation styles
    ========================================================================== */
 .bar-title {
-  background-color: #8d8199;
+  background-color: #e97770;
   background-image: none;
   border: none; }
 
@@ -2062,12 +2062,12 @@ button.button-block {
   left: 0;
   display: none;
   position: absolute;
-  background-color: #8d8199;
+  background-color: #e97770;
   width: 200px;
   height: 100%;
   z-index: 5000000; }
   .sidebar ul {
-    background-color: #8d8199; }
+    background-color: #e97770; }
     .sidebar ul .sprite {
       margin-right: 20px; }
       .sidebar ul .sprite:first-child {
@@ -2080,9 +2080,9 @@ button.button-block {
       padding: 25px;
       padding-left: 15px; }
       .sidebar ul li:active {
-        background-color: #746780; }
+        background-color: #e24d44; }
       .sidebar ul li:hover {
-        background-color: #746780; }
+        background-color: #e24d44; }
       .sidebar ul li a {
         left: 0;
         color: white; }
@@ -2126,7 +2126,7 @@ button.button-block {
 .cn-button {
   border: none;
   background: none;
-  color: #8d8199;
+  color: #e97770;
   text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
@@ -2218,17 +2218,17 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   transform: rotate(135deg) skew(45deg); }
 
 .csstransforms .cn-wrapper li a {
-  background-color: #8d8199; }
+  background-color: #e97770; }
 
 /* active style */
 .csstransforms .cn-wrapper li.active a {
-  background-color: #a79db0; }
+  background-color: #f0a19c; }
 
 /* hover style */
 .csstransforms .cn-wrapper li:not(.active) a:hover,
 .csstransforms .cn-wrapper li:not(.active) a:active,
 .csstransforms .cn-wrapper li:not(.active) a:focus {
-  background-color: #a79db0; }
+  background-color: #f0a19c; }
 
 /* fallback */
 .no-csstransforms .cn-button {
@@ -2313,16 +2313,16 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   text-shadow: none; }
 
 .bar-title [class*="button"] {
-  background-color: #8d8199;
+  background-color: #e97770;
   background-image: none;
   border: 0px;
   text-shadow: none;
   box-shadow: none; }
   .bar-title [class*="button"]:active {
-    background-color: #746780;
+    background-color: #e24d44;
     border: 0px; }
   .bar-title [class*="button"]:hover {
-    background-color: #746780;
+    background-color: #e24d44;
     border: 0px; }
   .bar-title [class*="button"] .sprite {
     width: 20px;
@@ -2341,17 +2341,17 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   color: white; }
 
 .sidebar [class*="button"] {
-  background-color: #8d8199;
+  background-color: #e97770;
   background-image: none;
   border: 0px;
   text-shadow: none;
   box-shadow: none;
   margin-top: -10px; }
   .sidebar [class*="button"]:active {
-    background-color: #746780;
+    background-color: #e24d44;
     border: 0px; }
   .sidebar [class*="button"]:hover {
-    background-color: #746780;
+    background-color: #e24d44;
     border: 0px; }
   .sidebar [class*="button"] .sprite {
     width: 20px; }
@@ -2365,14 +2365,14 @@ body {
   background-color: transparent; }
 
 button {
-  background-color: #8d8199;
+  background-color: #e97770;
   background-image: none;
   border: 0px; }
   button:active {
-    background-color: #746780;
+    background-color: #e24d44;
     border: 0px; }
   button:hover {
-    background-color: #746780;
+    background-color: #e24d44;
     border: 0px; }
 
 .circleplayer {
@@ -2488,7 +2488,7 @@ tr {
   padding-bottom: 20px; }
 
 ul li a {
-  color: #8d8199;
+  color: #e97770;
   font-size: 16px; }
 
 <<<<<<< HEAD
@@ -2551,7 +2551,7 @@ a.ulAnchors {
 
 .directionbold {
   font-size: 40px;
-  color: #d6a392;
+  color: #8d8199;
   bottom: 70px;
   right: 5px; }
 
